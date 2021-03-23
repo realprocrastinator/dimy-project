@@ -81,6 +81,7 @@ Hi 朋友们，这将是我们一起合作的`git repo`。
       | 10       | A user who is diagnosed positive with COVID-19, **can choose** to upload their close contacts to the backend server. **It combines all available DBF’s into a single Contact Bloom Filter (CBF)** and **uploads the CBF to the backend server.** **Once a device uploads a CBF, it stops generating the QBFs**. The device will **receive a confirmation that the upload has been successful**. |
 
     - Front-end should be able to configured to **DEBUG mode**
+      
       - Msg sent/received, state of the Bloom Filter
     - UDP to broadcast inter device communications.
     - DBF, QBF and CBF are size of **100KB (Padding? Or maximum?)** and use **3 hashes (Hash 3 times or 3 different hash functions for each?) for encoding**.
@@ -156,52 +157,66 @@ Hi 朋友们，这将是我们一起合作的`git repo`。
 
 # 待做
 
-- 实现语言
-  - Python
-  - C
-  - Java
 - 制作期中汇报
   - 日记
   - 录像
 
 # TODO
 
-- Decide Implementing language
-  - Python
-  - C
-  - Java
 - Mid-term report/record
   - Diary
   - Recording
-- Work break down
-- Ask Questions on Team
+- ~~Work break down~~
+- ~~Ask Questions on Team~~
 
 # 疑问
 
-- DBF, QBF, CBF大小是固定的100 KB 还是最多100 KB
-- ３个哈希是指对以上三个文件使用三个不同的哈希方程还是对一个文件进行三次哈希？
-- 当前端应用与后端应用沟通时我们可以自定义自己的消息传送机制嘛？比如消息的格式，大小等等。。（假如在没有实现自己的后端的情况下），另外与后端沟通的API可以自己定义嘛？
-- 期中汇报需要录制视频嘛？
-- 期末的视频演示需要每个组员都参与吗？
+- **DBF, QBF, CBF大小是固定的100 KB 还是最多100 KB**
+- **日记格式，要记录些什么？**
+- ~~３个哈希是指对以上三个文件使用三个不同的哈希方程还是对一个文件进行三次哈希？~~
+- ~~当前端应用与后端应用沟通时我们可以自定义自己的消息传送机制嘛？比如消息的格式，大小等等。。（假如在没有实现自己的后端的情况下），另外与后端沟通的API可以自己定义嘛？~~
+- ~~期中汇报需要录制视频嘛？~~
+- ~~期末的视频演示需要每个组员都参与吗？~~
 
 # Questions
 
+- Diary format.
 - DBF, QBF and CBF are size of **100KB (Padding? Or maximum?)** and use **3 hashes (Hash 3 times or 3 different hash functions for each?) for encoding**.
-- Message Format for the Client App and API for communicating the Back-end.
-- Do we need to record a video for Mid term presentation?
-- Does every member in the team should participate in the Demo Video for Final?  
+- ~~Message Format for the Client App and API for communicating the Back-end.~~
+- ~~Do we need to record a video for Mid term presentation?~~
+- ~~Does every member in the team should participate in the Demo Video for Final?~~  
 
 # 分工
 
-- 待定
+- gjw
+  - UDP 
+  - k/n sharekey
+  - BF module
+- csy
+  - ID gen module
+  - DH key exchange
+- zyt
+  - upload CBF
+  - TCP + query 
 
 # Contribution
 
-- TBD
+- gjw
+  - UDP 
+  - k/n sharekey
+  - BF module
+- csy
+  - ID gen module
+  - DH key exchange
+- zyt
+  - upload CBF
+  - TCP + query
 
 # 更新日志
 
+- 2021 Mar.24 更新了分工，以及疑问
 - 2021 Mar. 22 建立的初始工作分支，更新里主分支的`README`以及注意事项
 
 # Change log
+- 2021 Mar. 24 updated working assignment and questions
 - 2021 Mar. 22 create initial working repo and updated the `README` in the `main` branch. 
