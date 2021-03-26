@@ -157,14 +157,21 @@ Hi 朋友们，这将是我们一起合作的`git repo`。
 
 # 待做
 
-- 制作期中汇报
-  - 日记
+- 制作期中汇报 (这周末完成)
+  - 日记 
   - 录像
 
 # TODO
 
-- Mid-term report/record
+- Mid-term report/record  (The mid-term version should be finished by this weekend)
   - Diary
+    - grp ID, zid etc.
+    - weekly log
+    - contribution
+    - challenge
+    - attach to final report 
+    - 1 page limitation
+    - any format
   - Recording
 - ~~Work break down~~
 - ~~Ask Questions on Team~~
@@ -172,7 +179,9 @@ Hi 朋友们，这将是我们一起合作的`git repo`。
 # 疑问
 
 - **DBF, QBF, CBF大小是固定的100 KB 还是最多100 KB**
-- **日记格式，要记录些什么？**
+- 期中汇报的视频格式以及大小？
+- ~~**日记格式，要记录些什么？**~~
+  - 参考作业要求
 - ~~３个哈希是指对以上三个文件使用三个不同的哈希方程还是对一个文件进行三次哈希？~~
 - ~~当前端应用与后端应用沟通时我们可以自定义自己的消息传送机制嘛？比如消息的格式，大小等等。。（假如在没有实现自己的后端的情况下），另外与后端沟通的API可以自己定义嘛？~~
 - ~~期中汇报需要录制视频嘛？~~
@@ -180,11 +189,12 @@ Hi 朋友们，这将是我们一起合作的`git repo`。
 
 # Questions
 
-- Diary format.
+- Video format & size？
 - DBF, QBF and CBF are size of **100KB (Padding? Or maximum?)** and use **3 hashes (Hash 3 times or 3 different hash functions for each?) for encoding**.
 - ~~Message Format for the Client App and API for communicating the Back-end.~~
 - ~~Do we need to record a video for Mid term presentation?~~
 - ~~Does every member in the team should participate in the Demo Video for Final?~~  
+- ~~Diary format.~~
 
 # 分工
 
@@ -214,9 +224,11 @@ Hi 朋友们，这将是我们一起合作的`git repo`。
 
 # 更新日志
 
+- 2021 Mar.27 更新了期中汇报ppt，以及疑问
 - 2021 Mar.24 更新了分工，以及疑问
 - 2021 Mar. 22 建立的初始工作分支，更新里主分支的`README`以及注意事项
 
 # Change log
+- 2021 Mar. 27 updated Mid-term presentation slides and questions 
 - 2021 Mar. 24 updated working assignment and questions
 - 2021 Mar. 22 create initial working repo and updated the `README` in the `main` branch. 
