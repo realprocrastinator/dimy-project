@@ -223,12 +223,13 @@ Hi 朋友们，这将是我们一起合作的`git repo`。
   - TCP + query
 
 # 更新日志
-
+- 2021 Mar.28 精简了演讲ppt，添加了每页ppt的详细描述
 - 2021 Mar.27 更新了期中汇报ppt，以及疑问
 - 2021 Mar.24 更新了分工，以及疑问
 - 2021 Mar. 22 建立的初始工作分支，更新里主分支的`README`以及注意事项
 
 # Change log
+- 2021 Mar. 28 updated refined slides and move detials to a separate doc
 - 2021 Mar. 27 updated Mid-term presentation slides and questions 
 - 2021 Mar. 24 updated working assignment and questions
 - 2021 Mar. 22 create initial working repo and updated the `README` in the `main` branch. 
