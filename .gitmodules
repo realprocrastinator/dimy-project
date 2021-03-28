@@ -1,0 +1,3 @@
+[submodule "COMP9337-videos"]
+	path = COMP9337-videos
+	url = git@github.com:realprocrastinator/COMP9337-videos.git
