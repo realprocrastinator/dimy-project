@@ -31,6 +31,14 @@ Jiawei Gao	Siying Chen	Yuntao Zhou
 
 | Week | Tasks                                                        | Issue                                   |
 | ---- | ------------------------------------------------------------ | --------------------------------------- |
-| 5    | Create github repo + Decide the implementation details.      | Some questions about the DIMY protocol. |
-| 6    | Create slides for presentation + Record the video clips + Assign tasks. | Null                                    |
+| 5    | 1. Create github repo		               | 1. Some questions about the DIMY protocol    |
+          2. Decide which language to use(python)	 2. Confusions about the way to record the diary and present the protocol understanding
+          3. Have initial framework of our code           3. How to achieve the functions and which package of python can be used
+          4. Discuss the work division of the code
+          ,diary record and protocol presentation     
+| 6    | 1. Create slides for presentation                 | 1. How to concatenate videos of the members
+          2. Have a basic framework of codes	 2. How to upload videos with large size
+          3. Decide the implementation details           3. Code implementation
+          4. Record the video clips 
+          5.  Assign tasks.
 | 7    | In progress                                                  | Null                                    |
