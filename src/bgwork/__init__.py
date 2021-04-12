@@ -1,1 +1,1 @@
-from bgwork.bgworker import BackgroundWorker
+from .bgworker import BackgroundWorker
