@@ -1,8 +1,14 @@
-import sslcrypto
+import sys
+import os
+# A very hacky way to enfore python load a module from the project dir
+from pathlib import Path
+CURDIR = os.path.dirname(os.path.abspath(__file__))
+WORKSPACE = Path(CURDIR).parent.absolute()
+sys.path.append(str(WORKSPACE))
+import sslcrypto_client as sslcrypto
 from threading import Lock
 import logging
 import sys
-import bgwork
 
 # A bit hacky here. 
 # TODO(Jiawei): 
@@ -159,16 +165,14 @@ if __name__ == "__main__":
     c = IDManager()
 
     print("Testing invalid cases")    
-
     # if haven't called gen_EphID then I expected None here
     assert(c.EphID == None)
-
     # if the EphID is none then we expect gen_EncntID to return None as well
     assert(c.gen_EncntID() == None)
     assert(c.EncntID == None)
+    print("Test: Invalid cases passed\n")
 
     print("Testing whether lib and methods are functioning well")    
-    
     EphID = c.gen_EphID()
     assert(EphID != None)
     assert(EphID == c.EphID)
@@ -176,8 +180,8 @@ if __name__ == "__main__":
     assert(isinstance(c.EphID, bytes))
     assert(len(EphID) == 16)
     assert(len(c.EphID) == 16)    
-    print(c.EphID)
-    print("Test: EphID passed")
+    print("EphID is:", c.EphID.hex())
+    print("Test: EphID passed\n")
     
     EncntID = c.gen_EncntID()
     assert(EncntID != None)
@@ -186,12 +190,12 @@ if __name__ == "__main__":
     assert(isinstance(c.EncntID, bytes))
     assert(len(EncntID) == 16)
     assert(len(c.EncntID) == 16)
-    print("Test: EncntID passed")
-    print(c.EncntID)
+    print("EncntID is:", c.EncntID.hex())
+    print("Test: EncntID passed\n")
 
     # TODO(jiawei): Testing whether locking functions in multithreaded case
     print("Testing multithreaded case")
-    assert(not"Not implemented yet")
+    assert(not"Not implemented yet\n")
 
 
 
