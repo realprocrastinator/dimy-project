@@ -84,7 +84,9 @@ class IDManager(object):
         
         # make this method thread safe to prevent another thread from trying to
         # retrieve EphiD during generating
-        self.EphID_lock.acquire()
+        if not self.EphID_lock.locked(): 
+            self.EphID_lock.acquire()
+
         # The library uses first byte to indicate whether compressed! We ignore it
         self._EphID = bytes(self._public_secret)[1:]
         
@@ -93,8 +95,9 @@ class IDManager(object):
             # explicitly clear the EphID to indicate an error occured
             self._EphID = None
             return None
-        
-        self.EphID_lock.release()
+            
+        if self.EphID_lock.locked(): 
+            self.EphID_lock.release()
         self.logger.info(f"EphID is: {self._EphID.hex()}")
 
         return self._EphID
@@ -112,7 +115,9 @@ class IDManager(object):
         self.logger.debug("Reconstructing the encounter ID.")
         # make this method thread safe so if another thread trying to retrive Encounter ID,
         # we will be fine
-        self.EncntID_lock.acquire()
+        if not self.EncntID_lock.locked():
+            self.EncntID_lock.acquire()
+        
         self._EncntID = self._curve.derive(self._private_secret, self._public_secret)
 
         if (not self._EncntID):
@@ -121,7 +126,8 @@ class IDManager(object):
             self._EncntID = None
             return None
 
-        self.EncntID_lock.release()
+        if self.EncntID_lock.locked():
+            self.EncntID_lock.release()
         
         self.logger.info(f"EncntID is: {self._EncntID.hex()}")
 
@@ -130,33 +136,50 @@ class IDManager(object):
     @property
     def EphID(self):
         
-        self.EphID_lock.acquire()
+        if not self.EphID_lock.locked(): 
+            self.EphID_lock.acquire()
+        
         EphID = self._EphID 
-        self.EphID_lock.release()
+        
+        if self.EphID_lock.locked():
+            self.EphID_lock.release()
 
         return EphID
 
     @EphID.setter
     def EphID(self, id):
-        self.EphID_lock.acquire()
+        
+        if not self.EphID_lock.locked(): 
+            self.EphID_lock.acquire()
+        
         self._EphID = id
-        self.EphID_lock.release()
-    
+        
+        if self.EphID_lock.locked():
+            self.EphID_lock.release()
+
     @property
     def EncntID(self):
         
-        self.EncntID_lock.acquire()
-        EncntID = self._EncntID 
-        self.EncntID_lock.release()
+        if not self.EncntID_lock.locked():
+            self.EncntID_lock.acquire()
+        
+        EncntID = self._EncntID
+
+        if self.EncntID_lock.locked():
+            self.EncntID_lock.release()
 
         return EncntID
 
     @EncntID.setter
     def EncntID(self, id):
 
-        self.EncntID_lock.acquire()
+        if not self.EncntID_lock.locked():
+            self.EncntID_lock.acquire()
+        
         self._EncntID = id        
-        self.EncntID_lock.release()
+        
+        if self.EncntID_lock.locked():
+            self.EncntID_lock.release()
 
 
 if __name__ == "__main__":
