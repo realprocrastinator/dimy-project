@@ -1,0 +1,64 @@
+******** ALL THE OUTPUT IS IN HEX FORMAT *********
+******** ALL THE OUTPUT IS IN HEX FORMAT *********
+******** ALL THE OUTPUT IS IN HEX FORMAT *********
+
+ >>>>> Service start working, client is working on UDP port 3001 <<<<<
+
+======= created a new Contact BloomFilter (every 10 minutes will create a new one, maximum 6 CBFs) ======= 
+
+------------------> Segment 1 <------------------
+ generate EphID:23f8c3a16e14c29d57219a00b5410fa9
+ hash value of EphID: e52e78
+
+------------------> Segment 2 <------------------
+Six shares: 
+
+[
+    83b1f82ce931ae35b2203ff239ca1cdb
+    377113bce2bc6c7cf336e3285c779032
+    97382831659900d4163746dad0fc8340
+    2c9dd6eb3ffa46dacb5bc821f9c1f863
+    8cd4ed66b8df2a722e5a6dd3754aeb11
+    381406f6b352e83b6f4cb10910f767f8
+]
+
+------------------> Segment 3 <------------------
+[ Segment 3-A, sending share: 83b1f82ce931ae35b2203ff239ca1cdb ]
+[ Segment 3-B, received share: c1fb11fec44cef9dbead6a616ab48b6e ]
+[ Segment 3-C, total shares received: 1 ]
+[ Segment 3-A, sending share: 377113bce2bc6c7cf336e3285c779032 ]
+[ Segment 3-B, received share: cfc4653ea49418c722235d6d1b420565 ]
+[ Segment 3-C, total shares received: 2 ]
+[ Segment 3-A, sending share: 97382831659900d4163746dad0fc8340 ]
+[ Segment 3-B, received share: d0802e0baf81d9819a16bb2802e905f0 ]
+[ Segment 3-C, total shares received: 3 ]
+
+------------------> Segment 4 <------------------
+[ Segment 4-A, re-construct EphID: debf5acbcf592edb06988c24731f8bfb ]
+[ Segment 4-B, hash value of re-constructed EphID: 9b75fc is equal to hash value of original EphID: 9b75fc
+
+------------------> Segment 5 <------------------
+[ generate shared secret EncID: 0e2fac609122f7f241ed1a969b5e02af ]
+
+------------------> Segment 6 <------------------
+[ ======== insert into DBF (murmur3 hashing with 3 hashes) ]
+
+------------------> Segment 7 <------------------
+[ Segment 7-A, insert EncID into DBF at positions: 167090, 343671, 296005 ]
+[ current DBF state after inserting new EncID: {167090, 296005, 343671}
+
+------------------> Segment 8 <------------------
+[ combine DBFs into a single QBF - 2021-02-23:15:06:30 ]
+[ Currently have 1 DBF, it's state: {167090, 296005, 343671} ]
+[ Single QBF: {167090, 296005, 343671} ]
+[ NEXT QUERY TIME - 2021-02-23:16:06:31 ]
+
+------------------> Segment 9 <------------------
+ uploading QBF to backend server...
+ result: None Match!
+
+uploadCBF (terminal input from client)
+
+------------------> Segment 10 <------------------
+ uploading CBF to backend server...
+ upload CBF success 

@@ -1,9 +1,10 @@
-from .bloomfilter import BloomFilter
+from bloomfilter import BloomFilter
 from threading import Lock
 from uuid import uuid1
 from time import monotonic
 import logging
 import sys
+import base64
 
 # A genieric BF calss, can be DBF, QBF or CBF
 class GBF(BloomFilter):
@@ -213,6 +214,46 @@ class BloomFilterManager(object):
     def cbf(self):
         return self._get_cluster("CBF")
 
+    # return a raw str encoded using base64, also write to a file if outfile is not None
+    # this method is not thread safe! return False on error 
+    def dump_bf(self, type_name, idx = None, outfile = None):
+        type_name = type_name.lower()
+
+        if (type_name == "qbf"):
+            # array type
+            bf = bytearray(self.qbf.arr)
+            # raw string encoded in base64
+            b64_str = base64.b64encode(bf).decode('utf-8')
+        
+        elif (type_name == "cbf"):
+            bf = bytearray(self.cbf.arr)
+            b64_str = base64.b64encode(bf).decode('utf-8')
+        
+        elif (type_name == "dbf"):
+            if (not idx):
+                bf = bytearray(self.cur_dbf.arr)
+            else:
+                if (idx >= self.max_poolsz or idx < 0):
+                    self.logger.error("Idx can't be negative or go beyond max pool size.")
+                    return False
+                
+                bf = bytearray(self.dbfpool[idx].arr)
+            
+            b64_str = base64.b64encode(bf).decode('utf-8')
+        
+        else:
+            self.logger.error("Unsupported BF type.")
+            return False
+        
+        self.logger.debug(f"Dumping BF with id {bf.id}" + ".\n" if not outfile else f"to {outfile}.")
+        
+        if outfile:
+            with open(outfile, "w") as f:
+                f.write(b64_str)
+        
+        return b64_str
+        
+
 if __name__ == "__main__":
     # Small unit test here
 
@@ -282,9 +323,9 @@ if __name__ == "__main__":
     assert(bfmgr.cur_dbf.contains("Hello UNSW") == True)
 
     # test cluster dbfs
-    assert(bfmgr.cluster_dbf(bfmgr.max_poolsz + 1, "QBF") == False)
-    assert(bfmgr.cluster_dbf(-1, "QBF") == False)
-    assert(bfmgr.cluster_dbf(bfmgr.max_poolsz, "XBF") == False)
+    assert(not bfmgr.cluster_dbf(bfmgr.max_poolsz + 1, "QBF"))
+    assert(not bfmgr.cluster_dbf(-1, "QBF"))
+    assert(not bfmgr.cluster_dbf(bfmgr.max_poolsz, "XBF"))
     
     assert(bfmgr.cluster_dbf(bfmgr.max_poolsz, "QBF"))
     assert(bfmgr.qbf != None)
@@ -302,6 +343,37 @@ if __name__ == "__main__":
 
 
     print("Test atomic methods add/rm/update/cluster passed\n")
+
+    # Test dump method
+    # Invalid case
+
+    # reset the pool and recluster qbf and cbf
+    for _ in range(bfmgr.max_poolsz):
+        bfmgr.update_dbfpool_atomic()
+
+    bfmgr.cluster_dbf(bfmgr.max_poolsz, "QBF")
+    bfmgr.cluster_dbf(bfmgr.max_poolsz, "CBF")
+    assert(bfmgr.qbf)
+    assert(bfmgr.cbf)
+
+    exp_str = base64.b64encode(bytearray(b"\x00" * (800000 // 8))).decode('utf-8')
+    
+    PREFIX = "./dump-b64"
+
+    b64bfstr = bfmgr.dump_bf("xbf", outfile = PREFIX + "qbf")
+    assert(not b64bfstr)
+    b64bfstr = bfmgr.dump_bf("dbf", idx = -1, outfile = PREFIX + "qbf")
+    assert(not b64bfstr)
+    b64bfstr = bfmgr.dump_bf("qbf", outfile = PREFIX + "qbf")
+    assert(b64bfstr == exp_str)
+    b64bfstr = bfmgr.dump_bf("cbf", outfile = PREFIX + "cbf")
+    assert(b64bfstr == exp_str)
+    b64bfstr = bfmgr.dump_bf("dbf", outfile = PREFIX + "dbf")
+    assert(b64bfstr == exp_str)
+    b64bfstr = bfmgr.dump_bf("dbf", idx = 1, outfile = PREFIX + "dbf-1")
+    assert(b64bfstr == exp_str)
+    
+    print("Test dump bf using base64 encoding passed\n")
 
     # Test multithreaded cases
     assert(not "Multithreaded test case not implemented yet")

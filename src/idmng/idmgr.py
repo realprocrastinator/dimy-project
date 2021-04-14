@@ -26,7 +26,7 @@ class IDManager(object):
         self._private_secret = None
         self._public_secret = None
         
-        # those are bytearray type
+        # those are bytes type
         self._private_secret_bytes = None
         self._EphID = None
         self._EncntID = None

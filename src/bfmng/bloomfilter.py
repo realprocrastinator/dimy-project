@@ -12,18 +12,18 @@ if DEBUG:
 # 1) Should make array sector size configurable depanding on the type supported by array
 class BloomFilter(object):
     # class wide variables
-    DEFAULTBITS = 320
+    DEFAULTBITS = 800000
     DEFAULTHASHFUNS = 3
-    DEFAULTARRSZ = 32
+    DEFAULTARRSZ = 8
     DEFAULTHASH = mmh3.hash
     
     # By default we are going to use murmurhash
     def __init__(self, nbits = DEFAULTBITS, hash_func = DEFAULTHASH, hash_times = DEFAULTHASHFUNS, arrsz = DEFAULTARRSZ):
         self._nbits = nbits
         self._arrsz = arrsz
-        self._narrs = (nbits + arrsz) // arrsz
+        self._narrs = (nbits + arrsz - 1) // arrsz
         # 'L' -> unsigned long type max 4 bytes
-        self.arr = array.array('L', [0]) * self._narrs
+        self.arr = array.array('B', [0]) * self._narrs
         self._hash_func = hash_func
         self._hash_times = hash_times
         # number of elements have been inserted 
