@@ -224,16 +224,24 @@ class BloomFilterManager(object):
 
     # return a raw str encoded using base64, also write to a file if outfile is not None
     # this method is not thread safe! return False on error 
-    def dump_bf(self, type_name, idx = None, outfile = None):
+    def dump_bf(self, type_name, idx = None, outfile = None, bf = None):
+        # if we want to dump an bf passed through argument
+        if (bf and isinstance(bf, GBF)):
+            bf = bytearray(self._qbf.arr)
+            b64_str = base64.b64encode(bf).decode('utf-8')
+            return b64_str
+        elif bf:
+            raise TypeError("Not BloomFilter type")
+        
         type_name = type_name.lower()
 
-        if (type_name == "qbf"):
+        if (type_name == "qbf") and self._qbf:
             # array type
-            bf = bytearray(self.qbf.arr)
+            bf = bytearray(self._qbf.arr)
             # raw string encoded in base64
             b64_str = base64.b64encode(bf).decode('utf-8')
         
-        elif (type_name == "cbf"):
+        elif (type_name == "cbf") and self._cbf:
             bf = bytearray(self.cbf.arr)
             b64_str = base64.b64encode(bf).decode('utf-8')
         
@@ -241,8 +249,8 @@ class BloomFilterManager(object):
             if (not idx):
                 bf = bytearray(self.cur_dbf.arr)
             else:
-                if (idx >= self.max_poolsz or idx < 0):
-                    self.logger.error("Idx can't be negative or go beyond max pool size.")
+                if (idx < 0 or idx >= len(self.dbfpool)):
+                    self.logger.error("Idx can't be negative or go beyond current max pool size.")
                     return False
                 
                 bf = bytearray(self.dbfpool[idx].arr)
@@ -250,7 +258,7 @@ class BloomFilterManager(object):
             b64_str = base64.b64encode(bf).decode('utf-8')
         
         else:
-            self.logger.error("Unsupported BF type.")
+            self.logger.error("Unsupported BF type or BF not ready yet.")
             return False
         
         self.logger.debug(f"Dumping {type_name.upper()}.\n" if not outfile else f"to {outfile}.")

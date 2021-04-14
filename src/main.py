@@ -1,6 +1,7 @@
 import bgwork
 import idmng
 import bfmng
+import commn
 import sys
 import time
 import signal
@@ -50,7 +51,7 @@ def background_tasks_install():
     bfmgr.update_dbfpool_atomic()
 
   # periodically combining 6 DBFs every `qbf_gen_interval` sec
-  qbf_gen_interval = 9
+  qbf_gen_interval = 6
 
   @bgworker.myjob("QBF-worker", qbf_gen_interval, True)
   def qbf_worker_do_job():
@@ -58,8 +59,14 @@ def background_tasks_install():
     qbf = bfmgr.cluster_dbf(bfmgr.max_poolsz, type_name = "QBF")
     if (qbf):
       print(f"Querying the sever with QBF ID: {qbf.id}")
-      time.sleep(3)
-      print("Got the result from server")
+      
+      # TODO(Jiawei): make url configurable
+      res, msg = commn.query_qbf(commn.URL.format(commn.suffix["query"]),\
+                                 {"QBF" : bfmgr.dump_bf("QBF", bf = qbf)})
+
+      print("Got the result from server: ", res)
+      print(msg)
+
     else:
       print("QBF not ready, may be pool is not full yet?")
 
