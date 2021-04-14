@@ -1,10 +1,18 @@
+# # A very hacky way to enfore python load a module from the project dir
+# from pathlib import Path
+# CURDIR = os.path.dirname(os.path.abspath(__file__))
+# WORKSPACE = Path(CURDIR).parent.absolute()
+# sys.path.append(str(WORKSPACE))
+
+# Add toor dir of the src tree to the syspath, so that we can use absolute import
+import sys
+from pathlib import Path # if you haven't already done so
+file = Path(__file__).resolve()
+parent, root = file.parent, file.parents[1]
+sys.path.append(str(root))
+
 import sys
 import os
-# A very hacky way to enfore python load a module from the project dir
-from pathlib import Path
-CURDIR = os.path.dirname(os.path.abspath(__file__))
-WORKSPACE = Path(CURDIR).parent.absolute()
-sys.path.append(str(WORKSPACE))
 import sslcrypto_client as sslcrypto
 from threading import Lock
 import logging

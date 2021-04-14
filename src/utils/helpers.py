@@ -53,6 +53,3 @@ if __name__ == "__main__":
     assert(ephid_decimal_to_bytes(567856785678567856785678).hex() ==  "00" * (16 - len(test_bytes)) + hex(567856785678567856785678)[2:])
     
     print("Test ephid_decimal_to_bytes passed\n")
-
-
-    

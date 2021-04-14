@@ -1,3 +1,10 @@
+# Add toor dir of the src tree to the syspath, so that we can use absolute import
+import sys
+from pathlib import Path # if you haven't already done so
+file = Path(__file__).resolve()
+parent, root = file.parent, file.parents[1]
+sys.path.append(str(root))
+
 from bgwork import job
 import logging
 import sys

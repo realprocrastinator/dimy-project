@@ -1,4 +1,11 @@
-from bloomfilter import BloomFilter
+# Add toor dir of the src tree to the syspath, so that we can use absolute import
+import sys
+from pathlib import Path # if you haven't already done so
+file = Path(__file__).resolve()
+parent, root = file.parent, file.parents[1]
+sys.path.append(str(root))
+
+from bfmng.bloomfilter import BloomFilter
 from threading import Lock
 from uuid import uuid1
 from time import monotonic
@@ -14,7 +21,7 @@ class GBF(BloomFilter):
         self._id = bf_type + "-" + uuid1().hex
 
     @property
-    def create_time(self):
+    def create_time(self):  
         return self._create_time
 
     @property
@@ -174,7 +181,8 @@ class BloomFilterManager(object):
         if not self.dbfpool_lock.locked():
             self.dbfpool_lock.acquire()
 
-        return self._cur_dbf
+        cur = self.dbfpool[-1] if len(self.dbfpool) > 0 else None
+        return cur
 
         if not self.dbfpool_lock.locked():
             self.dbfpool_lock.acquire()
@@ -185,7 +193,7 @@ class BloomFilterManager(object):
             self.dbfpool_lock.acquire()
 
         self.logger.debug(f"Inserting data {data} into DBF {self._cur_dbf.id}")
-        self._cur_dbf.insert(data)
+        self.dbfpool[-1].insert(data)
 
         if not self.dbfpool_lock.locked():
             self.dbfpool_lock.acquire()
@@ -245,7 +253,7 @@ class BloomFilterManager(object):
             self.logger.error("Unsupported BF type.")
             return False
         
-        self.logger.debug(f"Dumping BF with id {bf.id}" + ".\n" if not outfile else f"to {outfile}.")
+        self.logger.debug(f"Dumping {type_name.upper()}.\n" if not outfile else f"to {outfile}.")
         
         if outfile:
             with open(outfile, "w") as f:
