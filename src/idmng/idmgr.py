@@ -267,10 +267,10 @@ class IDManager(UDPManager):
         secret_shares = self.contact_book[hash_tag.hex()]
         # Check if can perform reconstruction
         if (len(secret_shares) >= threshold):
-            self.logger.info(f"Received {len(secret_shares)} parts now reconstructing the EphID")
+            self.logger.info(f"Received {len(secret_shares)} parts now reconstructing the EphID using the first three")
 
             # Reconstruct EphID in bytes type
-            ephid_of_other = ephid_decimal_to_bytes(recover_secret(secret_shares))
+            ephid_of_other = ephid_decimal_to_bytes(recover_secret(secret_shares[:3]))
             self.logger.info(f"Reconstructed EphID is: 0x{ephid_of_other.hex()}")
             
             new_hash_tag = sha256(ephid_of_other \
@@ -279,6 +279,7 @@ class IDManager(UDPManager):
 
             self.logger.debug(f"New Reconstructed EphID has hash: 0x{new_hash_tag}")
             if (new_hash_tag != hash_tag.hex()):
+                
                 self.logger.error(f"Hash of reconstructed EphID mismatched")
                 return None
             

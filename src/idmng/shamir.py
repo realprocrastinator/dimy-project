@@ -12,12 +12,19 @@ from __future__ import print_function
 import random
 import functools
 
+# Add toor dir of the src tree to the syspath, so that we can use absolute import
+import sys
+from pathlib import Path # if you haven't already done so
+file = Path(__file__).resolve()
+parent, root = file.parent, file.parents[1]
+sys.path.append(str(root))
+
 # 12th Mersenne Prime
 # (for this application we want a known prime number as close as
 # possible to our security level; e.g.  desired security level of 128
 # bits -- too large and all the ciphertext is large; too small and
 # security is compromised)
-_PRIME = 2 ** 127 - 1
+_PRIME = 2 ** 128 - 1
 # 13th Mersenne Prime is 2**521 - 1
 
 _RINT = functools.partial(random.SystemRandom().randint, 0)
@@ -109,7 +116,7 @@ def recover_secret(shares, prime=_PRIME):
 
 def main():
     """Main function"""
-    secret = 95187642070087605308147136200515161995
+    secret = ephid_bytes_or_hexstr_to_decimal(b"\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99")
     secret, shares = make_shares(secret, minimum=3, shares=6)
 
     print('Secret:                                                     ',
@@ -125,4 +132,14 @@ def main():
           recover_secret(shares[-3:]))
 
 if __name__ == '__main__':
+    from utils.helpers import *
     main()
+    # s = [(1, 28956852499995734302333234451844105093), (2, 4530917675024405667621562586281377631), (3, 160822523719505393604688124349264093365)]
+    # print('Secret recovered from minimum subset of shares:             ',
+    #       recover_secret(s))
+
+    
+
+    # print(ephid_decimal_to_bytes(recover_secret(s)).hex())
+    
+    # print(ephid_decimal_to_bytes(160822523719505393604688124349264093365).hex())
