@@ -33,7 +33,7 @@ def _eval_at(poly, x, prime):
         accum %= prime
     return accum
 
-def make_random_shares(data, minimum, shares, prime=_PRIME):
+def make_shares(data, minimum, shares, prime=_PRIME):
     """
     Generates a random shamir pool, returns the secret and the share
     points.
@@ -110,7 +110,7 @@ def recover_secret(shares, prime=_PRIME):
 def main():
     """Main function"""
     secret = 95187642070087605308147136200515161995
-    secret, shares = make_random_shares(secret, minimum=3, shares=6)
+    secret, shares = make_shares(secret, minimum=3, shares=6)
 
     print('Secret:                                                     ',
           secret)

@@ -1,7 +1,7 @@
 
 # msg format
-# |   3 bytes     |   1 byte         |   16 bytes                |
-# |   tag(hash)   |   #section_id    |   part of shared secret   |
+# |   3 bytes     |   1 byte         |   16 bytes                |    1 byte            |
+# |   tag(hash)   |   #section_id    |   part of shared secret   |  is_compressed flag  |
 
 class Message(object):
     def __init__(self, msg = bytes(), tag_len = 3, sec_id_len = 1, secret_len = 16):
