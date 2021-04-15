@@ -19,11 +19,7 @@ class BloomFilter(object):
   DEFAULTHASH = mmh3.hash
 
   # By default we are going to use murmurhash
-  def __init__(self,
-               nbits=DEFAULTBITS,
-               hash_func=DEFAULTHASH,
-               hash_times=DEFAULTHASHFUNS,
-               arrsz=DEFAULTARRSZ):
+  def __init__(self, nbits=DEFAULTBITS, hash_func=DEFAULTHASH, hash_times=DEFAULTHASHFUNS, arrsz=DEFAULTARRSZ):
     self._nbits = nbits
     self._arrsz = arrsz
     self._narrs = (nbits + arrsz - 1) // arrsz
@@ -37,16 +33,17 @@ class BloomFilter(object):
   def insert(self, data):
     if (DEBUG):
       print(f"Inserting data: {data}")
+
     for arr_idx, arr_bit_idx in self.hash_gen(data):
       self.arr[arr_idx] |= (1 << arr_bit_idx)
+
     if (DEBUG):
       with open(f"dump{uuid.uuid1().hex[:6]}.txt", 'w') as f:
         f.write(f"After insertion: {self.arr}")
     self._neles_inserted += 1
 
   def contains(self, data):
-    return all(self.arr[arr_idx] & (1 << arr_bit_idx)
-               for arr_idx, arr_bit_idx in self.hash_gen(data))
+    return all(self.arr[arr_idx] & (1 << arr_bit_idx) for arr_idx, arr_bit_idx in self.hash_gen(data))
 
   def remove(self, data):
     if (DEBUG):
@@ -90,12 +87,13 @@ class BloomFilter(object):
     return self._calculate_fs_prob()
 
   def _calculate_fs_prob(self):
-    return (1 - math.exp(-self._hash_times * self._neles_inserted /
-                         self._nbits))**self._hash_times
+    return (1 - math.exp(-self._hash_times * self._neles_inserted / self._nbits))**self._hash_times
 
   def do_hash(self, *args):
     hash_value = self._hash_func(*args)
     raw_idx = hash_value % self._nbits
+    print("Inserting @position:", raw_idx)
+
     arr_idx = raw_idx // self._arrsz
     arr_bit_idx = raw_idx % self._arrsz
 
@@ -135,8 +133,7 @@ if __name__ == "__main__":
   for state in states:
     # book keeping each hash
     for i in range(bf._hash_times):
-      hash_set.add((mmh3.hash(state, i) % bf.DEFAULTBITS // bf.DEFAULTARRSZ,
-                    mmh3.hash(state, i) % bf.DEFAULTBITS % bf.DEFAULTARRSZ))
+      hash_set.add((mmh3.hash(state, i) % bf.DEFAULTBITS // bf.DEFAULTARRSZ, mmh3.hash(state, i) % bf.DEFAULTBITS % bf.DEFAULTARRSZ))
 
     bf.insert(state)
 
@@ -155,8 +152,7 @@ if __name__ == "__main__":
   print("Testing searching for not insterted data")
   # generating a random word list for each word has length == max len of the word in states + 1
   nwords = 50
-  word_gen = lambda x: "".join(c for _ in range(x)
-                               for c in random.choice(ascii_letters))
+  word_gen = lambda x: "".join(c for _ in range(x) for c in random.choice(ascii_letters))
   word_list = [word_gen(len(max(states, key=len)) + 1) for _ in range(nwords)]
 
   # Shouldn't contain any in the bf!

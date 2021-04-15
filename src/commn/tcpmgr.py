@@ -46,7 +46,7 @@ def upload_cbf(url, data, log_func=None):
       # parse response to get the internal result
       if (status):
         resp, msg = parse_response(status, log_func)
-        log(f"Result from server: {resp}", msg)
+        log(f"Result from server: {resp}, {msg}")
       else:
         log("Empty status.")
       res = (resp == "Success")
@@ -142,10 +142,7 @@ if __name__ == "__main__":
   # query match
   res, msg = query_qbf(URL.format(suffix["query"]), data)
   assert (res == "Match")
-  assert (
-      msg ==
-      "You are potentially at risk. Please consult a health official, self-isolate and do a COVID-19 test at your earliest."
-  )
+  assert (msg == "You are potentially at risk. Please consult a health official, self-isolate and do a COVID-19 test at your earliest.")
   print("Test query match passed\n")
 
   # query unmatch

@@ -19,6 +19,7 @@ from bfmng.bloomfilter import BloomFilter
 # TODO(JIAWEI): remove this
 DEFAULT_LOGFILE = "log.txt"
 
+
 # A genieric BF calss, can be DBF, QBF or CBF
 class GBF(BloomFilter):
 
@@ -83,8 +84,7 @@ class BloomFilterManager(object):
       self._add_dbf(GBF())
     else:
       # This should never happen unless we have a concurrency bug
-      self.logger.error(
-          f"Pool Size larger than {self.max_poolsz}! Raise condition here!")
+      self.logger.error(f"Pool Size larger than {self.max_poolsz}! Raise condition here!")
       return False
 
     if self.dbfpool_lock.locked():
@@ -100,7 +100,7 @@ class BloomFilterManager(object):
     self.dbfpool.append(dbf)
     # update the current DBF to the latest one
     self._cur_dbf = self.dbfpool[-1]
-    
+
     self.logger.info(f"Adding a new DBF to the pool with id {dbf.id}. Now the size is: {len(self.dbfpool)}")
     return True
 
@@ -126,10 +126,9 @@ class BloomFilterManager(object):
     if len(self.dbfpool) == 0 or dbf_idx < 0 or dbf_idx >= self.max_poolsz:
       return False
 
-    self.logger.info(
-        f"Removing a DBF from the pool with id {self.dbfpool[dbf_idx].id}. Now the size is: {len(self.dbfpool)}")
+    self.logger.info(f"Removing a DBF from the pool with id {self.dbfpool[dbf_idx].id}. Now the size is: {len(self.dbfpool)}")
     del self.dbfpool[dbf_idx]
-    
+
     self.logger.debug("Updating current DBF")
     if (len(self.dbfpool) > 0):
       # update the current DBF to the latest one
@@ -149,9 +148,7 @@ class BloomFilterManager(object):
       # remove the oldest DBF from the pool if no id specified
       res = self._rm_dbf(0)
     else:
-      if (any(not self._rm_dbf(i)
-              for i, dbf in enumerate(self.dbfpool)
-              if dbf.id == id)):
+      if (any(not self._rm_dbf(i) for i, dbf in enumerate(self.dbfpool) if dbf.id == id)):
         res = False
       # for i, dbf in enumerate(self.dbfpool):
       #     if dbf.id == id:
@@ -165,11 +162,11 @@ class BloomFilterManager(object):
   # cluster a set of bfs into one, type_name can be "QBF" or "CBF"
   def cluster_dbf(self, num, type_name):
     self.logger.info(f"Clustering {self.max_poolsz} DBFs into one {type_name}")
-    
+
     if num < 0 or num > len(self.dbfpool) or type_name not in ["QBF", "CBF"]:
       self.logger.debug(f"Pool not ready yet")
       return None
-    
+
     res_bf = GBF(bf_type=type_name)
 
     if not self.dbfpool_lock.locked():
@@ -206,7 +203,7 @@ class BloomFilterManager(object):
     if not self.dbfpool_lock.locked():
       self.dbfpool_lock.acquire()
 
-    self.logger.info(f"Inserting data {data} into DBF {self._cur_dbf.id}")
+    self.logger.debug(f"Inserting data {data} into DBF {self._cur_dbf.id}")
     self.dbfpool[-1].insert(data)
 
     if not self.dbfpool_lock.locked():
@@ -264,8 +261,7 @@ class BloomFilterManager(object):
         bf = bytearray(self.cur_dbf.arr)
       else:
         if (idx < 0 or idx >= len(self.dbfpool)):
-          self.logger.error(
-              "Idx can't be negative or go beyond current max pool size.")
+          self.logger.error("Idx can't be negative or go beyond current max pool size.")
           return False
 
         bf = bytearray(self.dbfpool[idx].arr)
@@ -276,8 +272,7 @@ class BloomFilterManager(object):
       self.logger.error("Unsupported BF type or BF not ready yet.")
       return False
 
-    self.logger.debug(
-        f"Dumping {type_name.upper()}.\n" if not outfile else f"to {outfile}.")
+    self.logger.debug(f"Dumping {type_name.upper()}.\n" if not outfile else f"to {outfile}.")
 
     if outfile:
       with open(outfile, "w") as f:
@@ -331,16 +326,14 @@ if __name__ == "__main__":
   assert (bfmgr.rm_dbf_atomic() == True)
   assert (len(bfmgr.dbfpool) == bfmgr.max_poolsz - 1)
   new_id_list = [bdf.id for bdf in bfmgr.dbfpool]
-  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1]
-              for i in range(bfmgr.max_poolsz - 1)))
+  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1] for i in range(bfmgr.max_poolsz - 1)))
   assert (bfmgr.cur_dbf == bfmgr.dbfpool[-1])
 
   # test automic add first
   assert (bfmgr.add_dbf_atomic() == True)
   assert (len(bfmgr.dbfpool) == bfmgr.max_poolsz)
   new_id_list = [bdf.id for bdf in bfmgr.dbfpool]
-  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1]
-              for i in range(bfmgr.max_poolsz - 1)))
+  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1] for i in range(bfmgr.max_poolsz - 1)))
   assert (bfmgr.cur_dbf == bfmgr.dbfpool[-1])
 
   id_list = [bdf.id for bdf in bfmgr.dbfpool]
@@ -348,8 +341,7 @@ if __name__ == "__main__":
   assert (bfmgr.update_dbfpool_atomic() == True)
   assert (len(bfmgr.dbfpool) == bfmgr.max_poolsz)
   new_id_list = [bdf.id for bdf in bfmgr.dbfpool]
-  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1]
-              for i in range(bfmgr.max_poolsz - 1)))
+  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1] for i in range(bfmgr.max_poolsz - 1)))
   assert (bfmgr.cur_dbf == bfmgr.dbfpool[-1])
 
   # test insert into DBF

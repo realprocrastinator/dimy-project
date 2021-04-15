@@ -230,7 +230,7 @@ class IDManager(UDPManager):
     # for each part
     for i, s in shares:
       bsecret = ephid_decimal_to_bytes(s)
-      self.logger.info(f"Sharing: 0x{bsecret.hex()}...part: {i}/{parts}")
+      self.logger.info(f"Sharing: 0x{bsecret.hex()}...part: {i}/{parts} ====>")
 
       # construct the message
       sec_id = hex(i)[2:]
@@ -255,8 +255,9 @@ class IDManager(UDPManager):
       self.logger.debug("Filter out my own secret share")
       return None
 
+    self.logger.info("\n------------------> Segment 3 <------------------")
     self.logger.info(
-        f"Got the part {int(sec_id.hex(), 16)}, secret: {secret.hex()} from: {hash_tag.hex()}"
+        f"Receive: part {int(sec_id.hex(), 16)}, secret: {secret.hex()} from: {hash_tag.hex()} <====="
     )
 
     # insert into the contact_book, which is only be used in this thread
@@ -266,6 +267,7 @@ class IDManager(UDPManager):
     secret_shares = self.contact_book[hash_tag.hex()]
     # Check if can perform reconstruction
     if (len(secret_shares) >= threshold):
+      self.logger.info("\n------------------> Segment 4 <------------------")
       self.logger.info(
           f"Received {len(secret_shares)} parts now reconstructing the EphID using the first three"
       )
@@ -282,11 +284,11 @@ class IDManager(UDPManager):
         self.logger.error(f"Hash of reconstructed EphID mismatched")
         return None
 
-      self.logger.info("Hash of reconstructed EphID matched")
+      self.logger.info(f"Hash of reconstructed EphID matched: {new_hash_tag} == {hash_tag.hex()}")
 
       encntid = self.gen_EncntID(ephid_of_other)
       del self.contact_book[hash_tag.hex()]
-      
+
     else:
 
       self.logger.debug(
