@@ -11,9 +11,7 @@ sock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 msg = b'A broadcast msg!'
 
 while True:
-    # block on port listening
-    sock.sendto(msg, (IP, PORT))
-    print("Msg sent")
-    time.sleep(2)
-
-    
+  # block on port listening
+  sock.sendto(msg, (IP, PORT))
+  print("Msg sent")
+  time.sleep(2)

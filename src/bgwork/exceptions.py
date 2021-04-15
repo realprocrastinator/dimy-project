@@ -4,5 +4,6 @@ class grp03_exceptions(Exception):
   """
   pass
 
+
 class NullHandlerError(Exception):
   pass
