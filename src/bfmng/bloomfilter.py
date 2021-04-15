@@ -196,4 +196,4 @@ if __name__ == "__main__":
       assert(all((mmh3.hash(state, i) % bf.DEFAULTBITS // bf.DEFAULTARRSZ, \
                   mmh3.hash(state, i) % bf.DEFAULTBITS % bf.DEFAULTARRSZ) in hash_set \
                   for i in range(bf._hash_times)))
-  print("Test remove data passed\n")
+  print("Test remove data passed")

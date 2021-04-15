@@ -34,7 +34,7 @@ class Job(threading.Thread):
     # stop only if we are signaled
     # wait until timeout to involke the handler using this conditional variable
     while not self._ifstop.wait(timeout=float(self._interval)):
-      print(f"The handler of job {self.name} is being involked.")
+      print(f"\n\nThe handler of job {self.name} is being involked.")
       self._handler(*self._args, **self._kargs)
 
     print(f"Job {self.name} stops running.")
@@ -43,7 +43,7 @@ class Job(threading.Thread):
     # terminate gracefully and clean up resources
     self._ifstop.set()
     print(f"Job {self.name} is going to terminate.")
-    print("Cleaning up")
+    print("Cleaning up\n")
 
     # Don't create any Zommmmmbiesssss
     self.join()

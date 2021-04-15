@@ -29,7 +29,7 @@ def parse_response(status, log):
     else:
       # error occured
       res, msg = status["status"], status["error"]
-  except KeyError as e:
+  except KeyError:
     log("Entry not found! Might because API changed?")
 
   return res, msg
@@ -46,9 +46,9 @@ def upload_cbf(url, data, log_func=None):
       # parse response to get the internal result
       if (status):
         resp, msg = parse_response(status, log_func)
-        log(f"Result: {resp}", msg)
+        log(f"Result from server: {resp}", msg)
       else:
-        log("Enpty status.")
+        log("Empty status.")
       res = (resp == "Success")
     else:
       # error caused by http request, maybe network failure or server down
@@ -75,9 +75,9 @@ def query_qbf(url, data, log_func=None):
       # parse response to get the internal result
       if (status):
         res, msg = parse_response(status, log_func)
-        log(f"Result: {res}", msg)
+        log(f"Result from server: {res}", msg)
       else:
-        log("Enpty status.")
+        log("Empty status.")
     else:
       # error caused by http request, maybe network failure or server down
       log(f"HTTP request failed with status code {r.status_code}")

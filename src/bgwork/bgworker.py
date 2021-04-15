@@ -50,30 +50,30 @@ class BackgroundWorker(object):
   # This function should be called internally
   def _start_jobs(self):
     for j in self.jobs:
-      self.logger.info(f"Starting job {j.name}")
+      self.logger.debug(f"Starting job {j.name}")
       j.start()
 
   def start_all(self):
-    self.logger.info("Starting background worker...")
+    self.logger.debug("Starting background worker...")
     self._start_jobs()
 
   def start_job(self, jobname, if_restart=False):
-    self.logger.info(f"Starting job {jobname}")
+    self.logger.debug(f"Starting job {jobname}")
     for j in self.jobs:
       if (j.name == jobname):
         j.start()
 
   def _stop_jobs(self):
     for j in self.jobs:
-      self.logger.info(f"Stopping job {j.name}")
+      self.logger.debug(f"Stopping job {j.name}")
       j.stop()
 
   def stop_all(self):
-    self.logger.info(f"Stopping background worker...")
+    self.logger.debug(f"Stopping background worker...")
     self._stop_jobs()
 
   def stop_job(self, jobname):
-    self.logger.info(f"Stopping job {jobname}")
+    self.logger.debug(f"Stopping job {jobname}")
     for j in self.jobs:
       if j.name == jobname:
         j.stop()

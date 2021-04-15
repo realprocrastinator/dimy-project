@@ -26,7 +26,7 @@ import sslcrypto_client as sslcrypto
 # 2) Configurable logger
 # 3) Add multipthreaded test case
 # 4) Consider integrate sslcrypto module into the project instead of using it as a site package
-
+DEFAULT_LOGFILE = "log.txt"
 
 class IDManager(UDPManager):
   """
@@ -60,12 +60,11 @@ class IDManager(UDPManager):
     self.my_hash_tag = set()
 
     # logger
+    logging.basicConfig(filename=DEFAULT_LOGFILE, filemode="a", \
+        format='[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
     self.logger = logging.getLogger("IDManager")
     shdlr = logging.StreamHandler(sys.stdout)
-    shdlr.setLevel(loglevel)
-    formatter = logging.Formatter(
-        '[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
-    shdlr.setFormatter(formatter)
+    shdlr.setLevel(logging.INFO)
     if (not self.logger.handlers):
       self.logger.addHandler(shdlr)
     self.logger.setLevel(loglevel)
@@ -88,9 +87,7 @@ class IDManager(UDPManager):
       self._EphID = None
       return None
 
-    self.logger.debug("Generating a new EphID.")
-    self.logger.debug(f"Generating private secret.")
-
+    self.logger.debug("Generating a new EphID and Generating private secret.")
     # Generate the private secret for the ECDH
     self._private_secret = self._gen_private_secret()
     if (not self._private_secret):
@@ -124,7 +121,7 @@ class IDManager(UDPManager):
 
     if self.EphID_lock.locked():
       self.EphID_lock.release()
-    self.logger.info(f"EphID is: {self._EphID.hex()}")
+    self.logger.info(f"Newly generated EphID is: {self._EphID.hex()}")
 
     return self._EphID
 
@@ -158,7 +155,7 @@ class IDManager(UDPManager):
     if self.EncntID_lock.locked():
       self.EncntID_lock.release()
 
-    self.logger.info(f"EncntID is: {self._EncntID.hex()}")
+    self.logger.info(f"Newly generated EncntID is: {self._EncntID.hex()}")
 
     return self._EncntID
 
@@ -214,7 +211,7 @@ class IDManager(UDPManager):
   def share_EphID(self, ephid, interval, ip, port, parts=6, threadshold=3):
 
     # construct six parts using shmair algo
-    self.logger.info(f"Generating {parts} sharings of EphID: {ephid}")
+    self.logger.info(f"Generating {parts} sharings of EphID: 0x{ephid.hex()}")
     _, shares = make_shares(ephid_bytes_or_hexstr_to_decimal(ephid),
                             threadshold, parts)
 
@@ -233,7 +230,7 @@ class IDManager(UDPManager):
     # for each part
     for i, s in shares:
       bsecret = ephid_decimal_to_bytes(s)
-      self.logger.info(f"Sharing: {bsecret}...part {i}/{parts}")
+      self.logger.info(f"Sharing: 0x{bsecret.hex()}...part: {i}/{parts}")
 
       # construct the message
       sec_id = hex(i)[2:]
@@ -255,7 +252,7 @@ class IDManager(UDPManager):
     hash_tag, sec_id, secret = msg.tag, msg.sec_id, msg.secret
 
     if (hash_tag.hex() in self.my_hash_tag and filter_self):
-      self.logger.info("Filter out my own secret share")
+      self.logger.debug("Filter out my own secret share")
       return None
 
     self.logger.info(
@@ -275,26 +272,24 @@ class IDManager(UDPManager):
 
       # Reconstruct EphID in bytes type
       ephid_of_other = ephid_decimal_to_bytes(recover_secret(secret_shares[:3]))
-      self.logger.info(f"Reconstructed EphID is: 0x{ephid_of_other.hex()}")
-
       new_hash_tag = sha256(ephid_of_other if isinstance(ephid_of_other, bytes
                                                         ) else ephid_of_other.
                             encode("utf-8")).hexdigest()[:len(hash_tag) * 2]
 
-      self.logger.debug(f"New Reconstructed EphID has hash: 0x{new_hash_tag}")
+      self.logger.info(f"Reconstructed EphID is: 0x{ephid_of_other.hex()} with hash tag 0x{new_hash_tag}")
+
       if (new_hash_tag != hash_tag.hex()):
         self.logger.error(f"Hash of reconstructed EphID mismatched")
         return None
 
-      self.logger.debug("Hash of reconstructed EphID matched")
+      self.logger.info("Hash of reconstructed EphID matched")
 
       encntid = self.gen_EncntID(ephid_of_other)
       del self.contact_book[hash_tag.hex()]
-
-      self.logger.debug(f"Generated EncntID is: 0x{encntid.hex()}")
+      
     else:
 
-      self.logger.info(
+      self.logger.debug(
           f"Received {len(secret_shares)} parts not enoungh to reconst the EphID"
       )
       encntid = None

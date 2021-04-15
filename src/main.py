@@ -37,12 +37,13 @@ def background_tasks_install():
   @bgworker.myjob("EphID-sender", ephid_gen_interval, True)
   # pylint: disable=unused-variable
   def gen_and_bdcast_EphID_wrapper():
+    print("\n\nGenerating and broadcasting secrets")
     ephid = idmngr.gen_EphID()
     if (not ephid):
       idmngr.logger.error("Failed to generat EphID")
 
     # simulate send one share every 2s
-    idmngr.logger.debug(f"Broadcasting EphID: {ephid}")
+    idmngr.logger.info(f"Broadcasting EphID: {ephid}")
     idmngr.share_EphID(ephid, DEFAULTSHARE_INTVL, DEFAULTBDCST_IP, DEFAULTBDCST_PORT)
 
   # bind to the address first
@@ -65,8 +66,7 @@ def background_tasks_install():
   @bgworker.myjob("DBF-worker", dbf_update_interval, True)
   # pylint: disable=unused-variable
   def cleaner_do_job():
-    print("Cleaner woke up, doing cleaning")
-    print("Updating the DBF pool")
+    print("\n\nUpdating the DBF pool...Removing the oldest DBF and add a new DBF")
 
     bfmgr.update_dbfpool_atomic()
 
@@ -76,7 +76,6 @@ def background_tasks_install():
   @bgworker.myjob("QBF-worker", qbf_gen_interval, True)
   # pylint: disable=unused-variable
   def qbf_worker_do_job():
-    print("QBF worker woke up, doing combining")
     qbf = bfmgr.cluster_dbf(bfmgr.max_poolsz, type_name="QBF")
     if (qbf):
       print(f"Querying the sever with QBF ID: {qbf.id}")
@@ -85,8 +84,10 @@ def background_tasks_install():
       res, msg = commn.query_qbf(commn.URL.format(commn.suffix["query"]),\
                                  {"QBF" : bfmgr.dump_bf("QBF", bf = qbf)})
 
+      print("\n\n=============================")
       print("Got the result from server: ", res)
       print(msg)
+      print("=============================\n\n")
 
     else:
       print("QBF not ready, may be pool is not full yet?")
@@ -96,7 +97,6 @@ def background_tasks_install():
 
 # A way to explicitly add a bg task to the bgworker
 def qbf_worker_redo_job(mgr):
-  print("QBF worker woke up, doing combining")
   qbf = mgr.cluster_dbf(mgr.max_poolsz, type_name="QBF")
 
   if (qbf):
@@ -104,10 +104,12 @@ def qbf_worker_redo_job(mgr):
 
     # TODO(Jiawei): make url configurable
     res, msg = commn.query_qbf(commn.URL.format(commn.suffix["query"]),\
-                               {"QBF" : mgr.dump_bf("QBF", bf = qbf)})
+                               {"QBF" : mgr.dump_bf("QBF", bf = qbf)}, log_func=mgr.logger.debug)
 
+    print("\n\n=============================")
     print("Got the result from server: ", res)
     print(msg)
+    print("=============================\n\n")
 
   else:
     print("QBF not ready, may be pool is not full yet?")
@@ -116,22 +118,19 @@ def qbf_worker_redo_job(mgr):
 
 
 def cbf_combine_and_upload(mgr):
-  print("CBF worker woke up, doing combining")
   cbf = mgr.cluster_dbf(mgr.max_poolsz, type_name="CBF")
 
   if (cbf):
-    print(f"Uploading the CBF with ID: {cbf.id}")
-
     # TODO(Jiawei): make url configurable
     res = commn.upload_cbf(commn.URL.format(commn.suffix["upload"]),\
-                               {"CBF" : mgr.dump_bf("CBF", bf = cbf)})
+                               {"CBF" : mgr.dump_bf("CBF", bf = cbf)}, log_func=mgr.logger.debug)
 
+    print("\n\n=============================")
     print("Got the result from server: ", "Success" if res else "Failed")
+    print("=============================\n\n")
 
   else:
     print("QBF not ready, may be pool is not full yet?")
-
-  print()
 
 
 # TODO(Jiawei): change global var inside signal handler not working
@@ -142,6 +141,8 @@ def sig_handler(signum, frame):
 
 
 def main():
+  print("WELCOME TO USE COVID - TRACING APPLICATION - DIMY\n\n")
+
   global G_STOPPED
 
   # register signal handler for handling signals
@@ -153,20 +154,21 @@ def main():
   bgworker.start_all()
 
   while not G_STOPPED:
-    print("This is in the main Thread")
     cmd = input("User Command>")
 
     if cmd == "s":
+      print("\n\nTerminating...")
       G_STOPPED = True
 
     # combine cbf and stop qbf
     if cmd == "c":
+      print("\n\nUploading CBF to the server...")
       cbf_combine_and_upload(bfmgr)
       bgworker.stop_job("QBF-worker")
 
     # resetart qbf, not required but would be nice to have
     if cmd == "r":
-      print("Restarting the QBF Worker")
+      print("\n\nRestarting the QBF Worker")
       bgworker.add_job("QBF-worker", 4, True, qbf_worker_redo_job, bfmgr)
       bgworker.start_job("QBF-worker", if_restart=True)
 

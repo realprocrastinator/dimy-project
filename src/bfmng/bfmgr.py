@@ -16,6 +16,8 @@ sys.path.append(str(root))
 # Custom modules
 from bfmng.bloomfilter import BloomFilter
 
+# TODO(JIAWEI): remove this
+DEFAULT_LOGFILE = "log.txt"
 
 # A genieric BF calss, can be DBF, QBF or CBF
 class GBF(BloomFilter):
@@ -54,12 +56,11 @@ class BloomFilterManager(object):
     self.max_poolsz = max_poolsz
 
     # logger
+    logging.basicConfig(filename=DEFAULT_LOGFILE, filemode="a", \
+        format='[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
     self.logger = logging.getLogger("BFManager")
     shdlr = logging.StreamHandler(sys.stdout)
-    shdlr.setLevel(loglevel)
-    formatter = logging.Formatter(
-        '[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
-    shdlr.setFormatter(formatter)
+    shdlr.setLevel(logging.INFO)
     self.logger.addHandler(shdlr)
     self.logger.setLevel(loglevel)
 
@@ -96,11 +97,11 @@ class BloomFilterManager(object):
     if (len(self.dbfpool) == self.max_poolsz):
       return False
 
-    self.logger.debug(f"Adding a new DBF to the pool with id {dbf.id}")
     self.dbfpool.append(dbf)
     # update the current DBF to the latest one
     self._cur_dbf = self.dbfpool[-1]
-    self.logger.debug(f"Current pool size is {len(self.dbfpool)}")
+    
+    self.logger.info(f"Adding a new DBF to the pool with id {dbf.id}. Now the size is: {len(self.dbfpool)}")
     return True
 
   def add_dbf_atomic(self, dbf=None):
@@ -125,23 +126,20 @@ class BloomFilterManager(object):
     if len(self.dbfpool) == 0 or dbf_idx < 0 or dbf_idx >= self.max_poolsz:
       return False
 
-    self.logger.debug(
-        f"Removing a DBF from the pool with id {self.dbfpool[dbf_idx].id}")
+    self.logger.info(
+        f"Removing a DBF from the pool with id {self.dbfpool[dbf_idx].id}. Now the size is: {len(self.dbfpool)}")
     del self.dbfpool[dbf_idx]
-
+    
+    self.logger.debug("Updating current DBF")
     if (len(self.dbfpool) > 0):
       # update the current DBF to the latest one
       self._cur_dbf = self.dbfpool[-1]
     else:
       self._cur_dbf = None
 
-    self.logger.debug(f"Current pool size is {len(self.dbfpool)}")
-
     return True
 
   def rm_dbf_atomic(self, id=None):
-    self.logger.debug(f"Removing a DBF from the pool")
-
     res = True
 
     if not self.dbfpool_lock.locked():
@@ -166,9 +164,12 @@ class BloomFilterManager(object):
 
   # cluster a set of bfs into one, type_name can be "QBF" or "CBF"
   def cluster_dbf(self, num, type_name):
+    self.logger.info(f"Clustering {self.max_poolsz} DBFs into one {type_name}")
+    
     if num < 0 or num > len(self.dbfpool) or type_name not in ["QBF", "CBF"]:
+      self.logger.debug(f"Pool not ready yet")
       return None
-
+    
     res_bf = GBF(bf_type=type_name)
 
     if not self.dbfpool_lock.locked():
@@ -205,7 +206,7 @@ class BloomFilterManager(object):
     if not self.dbfpool_lock.locked():
       self.dbfpool_lock.acquire()
 
-    self.logger.debug(f"Inserting data {data} into DBF {self._cur_dbf.id}")
+    self.logger.info(f"Inserting data {data} into DBF {self._cur_dbf.id}")
     self.dbfpool[-1].insert(data)
 
     if not self.dbfpool_lock.locked():
@@ -217,7 +218,7 @@ class BloomFilterManager(object):
     if not self.dbfpool_lock.locked():
       self.dbfpool_lock.acquire()
 
-    self.logger.debug(f"Getting {type_name}")
+    self.logger.debug(f"Get the cluster of {type_name}")
     res = self._qbf if type_name == "QBF" else self._cbf
 
     if not self.dbfpool_lock.locked():
