@@ -6,17 +6,20 @@ import sys
 import time
 import signal
 
+from config.configure import load_grp03_global_config
+
 # GLOBAL variable section
+G_CONFIG = load_grp03_global_config()
 G_STOPPED = False
-G_DEBUG = True
+G_DEBUG = G_CONFIG["DEBUG_MODE"]
 
 # GLOBAL contants
-DEFAULTBDCST_IP = "255.255.255.255"
-DEFAULTBDCST_PORT = 8080
-DEFAULTLISTENT_IP = ""
-DEFAULTSHARE_INTVL = 1
-DEFAULTSHARE_PARTS = 6
-DEFAULTSHARE_THRSD = 3
+BDCST_IP = G_CONFIG["UDP_SND_IP"]
+BDCST_PORT = G_CONFIG["UDP_SND_PORT"]
+LISTENT_IP = G_CONFIG["UDP_RCV_IP"]
+SHARE_SECS = G_CONFIG["BG_SHARE_EphID_SECS"]
+SHARE_PARTS = G_CONFIG["NUM_SECRET_PARTS"]
+SHARE_THRSD = G_CONFIG["NUM_THRESHOLD"]
 
 
 # This is a rapid prototyping the program flow
@@ -30,11 +33,11 @@ def background_tasks_install():
 
   # generate EphID every `ephid_gen_interval` s, and share one part every `secret_share_interval` sec
   idmngr = idmng.IDManager()
-  ephid_gen_interval = 7
-  # assert(ephid_gen_interval > DEFAULTSHARE_INTVL * DEFAULTSHARE_PARTS)
+  ephid_gen_secs = 7
+  # assert(ephid_gen_interval > SHARE_SECS * SHARE_PARTS)
 
   # register the callback function which will get invloked when the timer fires
-  @bgworker.myjob("EphID-sender", ephid_gen_interval, True)
+  @bgworker.myjob("EphID-sender", ephid_gen_secs, True)
   # pylint: disable=unused-variable
   def gen_and_bdcast_EphID_wrapper():
     idmngr.logger.info("\n------------------> Segment 1 & 2 <------------------")
@@ -45,15 +48,15 @@ def background_tasks_install():
       idmngr.logger.error("Failed to generat EphID")
 
     # simulate send one share every 2s
-    idmngr.share_EphID(ephid, DEFAULTSHARE_INTVL, DEFAULTBDCST_IP, DEFAULTBDCST_PORT)
+    idmngr.share_EphID(ephid, SHARE_SECS, BDCST_IP, BDCST_PORT)
 
   # bind to the address first
-  idmngr.bind_address(DEFAULTLISTENT_IP, DEFAULTBDCST_PORT)
+  idmngr.bind_address(LISTENT_IP, BDCST_PORT)
   # register the callback function which will
-  @bgworker.myjob("EphID-receiver", 1.5 * DEFAULTSHARE_INTVL * DEFAULTSHARE_THRSD, True)
+  @bgworker.myjob("EphID-receiver", 1.5 * SHARE_SECS * SHARE_THRSD, True)
   # pylint: disable=unused-variable
   def receive_and_try_reconstruct_EcntID():
-    encntid = idmngr.wait_for_secret(DEFAULTLISTENT_IP, DEFAULTBDCST_PORT, DEFAULTSHARE_THRSD, filter_self=not G_DEBUG)
+    encntid = idmngr.wait_for_secret(LISTENT_IP, BDCST_PORT, SHARE_THRSD, filter_self=not G_DEBUG)
 
     idmngr.logger.info("\n------------------> Segment 5 <------------------")
     idmngr.logger.info(f">>>> generate shared secret EncID: {encntid} <<<<")
@@ -76,7 +79,7 @@ def background_tasks_install():
     bfmgr.update_dbfpool_atomic()
 
   # periodically combining 6 DBFs every `qbf_gen_interval` sec
-  qbf_gen_interval = 30
+  qbf_gen_interval = 3
 
   @bgworker.myjob("QBF-worker", qbf_gen_interval, True)
   # pylint: disable=unused-variable
@@ -91,10 +94,10 @@ def background_tasks_install():
       res, msg = commn.query_qbf(commn.URL.format(commn.suffix["query"]),\
                                  {"QBF" : bfmgr.dump_bf("QBF", bf = qbf)})
 
-      bfmgr.logger.info("\n\n=============================")
+      bfmgr.logger.info("\n=============================")
       bfmgr.logger.info(f"Got the result from server: {res}")
       bfmgr.logger.info(msg)
-      bfmgr.logger.info("=============================\n\n")
+      bfmgr.logger.info("=============================\n")
 
     else:
       bfmgr.logger.info("QBF not ready, may be pool is not full yet?")
@@ -152,7 +155,7 @@ def sig_handler(signum, frame):
 
 
 def main():
-  print("WELCOME TO USE COVID - TRACING APPLICATION - DIMY\n\n")
+  print("WELCOME TO USE COVID - TRACING APPLICATION - DIMY\n")
 
   global G_STOPPED
 

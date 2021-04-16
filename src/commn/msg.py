@@ -1,6 +1,6 @@
 # msg format
-# |   3 bytes     |   1 byte         |   16 bytes                |    1 byte            |
-# |   tag(hash)   |   #section_id    |   part of shared secret   |  is_compressed flag  |
+# |   3 bytes     |   1 byte         |   16 bytes                | 
+# |   tag(hash)   |   #section_id    |   part of shared secret   | 
 
 
 class Message(object):

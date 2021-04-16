@@ -13,9 +13,10 @@ if DEBUG:
 # 1) Should make array sector size configurable depanding on the type supported by array
 class BloomFilter(object):
   # class wide variables
+  # in bits
   DEFAULTBITS = 800000
-  DEFAULTHASHFUNS = 3
   DEFAULTARRSZ = 8
+  DEFAULTHASHFUNS = 3
   DEFAULTHASH = mmh3.hash
 
   # By default we are going to use murmurhash

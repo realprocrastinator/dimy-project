@@ -75,7 +75,7 @@ def query_qbf(url, data, log_func=None):
       # parse response to get the internal result
       if (status):
         res, msg = parse_response(status, log_func)
-        log(f"Result from server: {res}", msg)
+        log(f"Result from server: {res}, {msg}")
       else:
         log("Empty status.")
     else:

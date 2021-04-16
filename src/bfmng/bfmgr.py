@@ -19,7 +19,6 @@ from bfmng.bloomfilter import BloomFilter
 # TODO(JIAWEI): remove this
 DEFAULT_LOGFILE = "log.txt"
 
-
 # A genieric BF calss, can be DBF, QBF or CBF
 class GBF(BloomFilter):
 
@@ -47,7 +46,7 @@ class GBF(BloomFilter):
 
 
 class BloomFilterManager(object):
-
+  # TODO(JIAWEI): make paras configurable
   def __init__(self, max_poolsz=6, loglevel=logging.DEBUG):
     self.dbfpool = [GBF() for _ in range(max_poolsz)]
     self._qbf = None
