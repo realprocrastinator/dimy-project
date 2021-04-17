@@ -13,24 +13,25 @@ sys.path.append(str(root))
 from bgwork import job
 
 
-#TODO(gjw): 1. configurable logging, stdout / log file
-class BackgroundWorker(object):
+class BackgroundManager(object):
   """
   This is a back ground worker class which can be assigned with multiple
   periodic tasks.
   """
 
-  def __init__(self, loglevel=logging.DEBUG):
+  def __init__(self, loglevel=logging.DEBUG, logfile=None):
     self.jobs = []
 
     # configure logger
+    logging.basicConfig(filename=logfile, filemode="a", \
+    format='[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
     self.logger = logging.getLogger("BGWorker")
     shdlr = logging.StreamHandler(sys.stdout)
-    shdlr.setLevel(loglevel)
-    formatter = logging.Formatter(
-        '[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
-    shdlr.setFormatter(formatter)
-    self.logger.addHandler(shdlr)
+    shdlr.setLevel(logging.INFO)
+    shdlr.createLock()
+    self.shdlr = shdlr
+    if (not self.logger.handlers):
+      self.logger.addHandler(shdlr)
     self.logger.setLevel(loglevel)
 
   # This function is only used internally

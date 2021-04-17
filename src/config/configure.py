@@ -22,23 +22,24 @@ DEFAULT = {
     "BGWRK_LOGLEVEL": logging.DEBUG,
 
     # Background Task config
-    "BG_GEN_EphID_SECS": 2,
+    "BG_GEN_EphID_SECS": 12,
     "BG_SHARE_EphID_SECS": 1,
-    "BG_RECV_CHECK_SECS": 4,
+    "BG_RECV_CHECK_SECS": 7,
     "BG_DBFPOOL_UPDATE_SECS": 30,
-    "BG_QBF_GEN_SECS": 4,
+    "BG_QBF_GEN_SECS": 10,
 
     # Server config
     "URL_TEMPLATE": "http://ec2-3-26-37-172.ap-southeast-2.compute.amazonaws.com:9000/comp4337/{0}",
     "URL_SUFFIX": {
-        "upload": "cbf/upload",
-        "query": "qbf/query"
+        "UPLOAD": "cbf/upload",
+        "QUERY": "qbf/query"
     },
 
     # Debugging config
     "STDOUT_LOGLEVEL": logging.INFO,
+    "ALL_LOG_LEVEL": logging.DEBUG,
     "DEBUG_MODE": True,
-    "LOGFILE": "bfmngr.log",
+    "ALL_LOG_FILE": "log.txt",
 
     # MISC config
     # Shamir Algo config

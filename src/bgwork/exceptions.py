@@ -7,3 +7,7 @@ class grp03_exceptions(Exception):
 
 class NullHandlerError(Exception):
   pass
+
+
+class HandlerRuntimeError(Exception):
+  pass

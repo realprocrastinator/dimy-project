@@ -1,6 +1,6 @@
 # msg format
-# |   3 bytes     |   1 byte         |   16 bytes                | 
-# |   tag(hash)   |   #section_id    |   part of shared secret   | 
+# |   3 bytes     |   1 byte         |   16 bytes                |
+# |   tag(hash)   |   #section_id    |   part of shared secret   |
 
 
 class Message(object):
@@ -11,9 +11,7 @@ class Message(object):
     self._secret_len = secret_len
     self._msg_len = tag_len + sec_id_len + secret_len
     if (len(msg) != 0 and len(msg) != self._msg_len):
-      raise ValueError(
-          "Message length mismatch with total length od tag, sec_id and secret."
-      )
+      raise ValueError("Message length mismatch with total length od tag, sec_id and secret.")
     self._msg = msg
 
   @property
@@ -60,32 +58,3 @@ class Message(object):
   @property
   def secret(self):
     return self._msg[self._tag_len + self._sec_id_len:]
-
-
-if __name__ == "__main__":
-
-  # Test new message
-  m = Message()
-  tag, sec_id, secret = b"hhh", b"\x01", b"\x99" * 16
-  m.msg = tag, sec_id, secret
-  assert (m.tag == tag)
-  assert (m.sec_id == sec_id)
-  assert (m.secret == secret)
-  print("Test construct new message passed\n")
-
-  # Test reassign new message
-  tag, sec_id, secret = b"lll", b"\x02", b"\x66" * 16
-  m.msg = tag, sec_id, secret
-  assert (m.tag == tag)
-  assert (m.sec_id == sec_id)
-  assert (m.secret == secret)
-  print("Test reassign new message passed\n")
-
-  # constructor
-  b = bytes(b"\x88" * 20)
-  m = Message(b)
-  tag, sec_id, secret = b"\x88" * 3, b"\x88", b"\x88" * 16
-  assert (m.tag == tag)
-  assert (m.sec_id == sec_id)
-  assert (m.secret == secret)
-  print("Test constructing from bytes passed")

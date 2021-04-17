@@ -1,1 +1,1 @@
-from .bgworker import BackgroundWorker
+from .bgmgr import BackgroundManager

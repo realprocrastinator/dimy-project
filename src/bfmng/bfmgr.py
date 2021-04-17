@@ -16,8 +16,6 @@ sys.path.append(str(root))
 # Custom modules
 from bfmng.bloomfilter import BloomFilter
 
-# TODO(JIAWEI): remove this
-DEFAULT_LOGFILE = "log.txt"
 
 # A genieric BF calss, can be DBF, QBF or CBF
 class GBF(BloomFilter):
@@ -47,7 +45,7 @@ class GBF(BloomFilter):
 
 class BloomFilterManager(object):
   # TODO(JIAWEI): make paras configurable
-  def __init__(self, max_poolsz=6, loglevel=logging.DEBUG):
+  def __init__(self, max_poolsz=6, loglevel=logging.DEBUG, logfile=None):
     self.dbfpool = [GBF() for _ in range(max_poolsz)]
     self._qbf = None
     self._cbf = None
@@ -56,12 +54,15 @@ class BloomFilterManager(object):
     self.max_poolsz = max_poolsz
 
     # logger
-    logging.basicConfig(filename=DEFAULT_LOGFILE, filemode="a", \
+    logging.basicConfig(filename=logfile, filemode="a", \
         format='[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
     self.logger = logging.getLogger("BFManager")
     shdlr = logging.StreamHandler(sys.stdout)
     shdlr.setLevel(logging.INFO)
-    self.logger.addHandler(shdlr)
+    shdlr.createLock()
+    self.shdlr = shdlr
+    if (not self.logger.handlers):
+      self.logger.addHandler(shdlr)
     self.logger.setLevel(loglevel)
 
   # renew_ is thread safe method which does two things
@@ -100,7 +101,7 @@ class BloomFilterManager(object):
     # update the current DBF to the latest one
     self._cur_dbf = self.dbfpool[-1]
 
-    self.logger.info(f"Adding a new DBF to the pool with id {dbf.id}. Now the size is: {len(self.dbfpool)}")
+    self.logger.debug(f"Adding a new DBF to the pool with id {dbf.id}. Now the size is: {len(self.dbfpool)}")
     return True
 
   def add_dbf_atomic(self, dbf=None):
@@ -125,7 +126,7 @@ class BloomFilterManager(object):
     if len(self.dbfpool) == 0 or dbf_idx < 0 or dbf_idx >= self.max_poolsz:
       return False
 
-    self.logger.info(f"Removing a DBF from the pool with id {self.dbfpool[dbf_idx].id}. Now the size is: {len(self.dbfpool)}")
+    self.logger.debug(f"Removing a DBF from the pool with id {self.dbfpool[dbf_idx].id}. Now the size is: {len(self.dbfpool)}")
     del self.dbfpool[dbf_idx]
 
     self.logger.debug("Updating current DBF")
@@ -149,6 +150,8 @@ class BloomFilterManager(object):
     else:
       if (any(not self._rm_dbf(i) for i, dbf in enumerate(self.dbfpool) if dbf.id == id)):
         res = False
+
+      # explicitly remove a DBF
       # for i, dbf in enumerate(self.dbfpool):
       #     if dbf.id == id:
       #         self._rm_dbf(self.dbfpool[i])
@@ -160,7 +163,8 @@ class BloomFilterManager(object):
 
   # cluster a set of bfs into one, type_name can be "QBF" or "CBF"
   def cluster_dbf(self, num, type_name):
-    self.logger.info(f"Clustering {self.max_poolsz} DBFs into one {type_name}")
+    self.logger.info("\n------------------> Segment 10 <------------------"
+                    f"\nClustering {self.max_poolsz} DBFs into one {type_name}\n")
 
     if num < 0 or num > len(self.dbfpool) or type_name not in ["QBF", "CBF"]:
       self.logger.debug(f"Pool not ready yet")
@@ -279,127 +283,3 @@ class BloomFilterManager(object):
 
     return b64_str
 
-
-if __name__ == "__main__":
-  # Small unit test here
-
-  # Testing trivial functionalities
-  print("Testing construction of BFmngr")
-  bfmgr = BloomFilterManager()
-  # By default we only construct one DBF
-  # assert(len(bfmgr.dbfpool) == 1)
-  assert (bfmgr.dbfpool_lock != None)
-  assert (bfmgr.dbfpool_lock.locked() == False)
-  bfmgr.dbfpool_lock.acquire()
-  assert (bfmgr.dbfpool_lock.locked() == True)
-  bfmgr.dbfpool_lock.release()
-  assert (bfmgr.dbfpool_lock.locked() == False)
-  print("Test construction passed\n")
-
-  # Testing add / remove DBF to / from the pool, single threaded
-  print("Testing management of BFmngr")
-  # Testing primitives
-  original_len = len(bfmgr.dbfpool)
-  bfmgr._rm_dbf(0)
-  assert (len(bfmgr.dbfpool) == original_len - 1)
-  # assert(bfmgr.cur_dbf == None)
-
-  # reject if pool already empty
-  # assert(bfmgr._rm_dbf(0) == False)
-
-  for _ in range(bfmgr.max_poolsz):
-    bfmgr._add_dbf(GBF())
-  assert (len(bfmgr.dbfpool) == bfmgr.max_poolsz)
-  assert (bfmgr.cur_dbf == bfmgr.dbfpool[-1])
-
-  # reject if full
-  assert (bfmgr._add_dbf(GBF()) == False)
-  print("Test add/rm primitives passed\n")
-
-  # test atomic methods in single thread case
-  # reject if already full
-  assert (bfmgr.add_dbf_atomic() == False)
-  id_list = [bdf.id for bdf in bfmgr.dbfpool]
-
-  # test automic remove first
-  assert (bfmgr.rm_dbf_atomic() == True)
-  assert (len(bfmgr.dbfpool) == bfmgr.max_poolsz - 1)
-  new_id_list = [bdf.id for bdf in bfmgr.dbfpool]
-  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1] for i in range(bfmgr.max_poolsz - 1)))
-  assert (bfmgr.cur_dbf == bfmgr.dbfpool[-1])
-
-  # test automic add first
-  assert (bfmgr.add_dbf_atomic() == True)
-  assert (len(bfmgr.dbfpool) == bfmgr.max_poolsz)
-  new_id_list = [bdf.id for bdf in bfmgr.dbfpool]
-  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1] for i in range(bfmgr.max_poolsz - 1)))
-  assert (bfmgr.cur_dbf == bfmgr.dbfpool[-1])
-
-  id_list = [bdf.id for bdf in bfmgr.dbfpool]
-  # test update dbf pool
-  assert (bfmgr.update_dbfpool_atomic() == True)
-  assert (len(bfmgr.dbfpool) == bfmgr.max_poolsz)
-  new_id_list = [bdf.id for bdf in bfmgr.dbfpool]
-  assert (all(bfmgr.dbfpool[i].id == id_list[i + 1] for i in range(bfmgr.max_poolsz - 1)))
-  assert (bfmgr.cur_dbf == bfmgr.dbfpool[-1])
-
-  # test insert into DBF
-  bfmgr.insert_to_dbf("Hello World")
-  assert (bfmgr.cur_dbf.contains("Hello World") == True)
-  bfmgr.insert_to_dbf("Hello UNSW")
-  assert (bfmgr.cur_dbf.contains("Hello UNSW") == True)
-
-  # test cluster dbfs
-  assert (not bfmgr.cluster_dbf(bfmgr.max_poolsz + 1, "QBF"))
-  assert (not bfmgr.cluster_dbf(-1, "QBF"))
-  assert (not bfmgr.cluster_dbf(bfmgr.max_poolsz, "XBF"))
-
-  assert (bfmgr.cluster_dbf(bfmgr.max_poolsz, "QBF"))
-  assert (bfmgr.qbf != None)
-  assert (bfmgr.qbf.contains("Hello World"))
-  assert (bfmgr.qbf.contains("Hello UNSW"))
-  assert (bfmgr.qbf.contains("World") == False)
-  assert (bfmgr.qbf.contains("UNSW") == False)
-
-  assert (bfmgr.cluster_dbf(bfmgr.max_poolsz, "CBF"))
-  assert (bfmgr.cbf != None)
-  assert (bfmgr.cbf.contains("Hello World"))
-  assert (bfmgr.cbf.contains("Hello UNSW"))
-  assert (bfmgr.qbf.contains("World") == False)
-  assert (bfmgr.qbf.contains("UNSW") == False)
-
-  print("Test atomic methods add/rm/update/cluster passed\n")
-
-  # Test dump method
-  # Invalid case
-
-  # reset the pool and recluster qbf and cbf
-  for _ in range(bfmgr.max_poolsz):
-    bfmgr.update_dbfpool_atomic()
-
-  bfmgr.cluster_dbf(bfmgr.max_poolsz, "QBF")
-  bfmgr.cluster_dbf(bfmgr.max_poolsz, "CBF")
-  assert (bfmgr.qbf)
-  assert (bfmgr.cbf)
-
-  exp_str = base64.b64encode(bytearray(b"\x00" * (800000 // 8))).decode('utf-8')
-
-  PREFIX = "./dump-b64"
-
-  b64bfstr = bfmgr.dump_bf("xbf", outfile=PREFIX + "qbf")
-  assert (not b64bfstr)
-  b64bfstr = bfmgr.dump_bf("dbf", idx=-1, outfile=PREFIX + "qbf")
-  assert (not b64bfstr)
-  b64bfstr = bfmgr.dump_bf("qbf", outfile=PREFIX + "qbf")
-  assert (b64bfstr == exp_str)
-  b64bfstr = bfmgr.dump_bf("cbf", outfile=PREFIX + "cbf")
-  assert (b64bfstr == exp_str)
-  b64bfstr = bfmgr.dump_bf("dbf", outfile=PREFIX + "dbf")
-  assert (b64bfstr == exp_str)
-  b64bfstr = bfmgr.dump_bf("dbf", idx=1, outfile=PREFIX + "dbf-1")
-  assert (b64bfstr == exp_str)
-
-  print("Test dump bf using base64 encoding passed\n")
-
-  # Test multithreaded cases
-  assert (not "Multithreaded test case not implemented yet")
