@@ -3,3 +3,5 @@ bgwork/__pycache__/
 ecdh.txt
 .vscode/
 __pycache__/
+log.txt
+default_conf.json

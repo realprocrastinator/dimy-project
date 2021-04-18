@@ -9,11 +9,11 @@ class UDPManager(object):
     self.name = name
     # UDP settings
     self.sendsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-    self.sendsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+    self.sendsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     self.sendsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 
     self.recvsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
-    self.recvsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEPORT, 1)
+    self.recvsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     self.recvsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 
     # logger
