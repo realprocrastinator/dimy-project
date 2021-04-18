@@ -10,7 +10,6 @@ import threading
 from bgwork.exceptions import NullHandlerError
 
 
-#TODO(gjw): 1. replace print with log; 2. add lock mechanism
 class Job(threading.Thread):
   """
   A generic Job class tends to be running in the background. The handler of each job

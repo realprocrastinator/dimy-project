@@ -22,7 +22,7 @@ import sslcrypto_client as sslcrypto
 
 
 # A bit hacky here.
-# TODO(Jiawei)
+# TODO(Jiawei):
 # 3) Add multipthreaded test case
 # 4) Consider integrate sslcrypto module into the project instead of using it as a site package
 class IDManager(UDPManager):
@@ -51,7 +51,7 @@ class IDManager(UDPManager):
 
     # filter hash tag, we are doing broadcasting, so need to filter out
     # out own message, but it can be useful to utilize self broadcasted message when debugging.
-    # TODO(1) periodically clean it up, but as we gen EphID every 10 mins
+    # TODO(Jiawei): periodically clean it up, but as we gen EphID every 10 mins
     # assume we run the app 365 days without terminating, intotal the gernerated hash
     # occupies 365 * 24 * 60 / 10 * 3 / 1014 -> 150kb should be fine.
     self.my_hash_tag = set()

@@ -1,5 +1,7 @@
 import json
 import logging
+import json
+import os
 
 DEFAULT = {
     # UDP config
@@ -47,21 +49,26 @@ DEFAULT = {
     "NUM_THRESHOLD": 3
 }
 
+def dump_default_json(filepath):
+  with open(filepath, "w") as f:
+    json.dump(DEFAULT, f, indent=4)
 
 # load the user given configurations
 def load_grp03_global_config(filepath=None):
   if (not filepath):
-    print("Using default configuration")
+    filepath = "./default_conf.json"
+    dump_default_json(filepath)
+    print(f"NOTICE: Using default configuration, the config is dumping to {os.path.abspath(filepath)}\n")
     return DEFAULT
 
   # try open the file, let it fail if not exist
   with open(filepath, "r") as f:
-    config = json.load(f.read())
+    config = json.load(f)
 
   # verify important keys
   for k in DEFAULT.keys():
     if (k not in config):
       raise ValueError(f"Missing configuration entry key : {k}")
 
-  print("Using custom configuration")
+  print(f"Using custom configuration file {os.path.abspath(filepath)}")
   return config

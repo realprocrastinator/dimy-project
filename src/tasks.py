@@ -22,8 +22,8 @@ def bg_gen_and_bdcast_EphID(idmngr, ip, port, share_interval):
 
 
 # background task for periodically checking whether can reconstruct EphID and insert EncntID to DBF
-def bg_receive_and_try_reconstruct_EcntID(idmngr, bfmgr, ip, port, threshold):
-  encntid = idmngr.wait_for_secret(ip, port, threshold, filter_self=False)
+def bg_receive_and_try_reconstruct_EcntID(idmngr, bfmgr, ip, port, threshold, filter_self="True"):
+  encntid = idmngr.wait_for_secret(ip, port, threshold, filter_self=filter_self)
   
   if (encntid):
     # insert to the DBF
@@ -80,7 +80,6 @@ def nbg_cbf_combine_and_upload(mgr, url):
   cbf = mgr.cluster_dbf(mgr.max_poolsz, type_name="CBF")
 
   if (cbf):
-    # TODO(Jiawei): make url configurable
     res = commn.upload_cbf(url,\
                                {"CBF" : mgr.dump_bf("CBF", bf = cbf)}, log_func=mgr.logger.debug)
 

@@ -9,8 +9,6 @@ if DEBUG:
   import uuid
 
 
-# TODO(Jiawei):
-# 1) Should make array sector size configurable depanding on the type supported by array
 class BloomFilter(object):
   # class wide variables
   # in bits

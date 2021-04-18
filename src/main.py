@@ -5,6 +5,7 @@ import commn
 import sys
 import time
 import signal
+import argparse
 
 # pylint: disable=unused-wildcard-import
 from tasks import *
@@ -45,7 +46,7 @@ def init_install_bgtasks(config):
   # install bg_receive_and_try_reconstruct_EncntID
   task_name, interval, task_hdlr = "EncntID-Worker", config["BG_RECV_CHECK_SECS"], bg_receive_and_try_reconstruct_EcntID
   args = (idmgr, bfmgr, config["UDP_RCV_IP"], config["UDP_RCV_PORT"], config["NUM_THRESHOLD"])
-  kargs = {}
+  kargs = {"filter_self" : config["SELF_FILTER"]}
   bg_task_install(bgmgr, task_name, interval, task_hdlr, *args, **kargs)
 
   # install bg_update_dbf_pool
@@ -64,7 +65,6 @@ def init_install_bgtasks(config):
 
 
 # handle the signal
-# TODO(Jiawei): change global var inside signal handler not working
 def sig_handler(signum, frame):
   global G_STOPPED
   print(f"Handling signal: {signum}, trying to terminat the process")
@@ -81,17 +81,37 @@ def init_register_signal_hdlr():
 # Other helpers #
 #################
 
-# TODO(Jiawei): parse cmdline args
-def parse_args():
-  pass
+def process_args():
+    usage_str = """
+    %(prog)s [OPTIONS]"""
+    
+    epilog_str = """
+
+    """
+    parser = argparse.ArgumentParser(description='DIMY client App.',
+                            usage=usage_str,
+                            epilog=epilog_str)
+    parser.add_argument("-c", "--conf", dest="conf_file", default=None,
+                        help="Configuration in Json format. (default: %(default)s).")
+
+    parser.add_argument("-n", "--no-self-filter", action="store_true",
+                        help="Flag indicates whether to filter out the self broadcasting message.\
+                           Can be useful when debugging locally on one machine. (default: %(default)s).")
+
+    return parser
+
 
 
 # the main loop
 def main(args):
   global G_STOPPED
 
+  parser = process_args()
+  args = parser.parse_args()
+
   # read congiurations
-  config = load_grp03_global_config()
+  config = load_grp03_global_config(args.conf_file)
+  config["SELF_FILTER"] = not args.no_self_filter
 
   print("WELCOME TO USE COVID - TRACING APPLICATION - DIMY\n")
 
@@ -136,9 +156,9 @@ def main(args):
       bgworker.start_job("QBF-worker", if_restart=True)
 
   # If we are going to return we clean up any way, just in case we have non daemon threads running
+  bgworker.stop_all()
   idmngr.sendsock.close()
   idmngr.recvsock.close()
-  bgworker.stop_all()
 
   return 0
 

@@ -44,7 +44,6 @@ class GBF(BloomFilter):
 
 
 class BloomFilterManager(object):
-  # TODO(JIAWEI): make paras configurable
   def __init__(self, max_poolsz=6, loglevel=logging.DEBUG, logfile=None):
     self.dbfpool = [GBF() for _ in range(max_poolsz)]
     self._qbf = None
