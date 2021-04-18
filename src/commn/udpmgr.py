@@ -17,7 +17,7 @@ class UDPManager(object):
     self.recvsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
 
     # logger
-    logging.basicConfig(filename=logfile, filemode="a", \
+    logging.basicConfig(filename=logfile, filemode="a",
         format='[%(asctime)s] [%(name)s] [%(levelname)s] %(message)s')
     self.logger = logging.getLogger("UDPManager-" + self.name)
     shdlr = logging.StreamHandler(sys.stdout)
