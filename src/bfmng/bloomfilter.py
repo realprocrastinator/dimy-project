@@ -28,6 +28,8 @@ class BloomFilter(object):
     self._hash_times = hash_times
     # number of elements have been inserted
     self._neles_inserted = 0
+    # The idex set that has been inserted in 
+    self.state = set()
 
   def insert(self, data):
     if (DEBUG):
@@ -92,6 +94,8 @@ class BloomFilter(object):
     hash_value = self._hash_func(*args)
     raw_idx = hash_value % self._nbits
     print("Inserting @position:", raw_idx)
+    # add the satte set for book keeping
+    self.state.add(raw_idx)
 
     arr_idx = raw_idx // self._arrsz
     arr_bit_idx = raw_idx % self._arrsz

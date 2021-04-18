@@ -6,6 +6,7 @@ import logging
 from threading import Lock
 import os
 import sys
+from datetime import datetime
 from pathlib import Path  # if you haven't already done so
 
 # include root src tree path to the sys path so that we can use absolute import
@@ -154,7 +155,8 @@ class IDManager(UDPManager):
     if self.EncntID_lock.locked():
       self.EncntID_lock.release()
 
-    self.logger.info(f"Newly generated EncntID is: {self._EncntID.hex()}")
+    self.logger.info(f"------------------> Segment 5-B <------------------"
+                      f"\nNewly generated EncntID is: {self._EncntID.hex()}")
 
     return self._EncntID
 
@@ -237,6 +239,9 @@ class IDManager(UDPManager):
       bsecrets.append(f"{bsecret.hex()}")
 
       # broadcast
+      now = datetime.now()
+      self.logger.info( f"\n------------------> Segment 3-A <------------------"
+                        f"\n{now.strftime('%H:%M:%S')} ====> Sending Share: 0x{bsecret.hex()}...part: {i}/{parts} ====>")
       self.send_msg(ip, port, msg.msg)
 
       # sleep interval seconds
@@ -246,13 +251,13 @@ class IDManager(UDPManager):
     #pylint: disable=unbalanced-tuple-unpacking
     share1, share2, share3, share4, share5, share6 = bsecrets
     self.logger.info("\n------------------> Segment 1 & 2 <------------------"
-                f"\nGenerating {parts} sharings of EphID: 0x{ephid.hex()}\n"
-                f"\n====> Sharing: 0x{share1}...part: {1}/{parts} ====>"
-                f"\n====> Sharing: 0x{share2}...part: {2}/{parts} ====>"
-                f"\n====> Sharing: 0x{share3}...part: {3}/{parts} ====>"
-                f"\n====> Sharing: 0x{share4}...part: {4}/{parts} ====>"
-                f"\n====> Sharing: 0x{share5}...part: {5}/{parts} ====>"
-                f"\n====> Sharing: 0x{share6}...part: {6}/{parts} ====>\n")
+                f"\nHas sent {parts} generated sharings of EphID: 0x{ephid.hex()}\n"
+                f"\n====> Sent Share: 0x{share1}...part: {1}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share2}...part: {2}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share3}...part: {3}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share4}...part: {4}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share5}...part: {5}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share6}...part: {6}/{parts} ====>\n")
 
 
   # Reutrn the ecounter ID if possible, otherwise None
@@ -271,12 +276,13 @@ class IDManager(UDPManager):
     self.contact_book[hash_tag.hex()].append((int(sec_id.hex(), 16), int(msg.secret.hex(), 16)))
 
     secret_shares = self.contact_book[hash_tag.hex()]
-    self.logger.info(f"\nReceive: part {int(sec_id.hex(), 16)}, secret: {secret.hex()} from: {hash_tag.hex()} <====="
+    self.logger.info(f"------------------> Segment 3-C & B <------------------"
+                     f"\n<===== Receive: part {int(sec_id.hex(), 16)}, secret: {secret.hex()} from: {hash_tag.hex()} <====="
                      f"\nTotal {len(secret_shares)} received\n")
 
     # Check if can perform reconstruction
     if (len(secret_shares) >= threshold):
-      self.logger.info("\n------------------> Segment 4 <------------------"
+      self.logger.info("\n------------------> Segment 4-A <------------------"
                       f"\nReceived {len(secret_shares)} parts now reconstructing the EphID using the first three\n")
 
       # Reconstruct EphID in bytes type
@@ -285,13 +291,13 @@ class IDManager(UDPManager):
           ephid_of_other if isinstance(ephid_of_other, bytes) else ephid_of_other.encode("utf-8")).hexdigest()[:len(hash_tag) * 2]
 
       if (new_hash_tag != hash_tag.hex()):
-        self.logger.error("\n------------------> Segment 4 <------------------"
+        self.logger.error("\n------------------> Segment 4-B <------------------"
                          f"\n     Hash of reconstructed EphID mismatched\n")
         return None
 
       encntid = self.gen_EncntID(ephid_of_other)
-      self.logger.info("\n------------------> Segment 5 <------------------"
-                      f"\n>>>> generate shared secret EncID: {encntid} <<<<"
+      self.logger.info("\n------------------> Segment 4-B & 5-A <------------------"
+                      f"\n>>>> generate shared secret EncID: {encntid} using ECDH <<<<"
                       f"\nHash of reconstructed EphID matched: {new_hash_tag} == {hash_tag.hex()}"
                       f"\nReconstructed EphID is: 0x{ephid_of_other.hex()} with hash tag 0x{new_hash_tag}\n")
       

@@ -44,13 +44,18 @@ class GBF(BloomFilter):
 
 
 class BloomFilterManager(object):
-  def __init__(self, max_poolsz=6, loglevel=logging.DEBUG, logfile=None):
-    self.dbfpool = [GBF() for _ in range(max_poolsz)]
+  def __init__(self, max_poolsz=6, init_pool_sz = 1, loglevel=logging.DEBUG, logfile=None):
+    self.dbfpool = [GBF() for _ in range(init_pool_sz)]
     self._qbf = None
     self._cbf = None
     self.dbfpool_lock = Lock()
-    self._cur_dbf = self.dbfpool[-1]
+    self._cur_dbf = self.dbfpool[0]
     self.max_poolsz = max_poolsz
+    # The flag indicates whether we should use the last DBF
+    # Since the every 10 minutes, we will moving from one to the next DBF,
+    # which means after 60 mins we will always point at the last DBF  
+    self.use_last = False
+    self.cur_dbf_idx = 0
 
     # logger
     logging.basicConfig(filename=logfile, filemode="a", \
@@ -81,10 +86,14 @@ class BloomFilterManager(object):
       # Remove the head and append to the tail
       self._rm_dbf(0)
       self._add_dbf(GBF())
+      # If we updated, then always use the last DBF
+      self.use_last = True
     else:
       # This should never happen unless we have a concurrency bug
       self.logger.error(f"Pool Size larger than {self.max_poolsz}! Raise condition here!")
       return False
+    
+    self.cur_dbf_idx = len(self.dbfpool) - 1
 
     if self.dbfpool_lock.locked():
       self.dbfpool_lock.release()
@@ -99,6 +108,7 @@ class BloomFilterManager(object):
     self.dbfpool.append(dbf)
     # update the current DBF to the latest one
     self._cur_dbf = self.dbfpool[-1]
+    self.cur_dbf_idx = len(self.dbfpool) - 1
 
     self.logger.debug(f"Adding a new DBF to the pool with id {dbf.id}. Now the size is: {len(self.dbfpool)}")
     return True
@@ -162,7 +172,7 @@ class BloomFilterManager(object):
 
   # cluster a set of bfs into one, type_name can be "QBF" or "CBF"
   def cluster_dbf(self, num, type_name):
-    self.logger.info("\n------------------> Segment 10 <------------------"
+    self.logger.info("\n------------------> Segment 8 or 10 <------------------"
                     f"\nClustering {self.max_poolsz} DBFs into one {type_name}\n")
 
     if num < 0 or num > len(self.dbfpool) or type_name not in ["QBF", "CBF"]:
@@ -190,23 +200,50 @@ class BloomFilterManager(object):
   # Thread safe method, get the current DBF
   @property
   def cur_dbf(self):
-    if not self.dbfpool_lock.locked():
-      self.dbfpool_lock.acquire()
+    # if not self.dbfpool_lock.locked():
+    #   self.dbfpool_lock.acquire()
 
-    cur = self.dbfpool[-1] if len(self.dbfpool) > 0 else None
+    # if not self.dbfpool_lock.locked():
+    #   self.dbfpool_lock.release()
 
-    if not self.dbfpool_lock.locked():
-      self.dbfpool_lock.release()
+    # We can use week sync, read no can happen either before/after write
+    return self._cur_dbf  
 
-    return cur
+
+  def update_cur_dbf(self):
+      if not self.dbfpool_lock.locked():
+        self.dbfpool_lock.acquire()
+
+      if (self.use_last):
+        cur = self.dbfpool[-1] if len(self.dbfpool) > 0 else None
+      else:
+        self.cur_dbf_idx += 1
+        if (self.cur_dbf_idx >= self.max_poolsz):
+          # If we move to the laste one already but update has been called
+          # Truncate to the last element 
+          self.cur_dbf_idx = self.max_poolsz - 1
+        cur = self.dbfpool[self.cur_dbf_idx]
+
+      # update internal cache _cur_dbf
+      self._cur_dbf = cur
+
+      if not self.dbfpool_lock.locked():
+        self.dbfpool_lock.release()
+
+      return cur     
 
   # Thread safe method, atomiclly insert a data in to the current DBF
   def insert_to_dbf(self, data):
     if not self.dbfpool_lock.locked():
       self.dbfpool_lock.acquire()
 
-    self.logger.debug(f"Inserting data {data} into DBF {self._cur_dbf.id}")
-    self.dbfpool[-1].insert(data)
+    self._cur_dbf.insert(data)
+    self.logger.info(f"\n------------------> Segment 6 & 7-A <------------------"
+                     f"\nInserting a new EncntID: {data.hex()} to the DBF (murmur3 hashing with 3 hashes)"
+                     f"\nInserting data {data.hex()} into DBF#{self.cur_dbf_idx} with id {self._cur_dbf.id}"
+                     f"\nCurrent Bloomfilter {self._cur_dbf.id} state is :{self._cur_dbf.state}")
+    # Make sure we dont't have inconsistency
+    assert(self.dbfpool[self.cur_dbf_idx] == self._cur_dbf)
 
     if not self.dbfpool_lock.locked():
       self.dbfpool_lock.release()
