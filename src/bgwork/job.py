@@ -16,6 +16,7 @@ class Job(threading.Thread):
     self._args = args
     self._kargs = kargs
 
+
   def run(self):
     if not self._handler:
       print(f"ERROR: Handler not installed in Job {self.name}")
@@ -28,6 +29,7 @@ class Job(threading.Thread):
       self._handler(*self._args, **self._kargs)
     
     print(f"Job {self.name} stops running.")
+
 
   def stop(self):
     # terminate gracefully and clean up resources
