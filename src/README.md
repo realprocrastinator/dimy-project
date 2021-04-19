@@ -4,7 +4,7 @@
 
 `DIMY` COVID  Contact Tracing Application application is a system implemented using `DIMY` protocol. [link here]. The whole system contains two parts, the front-end which runs on the client side, and the back-end which runs on an server side. The protocol implementation is based on a several full-strength general purpose cryptographic  algorithms, such as `ECDH`, `Shamir secret sharing`, `murmurhash3` etc. 
 
-The current implementation only contains the fron-tend part developed using `Python3.7` , and it depends on `mmh3`  and `openssl` libraries. The implementation has been tested on Linux environment and Python version 3.7 or above.
+The current implementation only contains the fron-tend part developed using `Python3.7`, and it depends on `mmh3`  and `openssl` libraries. The implementation has been tested on Linux environment and Python version 3.7 or above.
 
 ## Notice
 
@@ -12,7 +12,7 @@ The current implementation only contains the fron-tend part developed using `Pyt
 
 ## Usage
 
-First of all, please make sure you already have the required python libraries installed, the file `requiresments.txt` in the root source tree contains all the libraries installed on my system during developing. Not all of them are required, the main dependencies are `base58(1.0.3)`, `sslcrypto(5.3)` and `mmh3(3.0.0)`. But if there is some dependencies issues, this is good place to have a look :D.
+First of all, please make sure you already have the required python libraries installed, the file `requiresments.txt` in the root source tree contains all the libraries installed on my system during developing. Not all of them are required, the main dependencies are `base58(1.0.3)`, `sslcrypto(5.3)`, `pyaes(1.6.1)` and `mmh3(3.0.0)`. But if there is some dependencies issues, this is good place to have a look :D.
 
 Once the required libraries has been installed, the main program can be started by run `python3 main.py`. Once the program starts, it will generate a template of default configuration file named  `default_config.json`. By modifying this file, you can configure the program according to you taste. And to restart the program with the customised configuration, you need to use the `-c` flag. (e.g. `python3 ./main.py -c my_config.json`. The other flag named `-n` is used for debugging locally, if you only want to simulate the how does the whole front-end behave running just one program instance. If running two or more instances, this flag can be omitted.
 
@@ -60,7 +60,9 @@ The default configuration file is a `json` file contains several entries as foll
 
 - `BG_QBF_GEN_SECS`: The period of generating new `QBF` from the `DBF` pool as well as querying the the server in seconds, by default this is `3600`
 
-- `URL_TEMPLATE`: The root `url` of the default back-end server  `http://ec2-3-26-37-172.ap-southeast-2.compute.amazonaws.com:9000/comp4337/`
+- `URL_TEMPLATE`: The root `url` of the default back-end server:
+
+    -   `http://ec2-3-26-37-172.ap-southeast-2.compute.amazonaws.com:9000/comp4337/`
 
 - `URL_SUFFIX`: The suffix of the default back-end server `url` 
 
