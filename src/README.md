@@ -14,6 +14,18 @@ The current implementation only contains the fron-tend part developed using `Pyt
 
 First of all, please make sure you already have the required python libraries installed, the file `requiresments.txt` in the root source tree contains all the libraries installed on my system during developing. Not all of them are required, the main dependencies are `base58(1.0.3)`, `sslcrypto(5.3)`, `pyaes(1.6.1)` and `mmh3(3.0.0)`. But if there is some dependencies issues, this is good place to have a look :D.
 
+#### Tips for setting up the environment (Linux / MacOS)
+
+A good way to test  the python program without messing up with the host environment is to create a virtual environment. To do this you can install `venv`.
+
+1. create a virtual environment, `python3 -m venv test-env`
+2. clone the source code to the virtual environment
+   1. `cd test-env`
+   2. `git clone https://github.com/realprocrastinator/DIMY-grp.git`
+3. activate the virtual environment, `source test-env/bin/activate`
+4. know install the dependencies, `pip3 install -r ./DIMY-grp/src/requirements.txt`
+5. now you should be able to launch the program!  
+
 Once the required libraries has been installed, the main program can be started by run `python3 main.py`. Once the program starts, it will generate a template of default configuration file named  `default_config.json`. By modifying this file, you can configure the program according to you taste. And to restart the program with the customised configuration, you need to use the `-c` flag. (e.g. `python3 ./main.py -c my_config.json`. The other flag named `-n` is used for debugging locally, if you only want to simulate the how does the whole front-end behave running just one program instance. If running two or more instances, this flag can be omitted.
 
 In the main loop, the user can feed in the command. Currently only two commands are supported, first is `s` to terminate the program. The second one is `c` to generate the `CBF` and upload to the specific back-end server and wait for reply.
