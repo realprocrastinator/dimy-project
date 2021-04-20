@@ -146,7 +146,7 @@ def main(args):
       # automatic resetart qbf worker after uploading cbf, not required but would be nice to have
       print("\nRestarting the QBF Worker")
       url = config["URL_TEMPLATE"].format(config["URL_SUFFIX"]["QUERY"])
-      bgworker.add_job("QBF-worker", 4, True, bg_qbf_woker_combine_and_query, bfmgr, url)
+      bgworker.add_job("QBF-worker", 20, True, bg_qbf_woker_combine_and_query, bfmgr, url)
       bgworker.start_job("QBF-worker", if_restart=True)
 
   # If we are going to return we clean up any way, just in case we have non daemon threads running

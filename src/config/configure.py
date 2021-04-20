@@ -26,7 +26,7 @@ DEFAULT = {
     # Background Task config
     "BG_GEN_EphID_SECS": 60,
     "BG_SHARE_EphID_SECS": 10,
-    "BG_RECV_CHECK_SECS": 30,
+    "BG_RECV_CHECK_SECS": 10,
     "BG_DBF_MOVE_TO_NEXT": 600,
     "BG_DBFPOOL_UPDATE_SECS": 600,
     "BG_QBF_GEN_SECS": 3600,
