@@ -27,36 +27,56 @@ def bg_receive_and_try_reconstruct_EcntID(idmngr, bfmgr, ip, port, threshold, fi
   
   if (encntid):
     # insert to the DBF
-    bfmgr.logger.info("\n------------------> Segment 6 & 7 <------------------"
-                      "\nInserting a new EncntID to the DBF (murmur3 hashing with 3 hashes)")
     bfmgr.insert_to_dbf(encntid)
 
 
 # background task for periodically updating the DBF pool, remove the oldest one and add the new one
+# This function is used when init with 1 DBF
 def bg_update_dbf_pool(bfmgr):
-  bfmgr.logger.info("\n--------------------> Updating DBF Pool <--------------"
-                    "\nUpdating the DBF pool...Removing the oldest DBF and add a new DBF\n")
+  bfmgr.logger.info("\n------------------> Segment 7-B <------------------"
+                    "\nUpdating the DBF pool...Removing the oldest DBF and add a new DBF\n"
+                   f"\nCurrent DBF is {bfmgr.dbfpool[bfmgr.cur_dbf_idx].id}"
+                   f"\nCurrent DBF pool has: {[d.id for d in bfmgr.dbfpool]}")
   bfmgr.update_dbfpool_atomic()
 
 
 # background task for periodically querying the server with QBF
 def bg_qbf_woker_combine_and_query(bfmgr, url):
+  has_update_pool = False
+
+  if (len(bfmgr.dbfpool) < bfmgr.max_poolsz):
+    # We always update first to make this two events sequential ;D
+    # QBF worker get called but pool is not full yet? Lets make it full first!
+    bg_update_dbf_pool(bfmgr)
+    has_update_pool = True
+
   qbf = bfmgr.cluster_dbf(bfmgr.max_poolsz, type_name="QBF")
   if (qbf):
 
-    bfmgr.logger.info("\n------------------> Segment 8 & 9 <------------------"
+    bfmgr.logger.info("\n------------------> Segment 9-A <------------------"
                      f"\nQuerying the sever with QBF ID: {qbf.id}\n")
 
     res, msg = commn.query_qbf(url,\
-                               {"QBF" : bfmgr.dump_bf("QBF", bf = qbf)})
+                               {"QBF" : bfmgr.dump_bf("QBF", bf = qbf)}, log_func=bfmgr.logger.debug)
 
-    bfmgr.logger.info("\n============================="
+    bfmgr.logger.info("\n------------------> Segment 9-B <------------------"
+                      "\n==================================================="
                      f"\nGot the result from server: {res}, {msg}"
-                      "\n=============================\n")
+                      "\n===================================================\n")
 
   else:
     bfmgr.logger.info("\n------------------> Segment 8 & 9 <------------------"
                       "\nQBF not ready, may be pool is not full yet?\n")
+
+  if (not has_update_pool):
+    bg_update_dbf_pool(bfmgr)
+
+# background task for periodically updating the current DBF, this funtion is used when
+# init with 6 DBFs
+def bg_update_cur_dbf(bfmgr):
+  cur  = bfmgr.update_cur_dbf()
+  bfmgr.logger.info("\n------------------> Segment 7-B <------------------"
+                    f"\nThe current DBF updated to DBF#{bfmgr.cur_dbf_idx} with id {cur.id}")
 
 
 ############################

@@ -6,6 +6,7 @@ import logging
 from threading import Lock
 import os
 import sys
+from datetime import datetime
 from pathlib import Path  # if you haven't already done so
 
 # include root src tree path to the sys path so that we can use absolute import
@@ -33,6 +34,9 @@ class IDManager(UDPManager):
   def __init__(self, loglevel=logging.DEBUG, logfile=None):
     super().__init__()
     self._curve = sslcrypto.ecc.get_curve("secp128r1")
+    # If we receive a message crosses two broadcasting timing windows, it's necessary to
+    # remember the previous private secret so that we won't drive the wrong ECDH share secret
+    self._prev_private_secret = None
     self._private_secret = None
     self._public_secret = None
 
@@ -76,6 +80,7 @@ class IDManager(UDPManager):
       self.logger.error("No selected curve.")
       return None
 
+    self._prev_private_secret = self._private_secret
     self._private_secret = self._curve.new_private_key(is_compressed)
 
     return self._private_secret
@@ -126,7 +131,7 @@ class IDManager(UDPManager):
     return self._EphID
 
   # Use the compressed method when generating points of the curve
-  def gen_EncntID(self, other_ephid):
+  def gen_EncntID(self, other_ephid, use_prev_private_secret):
     if (not self._curve):
       self.logger.error("No selected curve.")
       return None
@@ -143,7 +148,8 @@ class IDManager(UDPManager):
 
     # According to the sslcrypto lib, the first byte can be either 0x2 or 0x03, we add 0x2 here ;D
     other_public_secret = bytes(b"\x02") + other_ephid
-    self._EncntID = self._curve.derive(self._private_secret, other_public_secret)
+    self._EncntID = self._curve.derive(self._private_secret if not use_prev_private_secret \
+                                                            else self._prev_private_secret, other_public_secret)
 
     if (not self._EncntID):
       self.logger.error("Failed to generate encounter ID.")
@@ -154,7 +160,8 @@ class IDManager(UDPManager):
     if self.EncntID_lock.locked():
       self.EncntID_lock.release()
 
-    self.logger.info(f"Newly generated EncntID is: {self._EncntID.hex()}")
+    self.logger.info(f"------------------> Segment 5-B <------------------"
+                      f"\nNewly generated EncntID is: {self._EncntID.hex()}")
 
     return self._EncntID
 
@@ -220,8 +227,11 @@ class IDManager(UDPManager):
 
     # book keeping my hash tag
     self.my_hash_tag.add(hash_tag)
-
     hash_tag = bytes.fromhex(hash_tag)
+
+    # sequence number to indicate which timing window this message belongs to
+    seqnum_hex = hex(self.seqnum)[2:]
+    bseqnum = bytes.fromhex(seqnum_hex.zfill(2 * msg._seqnum_len))
     
     # This is to enfore a serialized ouput
     bsecrets = []
@@ -231,12 +241,15 @@ class IDManager(UDPManager):
 
       # construct the message
       sec_id = hex(i)[2:]
-      sec_id = bytes.fromhex(sec_id.zfill(2 * (len(sec_id) + 1 // 2)))
-      msg.msg = (hash_tag, sec_id, bsecret)
+      sec_id = bytes.fromhex(sec_id.zfill(2 * msg._sec_id_len))
+      msg.msg = (hash_tag, sec_id, bsecret, bseqnum)
 
       bsecrets.append(f"{bsecret.hex()}")
 
       # broadcast
+      now = datetime.now()
+      self.logger.info( f"\n------------------> Segment 3-A <------------------"
+                        f"\n{now.strftime('%H:%M:%S')} ====> Sending Share: 0x{bsecret.hex()}...part: {i}/{parts} ====>")
       self.send_msg(ip, port, msg.msg)
 
       # sleep interval seconds
@@ -246,13 +259,16 @@ class IDManager(UDPManager):
     #pylint: disable=unbalanced-tuple-unpacking
     share1, share2, share3, share4, share5, share6 = bsecrets
     self.logger.info("\n------------------> Segment 1 & 2 <------------------"
-                f"\nGenerating {parts} sharings of EphID: 0x{ephid.hex()}\n"
-                f"\n====> Sharing: 0x{share1}...part: {1}/{parts} ====>"
-                f"\n====> Sharing: 0x{share2}...part: {2}/{parts} ====>"
-                f"\n====> Sharing: 0x{share3}...part: {3}/{parts} ====>"
-                f"\n====> Sharing: 0x{share4}...part: {4}/{parts} ====>"
-                f"\n====> Sharing: 0x{share5}...part: {5}/{parts} ====>"
-                f"\n====> Sharing: 0x{share6}...part: {6}/{parts} ====>\n")
+                f"\nHas sent {parts} generated sharings of EphID: 0x{ephid.hex()}\n"
+                f"\n====> Sent Share: 0x{share1}...part: {1}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share2}...part: {2}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share3}...part: {3}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share4}...part: {4}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share5}...part: {5}/{parts} ====>"
+                f"\n====> Sent Share: 0x{share6}...part: {6}/{parts} ====>\n")
+    
+    # increase the sequence number
+    self.seqnum += 1
 
 
   # Reutrn the ecounter ID if possible, otherwise None
@@ -261,7 +277,7 @@ class IDManager(UDPManager):
     msg = Message(msg=self.recv_msg(bufsz=bufsz))
 
     # UNmarshel the message
-    hash_tag, sec_id, secret = msg.tag, msg.sec_id, msg.secret
+    hash_tag, sec_id, secret, seqnum = msg.tag, msg.sec_id, msg.secret, msg.seqnum
 
     if (hash_tag.hex() in self.my_hash_tag and filter_self):
       self.logger.debug("Filter out my own secret share")
@@ -271,12 +287,29 @@ class IDManager(UDPManager):
     self.contact_book[hash_tag.hex()].append((int(sec_id.hex(), 16), int(msg.secret.hex(), 16)))
 
     secret_shares = self.contact_book[hash_tag.hex()]
-    self.logger.info(f"\nReceive: part {int(sec_id.hex(), 16)}, secret: {secret.hex()} from: {hash_tag.hex()} <====="
+    self.logger.info(f"------------------> Segment 3-C & B <------------------"
+                     f"\n<===== Receive: part {int(sec_id.hex(), 16)}, secret: {secret.hex()} from: {hash_tag.hex()} <====="
                      f"\nTotal {len(secret_shares)} received\n")
 
     # Check if can perform reconstruction
     if (len(secret_shares) >= threshold):
-      self.logger.info("\n------------------> Segment 4 <------------------"
+      # check if the sequence number is the smaller one, which means we should use the previous privates secret
+      # The overlap only crosses two timing window at most
+      seqnum = int(seqnum.hex(), 16)
+      if seqnum in self.seqnum_recs[hash_tag.hex()]:
+         use_prev_private_secret = self.seqnum_recs[hash_tag.hex()].index(seqnum) == 0
+      elif (len(self.seqnum_recs) < 2):
+          # [seq1, ] or []
+          self.seqnum_recs[hash_tag.hex()].append(seqnum)
+          use_prev_private_secret = False
+      else:
+          # [seq1, seq2], del seq1 append seq3
+          self.seqnum_recs[hash_tag.hex()].append(seqnum)
+          del self.seqnum_recs[hash_tag.hex()][0]
+          use_prev_private_secret = False
+
+
+      self.logger.info("\n------------------> Segment 4-A <------------------"
                       f"\nReceived {len(secret_shares)} parts now reconstructing the EphID using the first three\n")
 
       # Reconstruct EphID in bytes type
@@ -285,16 +318,17 @@ class IDManager(UDPManager):
           ephid_of_other if isinstance(ephid_of_other, bytes) else ephid_of_other.encode("utf-8")).hexdigest()[:len(hash_tag) * 2]
 
       if (new_hash_tag != hash_tag.hex()):
-        self.logger.error("\n------------------> Segment 4 <------------------"
+        self.logger.error("\n------------------> Segment 4-B <------------------"
                          f"\n     Hash of reconstructed EphID mismatched\n")
         return None
 
-      encntid = self.gen_EncntID(ephid_of_other)
-      self.logger.info("\n------------------> Segment 5 <------------------"
-                      f"\n>>>> generate shared secret EncID: {encntid} <<<<"
-                      f"\nHash of reconstructed EphID matched: {new_hash_tag} == {hash_tag.hex()}"
-                      f"\nReconstructed EphID is: 0x{ephid_of_other.hex()} with hash tag 0x{new_hash_tag}\n")
       
+      self.logger.info("\n------------------> Segment 4-B & 5-A <------------------"
+                      f"\nHash of reconstructed EphID matched: {new_hash_tag} == {hash_tag.hex()}"
+                      f"\nReconstructed EphID is: 0x{ephid_of_other.hex()} with hash tag 0x{new_hash_tag}\n"
+                      f"\nNow Generate the EnctID")
+      encntid = self.gen_EncntID(ephid_of_other, use_prev_private_secret)
+
       del self.contact_book[hash_tag.hex()]
 
     else:

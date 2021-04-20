@@ -1,6 +1,7 @@
 import socket
 import logging
 import sys
+import collections
 
 
 class UDPManager(object):
@@ -15,6 +16,11 @@ class UDPManager(object):
     self.recvsock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
     self.recvsock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
     self.recvsock.setsockopt(socket.SOL_SOCKET, socket.SO_BROADCAST, 1)
+
+    # global bessage sequence counter
+    self.seqnum = 0
+    # global sequence number records, only maintain two records
+    self.seqnum_recs = collections.defaultdict(list)
 
     # logger
     logging.basicConfig(filename=logfile, filemode="a",
