@@ -18,18 +18,18 @@ DEFAULT = {
     # BloomFilter Manager config
     "BFMGR_INIT_NDBFS": 6,
     "BFMGR_MAX_DBF_POOLSZ": 6,
-    "BFMGR_LOGLEVEL": logging.DEBUG,
+    "BFMGR_LOGLEVEL": logging.INFO,
 
     # BackGround Worker config
-    "BGWRK_LOGLEVEL": logging.DEBUG,
+    "BGWRK_LOGLEVEL": logging.INFO,
 
     # Background Task config
-    "BG_GEN_EphID_SECS": 12,
-    "BG_SHARE_EphID_SECS": 1,
-    "BG_RECV_CHECK_SECS": 7,
-    "BG_DBF_MOVE_TO_NEXT": 2,
-    "BG_DBFPOOL_UPDATE_SECS": 30,
-    "BG_QBF_GEN_SECS": 10,
+    "BG_GEN_EphID_SECS": 60,
+    "BG_SHARE_EphID_SECS": 10,
+    "BG_RECV_CHECK_SECS": 30,
+    "BG_DBF_MOVE_TO_NEXT": 600,
+    "BG_DBFPOOL_UPDATE_SECS": 600,
+    "BG_QBF_GEN_SECS": 3600,
 
     # Server config
     "URL_TEMPLATE": "http://ec2-3-26-37-172.ap-southeast-2.compute.amazonaws.com:9000/comp4337/{0}",
@@ -40,7 +40,7 @@ DEFAULT = {
 
     # Debugging config
     "STDOUT_LOGLEVEL": logging.INFO,
-    "ALL_LOG_LEVEL": logging.DEBUG,
+    "ALL_LOG_LEVEL": logging.INFO,
     "DEBUG_MODE": True,
     "ALL_LOG_FILE": "log.txt",
 
@@ -68,7 +68,7 @@ def load_grp03_global_config(filepath=None):
 
   # verify important keys
   for k in DEFAULT.keys():
-    if (k not in config):
+    if (k not in config.keys()):
       raise ValueError(f"Missing configuration entry key : {k}")
 
   print(f"Using custom configuration file {os.path.abspath(filepath)}")

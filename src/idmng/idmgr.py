@@ -305,7 +305,7 @@ class IDManager(UDPManager):
       else:
           # [seq1, seq2], del seq1 append seq3
           self.seqnum_recs[hash_tag.hex()].append(seqnum)
-          del self.seqnum[hash_tag.hex()][0]
+          del self.seqnum_recs[hash_tag.hex()][0]
           use_prev_private_secret = False
 
 
