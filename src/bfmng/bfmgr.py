@@ -1,5 +1,5 @@
 # Std modules
-from threading import Lock
+from threading import Lock, Condition
 from uuid import uuid1
 from time import monotonic
 import logging
@@ -49,6 +49,7 @@ class BloomFilterManager(object):
     self._qbf = None
     self._cbf = None
     self.dbfpool_lock = Lock()
+    self.dbfpool_cv = Condition()
     self._cur_dbf = self.dbfpool[0]
     self.max_poolsz = max_poolsz
     # The flag indicates whether we should use the last DBF

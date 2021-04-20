@@ -49,6 +49,12 @@ def init_install_bgtasks(config):
   kargs = {"filter_self" : config["SELF_FILTER"]}
   bg_task_install(bgmgr, task_name, interval, task_hdlr, *args, **kargs)
 
+  # install bg_update_dbf_pool
+  task_name, interval, task_hdlr = "DBFpool-Worker", config["BG_DBFPOOL_UPDATE_SECS"], bg_update_dbf_pool
+  args = (bfmgr, )
+  kargs = {}
+  bg_task_install(bgmgr, task_name, interval, task_hdlr, *args, **kargs)
+
   # install bg_qbf_woker_combine_and_query
   task_name, interval, task_hdlr = "QBF-Worker", config["BG_QBF_GEN_SECS"], bg_qbf_woker_combine_and_query
   args = (bfmgr, config["URL_TEMPLATE"].format(config["URL_SUFFIX"]["QUERY"]))
