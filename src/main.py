@@ -91,6 +91,7 @@ def process_args():
     parser = argparse.ArgumentParser(description='DIMY client App.',
                             usage=usage_str,
                             epilog=epilog_str)
+
     parser.add_argument("-c", "--conf", dest="conf_file", default=None,
                         help="Configuration in Json format. (default: %(default)s).")
 
