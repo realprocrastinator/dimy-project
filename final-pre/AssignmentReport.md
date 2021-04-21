@@ -38,7 +38,7 @@ This is the front-end implementation of the DIMY COVID contact tracing system. T
 
 ### Logging
 
-The logging subsystem has two output streams. One is the `stdout` and the other one is the `log.txt` configured by the ALL_LOG_FILE entry. The `stdout` is used for demonstration and the log file is used for diagnosing or inspecting the procedure.
+The logging subsystem has two output streams. One is the `stdout` and the other one is the `log.txt` configured by the `ALL_LOG_FILE` entry. The `stdout` is used for demonstration and the log file is used for diagnosing or inspecting the procedure. (**For this assignment, the we include a `log-host.txt` of the demo video.**)
 
 ### Configuration
 
