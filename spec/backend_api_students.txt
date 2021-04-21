@@ -1,8 +1,7 @@
-
-***** REST APIs for COMP4337 assignment *****
+***** REST API doc for COMP4337 assignment *****
 
 API - uploading CBF to backend server
-    URL: http://ec2-3-25-246-159.ap-southeast-2.compute.amazonaws.com:9000/comp4337/cbf/upload
+    URL: http://ec2-3-26-37-172.ap-southeast-2.compute.amazonaws.com:9000/comp4337/cbf/upload
     request method: POST
     request body:
       data type: JSON
@@ -25,7 +24,7 @@ API - uploading CBF to backend server
 
 
 API - periodical query (every 60 minutes - QBF)
-    URL: http://ec2-3-25-246-159.ap-southeast-2.compute.amazonaws.com:9000/comp4337/qbf/query
+    URL: http://ec2-3-26-37-172.ap-southeast-2.compute.amazonaws.com:9000/comp4337/qbf/query
     request method: POST
     request body:
       data type: JSON
@@ -48,7 +47,7 @@ API - periodical query (every 60 minutes - QBF)
 
 
 ***** NOTE *****
-If your request data format is NOT same as the above requirement, you will receive:
+If your request data format is NOT same as the above requirement you will receive:
 {
     "timestamp": "2021-03-22T02:10:13.257+00:00",
     "status": 400,
@@ -56,4 +55,5 @@ If your request data format is NOT same as the above requirement, you will recei
     "message": "",
     "path": "/comp4337/cbf/upload"
 }
+
 

@@ -1,0 +1,30 @@
+{
+    "UDP_RCV_IP": "",
+    "UDP_RCV_PORT": 8080,
+    "UDP_SND_IP": "255.255.255.255",
+    "UDP_SND_PORT": 8080,
+    "BF_BITS": 800000,
+    "BF_NHASHFUNS": 3,
+    "BF_ARRSZ_BITS": 8,
+    "BFMGR_INIT_NDBFS": 6,
+    "BFMGR_MAX_DBF_POOLSZ": 6,
+    "BFMGR_LOGLEVEL": 20,
+    "BGWRK_LOGLEVEL": 20,
+    "BG_GEN_EphID_SECS": 60,
+    "BG_SHARE_EphID_SECS": 10,
+    "BG_RECV_CHECK_SECS": 30,
+    "BG_DBF_MOVE_TO_NEXT": 600,
+    "BG_DBFPOOL_UPDATE_SECS": 600,
+    "BG_QBF_GEN_SECS": 3600,
+    "URL_TEMPLATE": "http://ec2-3-26-37-172.ap-southeast-2.compute.amazonaws.com:9000/comp4337/{0}",
+    "URL_SUFFIX": {
+        "UPLOAD": "cbf/upload",
+        "QUERY": "qbf/query"
+    },
+    "STDOUT_LOGLEVEL": 20,
+    "ALL_LOG_LEVEL": 20,
+    "DEBUG_MODE": true,
+    "ALL_LOG_FILE": "log.txt",
+    "NUM_SECRET_PARTS": 6,
+    "NUM_THRESHOLD": 3
+}

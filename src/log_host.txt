@@ -1,0 +1,2954 @@
+[2021-04-21 03:29:32,321] [IDManager] [INFO] Newly generated EphID is: 1943942ed20ff4ead8a89d40c2af48c8
+[2021-04-21 03:29:32,322] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:29:32 ====> Sending Share: 0x25c62ab1623dd9af1a35d3c230fb53dd...part: 1/6 ====>
+[2021-04-21 03:29:42,330] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:29:42 ====> Sending Share: 0x3b4b6451ba3223b89590700257bfaaec...part: 2/6 ====>
+[2021-04-21 03:29:52,338] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:29:52 ====> Sending Share: 0x59d3410fd9ecd3074ab8720136fc4df5...part: 3/6 ====>
+[2021-04-21 03:30:02,348] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:30:02 ====> Sending Share: 0x815dc0ebc16de79b39add9beceb13cf8...part: 4/6 ====>
+[2021-04-21 03:30:12,358] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:30:12 ====> Sending Share: 0xb1eae3e570b561746270a73b1ede77f5...part: 5/6 ====>
+[2021-04-21 03:30:22,365] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:30:22 ====> Sending Share: 0xeb7aa9fce7c34092c500da762783feec...part: 6/6 ====>
+[2021-04-21 03:30:32,374] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x1943942ed20ff4ead8a89d40c2af48c8
+
+====> Sent Share: 0x25c62ab1623dd9af1a35d3c230fb53dd...part: 1/6 ====>
+====> Sent Share: 0x3b4b6451ba3223b89590700257bfaaec...part: 2/6 ====>
+====> Sent Share: 0x59d3410fd9ecd3074ab8720136fc4df5...part: 3/6 ====>
+====> Sent Share: 0x815dc0ebc16de79b39add9beceb13cf8...part: 4/6 ====>
+====> Sent Share: 0xb1eae3e570b561746270a73b1ede77f5...part: 5/6 ====>
+====> Sent Share: 0xeb7aa9fce7c34092c500da762783feec...part: 6/6 ====>
+
+[2021-04-21 03:33:45,019] [IDManager] [INFO] Newly generated EphID is: b319e67540324a1fe5416814f4af4ef4
+[2021-04-21 03:33:45,019] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:33:45 ====> Sending Share: 0x90442acf76dad876e1e48fc56db97c31...part: 1/6 ====>
+[2021-04-21 03:33:55,028] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:33:55 ====> Sending Share: 0xdf6ed533b2c3814cf9993d90faa8d80b...part: 2/6 ====>
+[2021-04-21 03:34:05,038] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:34:05 ====> Sending Share: 0xa099e5a1f3ec44a22c5f71779b7d6283...part: 3/6 ====>
+[2021-04-21 03:34:15,047] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:34:15 ====> Sending Share: 0xd3c55c1a3a5522767a372b7950371b98...part: 4/6 ====>
+[2021-04-21 03:34:25,054] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:34:25 ====> Sending Share: 0x78f1389c85fe1ac9e3206b9618d6034b...part: 5/6 ====>
+[2021-04-21 03:34:35,062] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:34:35 ====> Sending Share: 0x901d7b28d6e72d9c671b31cdf55a199b...part: 6/6 ====>
+[2021-04-21 03:34:45,070] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xb319e67540324a1fe5416814f4af4ef4
+
+====> Sent Share: 0x90442acf76dad876e1e48fc56db97c31...part: 1/6 ====>
+====> Sent Share: 0xdf6ed533b2c3814cf9993d90faa8d80b...part: 2/6 ====>
+====> Sent Share: 0xa099e5a1f3ec44a22c5f71779b7d6283...part: 3/6 ====>
+====> Sent Share: 0xd3c55c1a3a5522767a372b7950371b98...part: 4/6 ====>
+====> Sent Share: 0x78f1389c85fe1ac9e3206b9618d6034b...part: 5/6 ====>
+====> Sent Share: 0x901d7b28d6e72d9c671b31cdf55a199b...part: 6/6 ====>
+
+[2021-04-21 03:35:45,071] [IDManager] [INFO] Newly generated EphID is: e75e5db7e67a0fcade0bcc99f9cd223f
+[2021-04-21 03:35:45,072] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:35:45 ====> Sending Share: 0x9416ed02116cc57ac4a26a5317c477fc...part: 1/6 ====>
+[2021-04-21 03:35:55,073] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 612eeddddb1e29eb914cd77f3587d335 from: de80e1 <=====
+Total 1 received
+
+[2021-04-21 03:35:55,073] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:35:55,081] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:35:55 ====> Sending Share: 0x9336b704f3075b3a7c7704632b4f56bd...part: 2/6 ====>
+[2021-04-21 03:36:05,090] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:36:05 ====> Sending Share: 0xe4bdbbc08b49d10a05899aca346dbe82...part: 3/6 ====>
+[2021-04-21 03:36:15,073] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 84d168f792120c338d55a74ddf526c3b from: de80e1 <=====
+Total 2 received
+
+[2021-04-21 03:36:15,073] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:36:15,098] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:36:15 ====> Sending Share: 0x88abfb34da3426e95fda2d88331faf4c...part: 4/6 ====>
+[2021-04-21 03:36:25,106] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:36:25 ====> Sending Share: 0x7f017561dfc65cd88b68bc9d2765291a...part: 5/6 ====>
+[2021-04-21 03:36:35,074] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 844ed64a14804963a5f5c315cc307fd9 from: de80e1 <=====
+Total 3 received
+
+[2021-04-21 03:36:35,074] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:36:35,074] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: de80e1 == de80e1
+Reconstructed EphID is: 0x196764fcefa4a28bb1db53a9ced0b4c7 with hash tag 0xde80e1
+
+Now Generate the EnctID
+[2021-04-21 03:36:35,076] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 1fe0dd54e3afec5e39a1b68861798858
+[2021-04-21 03:36:35,076] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 1fe0dd54e3afec5e39a1b68861798858 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 1fe0dd54e3afec5e39a1b68861798858 into DBF#0 with id DBF-8e8b28d0a1fe11eba519a97deeebcbd7
+Current Bloomfilter DBF-8e8b28d0a1fe11eba519a97deeebcbd7 state is :{296970, 91582, 496071}
+[2021-04-21 03:36:35,115] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:36:35 ====> Sending Share: 0xc7be2a479c0072d788354809113e2bec...part: 6/6 ====>
+[2021-04-21 03:36:45,122] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xe75e5db7e67a0fcade0bcc99f9cd223f
+
+====> Sent Share: 0x9416ed02116cc57ac4a26a5317c477fc...part: 1/6 ====>
+====> Sent Share: 0x9336b704f3075b3a7c7704632b4f56bd...part: 2/6 ====>
+====> Sent Share: 0xe4bdbbc08b49d10a05899aca346dbe82...part: 3/6 ====>
+====> Sent Share: 0x88abfb34da3426e95fda2d88331faf4c...part: 4/6 ====>
+====> Sent Share: 0x7f017561dfc65cd88b68bc9d2765291a...part: 5/6 ====>
+====> Sent Share: 0xc7be2a479c0072d788354809113e2bec...part: 6/6 ====>
+
+[2021-04-21 03:37:40,203] [IDManager] [INFO] Newly generated EphID is: be5d34dfde139b01c8cd8b683cf3d910
+[2021-04-21 03:37:40,204] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:37:40 ====> Sending Share: 0x974d393c8b4f2bbf8e896573656da42c...part: 1/6 ====>
+[2021-04-21 03:37:50,214] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:37:50 ====> Sending Share: 0xa6471d4bcbd83946a4bffe62220a691c...part: 2/6 ====>
+[2021-04-21 03:38:00,222] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:38:00 ====> Sending Share: 0xeb4ae10d9faec3970b71563472ca27e0...part: 3/6 ====>
+[2021-04-21 03:38:10,230] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:38:10 ====> Sending Share: 0x6658848206d2cab0c29d6cea57ace079...part: 4/6 ====>
+[2021-04-21 03:38:20,238] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:38:20 ====> Sending Share: 0x177007a901444e93ca444283d0b292e6...part: 5/6 ====>
+[2021-04-21 03:38:30,246] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:38:30 ====> Sending Share: 0xfe916a828f034f402265d700dddb3f26...part: 6/6 ====>
+[2021-04-21 03:38:40,255] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xbe5d34dfde139b01c8cd8b683cf3d910
+
+====> Sent Share: 0x974d393c8b4f2bbf8e896573656da42c...part: 1/6 ====>
+====> Sent Share: 0xa6471d4bcbd83946a4bffe62220a691c...part: 2/6 ====>
+====> Sent Share: 0xeb4ae10d9faec3970b71563472ca27e0...part: 3/6 ====>
+====> Sent Share: 0x6658848206d2cab0c29d6cea57ace079...part: 4/6 ====>
+====> Sent Share: 0x177007a901444e93ca444283d0b292e6...part: 5/6 ====>
+====> Sent Share: 0xfe916a828f034f402265d700dddb3f26...part: 6/6 ====>
+
+[2021-04-21 03:39:40,256] [IDManager] [INFO] Newly generated EphID is: 7e1aca073552f0194f9438afd1522378
+[2021-04-21 03:39:40,257] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:39:40 ====> Sending Share: 0xdb753a4686aac517ef6712d81a9eb5d8...part: 1/6 ====>
+[2021-04-21 03:39:50,266] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:39:50 ====> Sending Share: 0x68a9a99615c3c5b4dd9b92662feb3ac7...part: 2/6 ====>
+[2021-04-21 03:40:00,257] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 87e88bacd95b9dccc9bc96cfd458eafc from: 7dbf12 <=====
+Total 1 received
+
+[2021-04-21 03:40:00,258] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:40:00,274] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:40:00 ====> Sending Share: 0x25b817f5e29df1f01a31b75a1137b244...part: 3/6 ====>
+[2021-04-21 03:40:10,284] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:40:10 ====> Sending Share: 0x12a08565ed3949c9a52981b3be841c4f...part: 4/6 ====>
+[2021-04-21 03:40:20,258] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 95a1ebdfbadfcbdce5bdfbbf540b6bb4 from: 7dbf12 <=====
+Total 2 received
+
+[2021-04-21 03:40:20,258] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:40:20,294] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:40:20 ====> Sending Share: 0x2f62f1e63595cd417e82f17337d078e8...part: 5/6 ====>
+[2021-04-21 03:40:30,302] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:40:30 ====> Sending Share: 0x7bff5d76bbb37c57a63e06987d1cc80f...part: 6/6 ====>
+[2021-04-21 03:40:40,259] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: a455dc7735b8b29f36403f9ca6248763 from: 7dbf12 <=====
+Total 3 received
+
+[2021-04-21 03:40:40,259] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:40:40,259] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 7dbf12 == 7dbf12
+Reconstructed EphID is: 0x7b29bbde912c286ee23c10ce270d053b with hash tag 0x7dbf12
+
+Now Generate the EnctID
+[2021-04-21 03:40:40,260] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: eb7cd63bca1d9bf944d1bf2ef9ae6e52
+[2021-04-21 03:40:40,260] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: eb7cd63bca1d9bf944d1bf2ef9ae6e52 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data eb7cd63bca1d9bf944d1bf2ef9ae6e52 into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{662603, 146275, 746986}
+[2021-04-21 03:40:40,310] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x7e1aca073552f0194f9438afd1522378
+
+====> Sent Share: 0xdb753a4686aac517ef6712d81a9eb5d8...part: 1/6 ====>
+====> Sent Share: 0x68a9a99615c3c5b4dd9b92662feb3ac7...part: 2/6 ====>
+====> Sent Share: 0x25b817f5e29df1f01a31b75a1137b244...part: 3/6 ====>
+====> Sent Share: 0x12a08565ed3949c9a52981b3be841c4f...part: 4/6 ====>
+====> Sent Share: 0x2f62f1e63595cd417e82f17337d078e8...part: 5/6 ====>
+====> Sent Share: 0x7bff5d76bbb37c57a63e06987d1cc80f...part: 6/6 ====>
+
+[2021-04-21 03:41:00,261] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: b4045d7349e65213bb436267caa43e09 from: 7dbf12 <=====
+Total 1 received
+
+[2021-04-21 03:41:00,261] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:41:20,261] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: c4ad6ed3f768aa3a74c76420c18a8fa6 from: 7dbf12 <=====
+Total 2 received
+
+[2021-04-21 03:41:20,262] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:41:40,262] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: d65110993e3fbb1362cc44c78ad77c3a from: 7dbf12 <=====
+Total 3 received
+
+[2021-04-21 03:41:40,262] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:41:40,262] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 7dbf12 == 7dbf12
+Reconstructed EphID is: 0x7b29bbde912c286ee23c10ce270d053b with hash tag 0x7dbf12
+
+Now Generate the EnctID
+[2021-04-21 03:41:40,263] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 819ac9324050bc37861f9b0b8c4d5849
+[2021-04-21 03:41:40,263] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 819ac9324050bc37861f9b0b8c4d5849 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 819ac9324050bc37861f9b0b8c4d5849 into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{146275, 746986, 662603, 142448, 629813, 180476}
+[2021-04-21 03:41:40,311] [IDManager] [INFO] Newly generated EphID is: b87729b075832cb8f717fc9d49a38917
+[2021-04-21 03:41:40,311] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:41:40 ====> Sending Share: 0x5bf0f2b2fb7bad7469f76b6fa99abd16...part: 1/6 ====>
+[2021-04-21 03:41:50,318] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:41:50 ====> Sending Share: 0xf477350828f250d9195efa8f7665337c...part: 2/6 ====>
+[2021-04-21 03:42:00,263] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 9c13ebcc0a02a2fcc3880ba3dee53836 from: 9b9e1a <=====
+Total 1 received
+
+[2021-04-21 03:42:00,263] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:42:00,326] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:42:00 ====> Sending Share: 0x8209f0affde716e7054ea9fcb002ec4b...part: 3/6 ====>
+[2021-04-21 03:42:10,336] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:42:10 ====> Sending Share: 0x04a925aa7a59ff9e2dc679b75673e782...part: 4/6 ====>
+[2021-04-21 03:42:20,264] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: dfe355cb5abe1a3631ac5f0edc1e654b from: 9b9e1a <=====
+Total 2 received
+
+[2021-04-21 03:42:20,264] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:42:20,346] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:42:20 ====> Sending Share: 0x7c54d3f79e4b0afe92c669bf69b82520...part: 5/6 ====>
+[2021-04-21 03:42:30,354] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:42:30 ====> Sending Share: 0xe90cfb9769ba3908344e7a14e9cfa526...part: 6/6 ====>
+[2021-04-21 03:42:40,264] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 818ecc674d8975dd62557e7015891a92 from: 9b9e1a <=====
+Total 3 received
+
+[2021-04-21 03:42:40,265] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:42:40,265] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 9b9e1a == 9b9e1a
+Reconstructed EphID is: 0xb6208e695b57103117e8842f1ddd9352 with hash tag 0x9b9e1a
+
+Now Generate the EnctID
+[2021-04-21 03:42:40,265] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 501969c3a0f6fe0ec73aaf28e78167f8
+[2021-04-21 03:42:40,265] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 501969c3a0f6fe0ec73aaf28e78167f8 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 501969c3a0f6fe0ec73aaf28e78167f8 into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{146275, 746986, 662603, 242796, 142448, 753268, 629813, 332503, 180476}
+[2021-04-21 03:42:40,362] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xb87729b075832cb8f717fc9d49a38917
+
+====> Sent Share: 0x5bf0f2b2fb7bad7469f76b6fa99abd16...part: 1/6 ====>
+====> Sent Share: 0xf477350828f250d9195efa8f7665337c...part: 2/6 ====>
+====> Sent Share: 0x8209f0affde716e7054ea9fcb002ec4b...part: 3/6 ====>
+====> Sent Share: 0x04a925aa7a59ff9e2dc679b75673e782...part: 4/6 ====>
+====> Sent Share: 0x7c54d3f79e4b0afe92c669bf69b82520...part: 5/6 ====>
+====> Sent Share: 0xe90cfb9769ba3908344e7a14e9cfa526...part: 6/6 ====>
+
+[2021-04-21 03:43:00,265] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 81164f9fe264b5f2558369c78b25580a from: 9b9e1a <=====
+Total 1 received
+
+[2021-04-21 03:43:00,266] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:43:20,266] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: de79df75194fda750b3621153cf31db3 from: 9b9e1a <=====
+Total 2 received
+
+[2021-04-21 03:43:20,266] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:43:40,267] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 99b97be6f24ae365836da4592af26b8e from: 9b9e1a <=====
+Total 3 received
+
+[2021-04-21 03:43:40,267] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:43:40,267] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 9b9e1a == 9b9e1a
+Reconstructed EphID is: 0xb6208e695b57103117e8842f1ddd9352 with hash tag 0x9b9e1a
+
+Now Generate the EnctID
+[2021-04-21 03:43:40,267] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 501969c3a0f6fe0ec73aaf28e78167f8
+[2021-04-21 03:43:40,267] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 501969c3a0f6fe0ec73aaf28e78167f8 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 501969c3a0f6fe0ec73aaf28e78167f8 into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{146275, 746986, 662603, 242796, 142448, 753268, 629813, 332503, 180476}
+[2021-04-21 03:43:40,363] [IDManager] [INFO] Newly generated EphID is: dd4b9da4875d61fa9ddae34aaa00317a
+[2021-04-21 03:43:40,363] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:43:40 ====> Sending Share: 0x5550f87a6851c1b090221c97c569c8ef...part: 1/6 ====>
+[2021-04-21 03:43:50,373] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:43:50 ====> Sending Share: 0x48496114075016e44bbdab1ee2befaa0...part: 2/6 ====>
+[2021-04-21 03:44:00,268] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 92ec04f678da003c346fe7ca229d6fcc from: f6e4f3 <=====
+Total 1 received
+
+[2021-04-21 03:44:00,268] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:44:00,383] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:44:00 ====> Sending Share: 0xb634d77164586195d0ad8ee001ffc68d...part: 3/6 ====>
+[2021-04-21 03:44:10,391] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:44:10 ====> Sending Share: 0x9f135b927f6aa1c51ef1c7db232c2cb7...part: 4/6 ====>
+[2021-04-21 03:44:20,268] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 65967a714e7b8ba4784e2840bc56440d from: f6e4f3 <=====
+Total 2 received
+
+[2021-04-21 03:44:20,269] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:44:20,400] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:44:20 ====> Sending Share: 0x02e4ed775886d772368a561046442d1e...part: 5/6 ====>
+[2021-04-21 03:44:30,410] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:44:30 ====> Sending Share: 0xe1a98d1fefad029d1777397f6b47c7c0...part: 6/6 ====>
+[2021-04-21 03:44:40,269] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: f601dedb30af41e4432fc32f4d59fe67 from: f6e4f3 <=====
+Total 3 received
+
+[2021-04-21 03:44:40,269] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:44:40,270] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: f6e4f3 == f6e4f3
+Reconstructed EphID is: 0x7e027e6aafca9fab779501cb802f81a5 with hash tag 0xf6e4f3
+
+Now Generate the EnctID
+[2021-04-21 03:44:40,270] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: b08b8837b44eb5bcbfedcdfcfac4ef71
+[2021-04-21 03:44:40,270] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: b08b8837b44eb5bcbfedcdfcfac4ef71 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data b08b8837b44eb5bcbfedcdfcfac4ef71 into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{505088, 249633, 146275, 746986, 662603, 242796, 671311, 142448, 753268, 629813, 332503, 180476}
+[2021-04-21 03:44:40,418] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xdd4b9da4875d61fa9ddae34aaa00317a
+
+====> Sent Share: 0x5550f87a6851c1b090221c97c569c8ef...part: 1/6 ====>
+====> Sent Share: 0x48496114075016e44bbdab1ee2befaa0...part: 2/6 ====>
+====> Sent Share: 0xb634d77164586195d0ad8ee001ffc68d...part: 3/6 ====>
+====> Sent Share: 0x9f135b927f6aa1c51ef1c7db232c2cb7...part: 4/6 ====>
+====> Sent Share: 0x02e4ed775886d772368a561046442d1e...part: 5/6 ====>
+====> Sent Share: 0xe1a98d1fefad029d1777397f6b47c7c0...part: 6/6 ====>
+
+[2021-04-21 03:45:00,271] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 442e32341f7522fb9514b895d5a89edc from: f6e4f3 <=====
+Total 1 received
+
+[2021-04-21 03:45:00,271] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:45:20,271] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 501b747c1acd2eea6dfd08745542256a from: f6e4f3 <=====
+Total 2 received
+
+[2021-04-21 03:45:20,271] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:45:40,272] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 19c9a5b322b765b0cde8b2cacc269212 from: f6e4f3 <=====
+Total 3 received
+
+[2021-04-21 03:45:40,272] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:45:40,272] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: f6e4f3 == f6e4f3
+Reconstructed EphID is: 0x7e027e6aafca9fab779501cb802f81a5 with hash tag 0xf6e4f3
+
+Now Generate the EnctID
+[2021-04-21 03:45:40,272] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: b08b8837b44eb5bcbfedcdfcfac4ef71
+[2021-04-21 03:45:40,273] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: b08b8837b44eb5bcbfedcdfcfac4ef71 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data b08b8837b44eb5bcbfedcdfcfac4ef71 into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{505088, 249633, 146275, 746986, 662603, 242796, 671311, 142448, 753268, 629813, 332503, 180476}
+[2021-04-21 03:45:40,419] [IDManager] [INFO] Newly generated EphID is: ba7c5db8e2233823e96237965c5b3566
+[2021-04-21 03:45:40,419] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:45:40 ====> Sending Share: 0xb8aa953ec172ec5ee7dbe0b94be9755f...part: 1/6 ====>
+[2021-04-21 03:45:50,426] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:45:50 ====> Sending Share: 0x5becb6c952bc7a300d9ecd1e86096a00...part: 2/6 ====>
+[2021-04-21 03:46:00,273] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: bc46b3bd8662dbaa113e58f9d9dc3476 from: 3ac27a <=====
+Total 1 received
+
+[2021-04-21 03:46:00,273] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:46:00,434] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:46:00 ====> Sending Share: 0xa442c25895ffe1975aaafcc60abb1348...part: 3/6 ====>
+[2021-04-21 03:46:10,442] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:46:10 ====> Sending Share: 0x91acb7ec8b3d2294cf006fafd9fe7138...part: 4/6 ====>
+[2021-04-21 03:46:20,274] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: be06d846921b0ff9b3d1815f0e5ffdfb from: 3ac27a <=====
+Total 2 received
+
+[2021-04-21 03:46:20,274] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:46:20,450] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:46:20 ====> Sending Share: 0x242a978532743d286a9f25dbf3d383d0...part: 5/6 ====>
+[2021-04-21 03:46:30,458] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:46:30 ====> Sending Share: 0x5bbc61228ba531522d871f4a583a4b0f...part: 6/6 ====>
+[2021-04-21 03:46:40,275] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: b5fb065b1063cd7d5ef6a3391cf62d00 from: 3ac27a <=====
+Total 3 received
+
+[2021-04-21 03:46:40,275] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:46:40,275] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 3ac27a == 3ac27a
+Reconstructed EphID is: 0xb0ba98bfed3b308e773d2a097f6ad071 with hash tag 0x3ac27a
+
+Now Generate the EnctID
+[2021-04-21 03:46:40,275] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 25d0152bfd5527dbfa2eaacb410609f9
+[2021-04-21 03:46:40,275] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 25d0152bfd5527dbfa2eaacb410609f9 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 25d0152bfd5527dbfa2eaacb410609f9 into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{505088, 249633, 45120, 146275, 25065, 746986, 662603, 242796, 671311, 142448, 753268, 629813, 332503, 180476, 731293}
+[2021-04-21 03:46:40,467] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xba7c5db8e2233823e96237965c5b3566
+
+====> Sent Share: 0xb8aa953ec172ec5ee7dbe0b94be9755f...part: 1/6 ====>
+====> Sent Share: 0x5becb6c952bc7a300d9ecd1e86096a00...part: 2/6 ====>
+====> Sent Share: 0xa442c25895ffe1975aaafcc60abb1348...part: 3/6 ====>
+====> Sent Share: 0x91acb7ec8b3d2294cf006fafd9fe7138...part: 4/6 ====>
+====> Sent Share: 0x242a978532743d286a9f25dbf3d383d0...part: 5/6 ====>
+====> Sent Share: 0x5bbc61228ba531522d871f4a583a4b0f...part: 6/6 ====>
+
+[2021-04-21 03:47:10,276] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 887f7f2664a6e420cef6d34bc859bb8a from: 3ac27a <=====
+Total 1 received
+
+[2021-04-21 03:47:10,276] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:47:40,468] [IDManager] [INFO] Newly generated EphID is: ae58cf49f0666c980b8fb05c068c1189
+[2021-04-21 03:47:40,468] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:47:40 ====> Sending Share: 0x273af37ef6a10cf24014e7a7095cf189...part: 1/6 ====>
+[2021-04-21 03:47:50,468] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 1da7797b7f12d417ed77ab3a3f676177 from: 3c841f <=====
+Total 1 received
+
+[2021-04-21 03:47:50,468] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:47:50,478] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:47:50 ====> Sending Share: 0x652c37b03cba2260f55a2aa712bb79b6...part: 2/6 ====>
+[2021-04-21 03:48:00,487] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:48:00 ====> Sending Share: 0x682c9bddc2b1ace42b5f795c22a7aa11...part: 3/6 ====>
+[2021-04-21 03:48:10,469] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: d9d2c32026a2d136bdbb58db1ba7eda4 from: 3c841f <=====
+Total 2 received
+
+[2021-04-21 03:48:10,469] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:48:10,495] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:48:10 ====> Sending Share: 0x303c20078887ac7be224d3c63921829a...part: 4/6 ====>
+[2021-04-21 03:48:20,504] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:48:20 ====> Sending Share: 0xbd5ac42d8e3c212819aa39e556290350...part: 5/6 ====>
+[2021-04-21 03:48:30,470] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: d186e74e061daa2613fd101e69d61d1c from: 3c841f <=====
+Total 3 received
+
+[2021-04-21 03:48:30,470] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:48:30,470] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 3c841f == 3c841f
+Reconstructed EphID is: 0x9d050a600f6db2c9a332073bd5147893 with hash tag 0x3c841f
+
+Now Generate the EnctID
+[2021-04-21 03:48:30,471] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: adae4a59c6e342bce9127ed92f1ee27c
+[2021-04-21 03:48:30,471] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: adae4a59c6e342bce9127ed92f1ee27c to the DBF (murmur3 hashing with 3 hashes)
+Inserting data adae4a59c6e342bce9127ed92f1ee27c into DBF#0 with id DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current Bloomfilter DBF-1ab98680a1ff11eba519a97deeebcbd7 state is :{505088, 249633, 45120, 146275, 25065, 746986, 662603, 242796, 671311, 142448, 753268, 629813, 93045, 332503, 180476, 731293, 416318, 700735}
+[2021-04-21 03:48:30,514] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:48:30 ====> Sending Share: 0x0f88884fd3cf0ae8d1efabb979be2c35...part: 6/6 ====>
+[2021-04-21 03:48:40,256] [BFManager] [INFO] 
+------------------> Segment 7-B <------------------
+Updating the DBF pool...Removing the oldest DBF and add a new DBF
+
+Current DBF is DBF-1ab98680a1ff11eba519a97deeebcbd7
+Current DBF pool has: ['DBF-1ab98680a1ff11eba519a97deeebcbd7']
+[2021-04-21 03:48:40,522] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xae58cf49f0666c980b8fb05c068c1189
+
+====> Sent Share: 0x273af37ef6a10cf24014e7a7095cf189...part: 1/6 ====>
+====> Sent Share: 0x652c37b03cba2260f55a2aa712bb79b6...part: 2/6 ====>
+====> Sent Share: 0x682c9bddc2b1ace42b5f795c22a7aa11...part: 3/6 ====>
+====> Sent Share: 0x303c20078887ac7be224d3c63921829a...part: 4/6 ====>
+====> Sent Share: 0xbd5ac42d8e3c212819aa39e556290350...part: 5/6 ====>
+====> Sent Share: 0x0f88884fd3cf0ae8d1efabb979be2c35...part: 6/6 ====>
+
+[2021-04-21 03:48:50,472] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 04c3e6051d835ee5f03cd10429f1efdf from: 3c841f <=====
+Total 1 received
+
+[2021-04-21 03:48:50,472] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:49:10,472] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 7389bf456cd3ef76527a9b8c5bfb65eb from: 3c841f <=====
+Total 2 received
+
+[2021-04-21 03:49:10,473] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:49:30,473] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 1dd8730ef40f5bd73ab66fb6fff27f42 from: 3c841f <=====
+Total 3 received
+
+[2021-04-21 03:49:30,473] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:49:30,473] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 3c841f == 3c841f
+Reconstructed EphID is: 0x9d050a600f6db2c9a332073bd5147893 with hash tag 0x3c841f
+
+Now Generate the EnctID
+[2021-04-21 03:49:30,474] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: adae4a59c6e342bce9127ed92f1ee27c
+[2021-04-21 03:49:30,474] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: adae4a59c6e342bce9127ed92f1ee27c to the DBF (murmur3 hashing with 3 hashes)
+Inserting data adae4a59c6e342bce9127ed92f1ee27c into DBF#1 with id DBF-a425bc94a20011eba519a97deeebcbd7
+Current Bloomfilter DBF-a425bc94a20011eba519a97deeebcbd7 state is :{93045, 416318, 700735}
+[2021-04-21 03:49:40,524] [IDManager] [INFO] Newly generated EphID is: d5d8cd0ec05f6c729ff1eb9d771c6265
+[2021-04-21 03:49:40,524] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:49:40 ====> Sending Share: 0xc128d36e9e8f938aff60dc8cb6f778ec...part: 1/6 ====>
+[2021-04-21 03:49:50,525] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: cd497cb210a2f68721a2282d5abb56d8 from: 46f50e <=====
+Total 1 received
+
+[2021-04-21 03:49:50,525] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:49:50,534] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:49:50 ====> Sending Share: 0x616d84054aa806731ade5eccf60dab6a...part: 2/6 ====>
+[2021-04-21 03:50:00,542] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:50:00 ====> Sending Share: 0xb6a6ded2c4a8c52af26a725e345ef9de...part: 3/6 ====>
+[2021-04-21 03:50:10,526] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 8f92173f5f39f4cd6b215fc48e778e0e from: 46f50e <=====
+Total 2 received
+
+[2021-04-21 03:50:10,526] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:50:10,550] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:50:10 ====> Sending Share: 0xc0d4e3d70c91cfb28605174071eb6449...part: 4/6 ====>
+[2021-04-21 03:50:20,558] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:50:20 ====> Sending Share: 0x7ff7931222632609d5ae4d73aeb2eaab...part: 5/6 ====>
+[2021-04-21 03:50:30,567] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:50:30 ====> Sending Share: 0xf40eec84061cc830e16614f7eab58d03...part: 6/6 ====>
+[2021-04-21 03:50:40,527] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 78324f78aa1f00768a05a16d645b041b from: 46f50e <=====
+Total 3 received
+
+[2021-04-21 03:50:40,527] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:50:40,527] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 03:50:40,574] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xd5d8cd0ec05f6c729ff1eb9d771c6265
+
+====> Sent Share: 0xc128d36e9e8f938aff60dc8cb6f778ec...part: 1/6 ====>
+====> Sent Share: 0x616d84054aa806731ade5eccf60dab6a...part: 2/6 ====>
+====> Sent Share: 0xb6a6ded2c4a8c52af26a725e345ef9de...part: 3/6 ====>
+====> Sent Share: 0xc0d4e3d70c91cfb28605174071eb6449...part: 4/6 ====>
+====> Sent Share: 0x7ff7931222632609d5ae4d73aeb2eaab...part: 5/6 ====>
+====> Sent Share: 0xf40eec84061cc830e16614f7eab58d03...part: 6/6 ====>
+
+[2021-04-21 03:51:00,527] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 9e89ed24a66d0dd95f6aab7f068242f2 from: 46f50e <=====
+Total 4 received
+
+[2021-04-21 03:51:00,528] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:51:00,528] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 03:51:20,529] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: e63be13031f82045b8c6fbb978228454 from: 46f50e <=====
+Total 5 received
+
+[2021-04-21 03:51:20,529] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:51:20,529] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 03:51:40,575] [IDManager] [INFO] Newly generated EphID is: 6d489ffa4ead336698480996a88aedaa
+[2021-04-21 03:51:40,575] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:51:40 ====> Sending Share: 0x59474a5d060f4563c84092be42e4a995...part: 1/6 ====>
+[2021-04-21 03:51:50,575] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 891fa9f324b3a1edcfecb0bb43ad6f7b from: 287f44 <=====
+Total 1 received
+
+[2021-04-21 03:51:50,575] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:51:50,582] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:51:50 ====> Sending Share: 0x49d0414be141905f151f56c5b8272d96...part: 2/6 ====>
+[2021-04-21 03:52:00,590] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:52:00 ====> Sending Share: 0x3ee384c6e04414587ee455ad085279ad...part: 3/6 ====>
+[2021-04-21 03:52:10,576] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 2aee0228b673b4784f0fefb9ffe18e88 from: 287f44 <=====
+Total 2 received
+
+[2021-04-21 03:52:10,576] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:52:10,598] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:52:10 ====> Sending Share: 0x388114ce0316d150058f8f7433668dda...part: 4/6 ====>
+[2021-04-21 03:52:20,606] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:52:20 ====> Sending Share: 0x36a8f16149b9c745a921041b39636a1d...part: 5/6 ====>
+[2021-04-21 03:52:30,577] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 78df7e024f8e57f9c4b526638b32bdd2 from: 287f44 <=====
+Total 3 received
+
+[2021-04-21 03:52:30,577] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:52:30,577] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 287f44 == 287f44
+Reconstructed EphID is: 0x937475619a4e205a474b6967569660ac with hash tag 0x287f44
+
+Now Generate the EnctID
+[2021-04-21 03:52:30,577] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 40243bfebf9dbae22a3628ae5269813c
+[2021-04-21 03:52:30,578] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 40243bfebf9dbae22a3628ae5269813c to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 40243bfebf9dbae22a3628ae5269813c into DBF#1 with id DBF-a425bc94a20011eba519a97deeebcbd7
+Current Bloomfilter DBF-a425bc94a20011eba519a97deeebcbd7 state is :{66405, 536626, 93045, 570044, 416318, 700735}
+[2021-04-21 03:52:30,614] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:52:30 ====> Sending Share: 0x395b1a80b42cf6396998b3a21a490e76...part: 6/6 ====>
+[2021-04-21 03:52:40,622] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x6d489ffa4ead336698480996a88aedaa
+
+====> Sent Share: 0x59474a5d060f4563c84092be42e4a995...part: 1/6 ====>
+====> Sent Share: 0x49d0414be141905f151f56c5b8272d96...part: 2/6 ====>
+====> Sent Share: 0x3ee384c6e04414587ee455ad085279ad...part: 3/6 ====>
+====> Sent Share: 0x388114ce0316d150058f8f7433668dda...part: 4/6 ====>
+====> Sent Share: 0x36a8f16149b9c745a921041b39636a1d...part: 5/6 ====>
+====> Sent Share: 0x395b1a80b42cf6396998b3a21a490e76...part: 6/6 ====>
+
+[2021-04-21 03:52:50,578] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 72f41d7ff0038c7230dc54b7e5a0fd5a from: 287f44 <=====
+Total 1 received
+
+[2021-04-21 03:52:50,578] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:53:10,579] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 192be0a197d351e193857ab70f2c4d20 from: 287f44 <=====
+Total 2 received
+
+[2021-04-21 03:53:10,579] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:53:40,623] [IDManager] [INFO] Newly generated EphID is: 943ba71e9fd4aeb53860c86e09e71943
+[2021-04-21 03:53:40,623] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:53:40 ====> Sending Share: 0x5d4db987fe8ce3c08b547c1b29338067...part: 1/6 ====>
+[2021-04-21 03:53:50,623] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: e6f3a2b96a78c0075200cffd4e82d852 from: 9cdb1a <=====
+Total 1 received
+
+[2021-04-21 03:53:50,623] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:53:50,631] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:53:50 ====> Sending Share: 0x76f40cb0b5302679c598dd8550030757...part: 2/6 ====>
+[2021-04-21 03:54:00,640] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:54:00 ====> Sending Share: 0xe12ea098c3be76e0e72decac7e55ae13...part: 3/6 ====>
+[2021-04-21 03:54:10,624] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 0c0a60efa4c0c0a5b4c59bbb7ad50791 from: 9cdb1a <=====
+Total 2 received
+
+[2021-04-21 03:54:10,624] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:54:10,650] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:54:10 ====> Sending Share: 0x9bfd75402a37d4f5f013a990b42b749c...part: 4/6 ====>
+[2021-04-21 03:54:20,658] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:54:20 ====> Sending Share: 0xa7608aa6e89c40b8e04a1431f1845af1...part: 5/6 ====>
+[2021-04-21 03:54:30,625] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: ad4bcf07dfed7a1344ad634a27995965 from: 9cdb1a <=====
+Total 3 received
+
+[2021-04-21 03:54:30,625] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:54:30,625] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 9cdb1a == 9cdb1a
+Reconstructed EphID is: 0x3e079465311578381c5f000fa2a2cbab with hash tag 0x9cdb1a
+
+Now Generate the EnctID
+[2021-04-21 03:54:30,625] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: d115c3f7b37e7521c8106f4ea862e7d5
+[2021-04-21 03:54:30,626] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: d115c3f7b37e7521c8106f4ea862e7d5 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data d115c3f7b37e7521c8106f4ea862e7d5 into DBF#1 with id DBF-a425bc94a20011eba519a97deeebcbd7
+Current Bloomfilter DBF-a425bc94a20011eba519a97deeebcbd7 state is :{342303, 66405, 54150, 210888, 536626, 93045, 570044, 416318, 700735}
+[2021-04-21 03:54:30,666] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:54:30 ====> Sending Share: 0x0357e0ccfeebba29b7d12c9036606113...part: 6/6 ====>
+[2021-04-21 03:54:40,674] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x943ba71e9fd4aeb53860c86e09e71943
+
+====> Sent Share: 0x5d4db987fe8ce3c08b547c1b29338067...part: 1/6 ====>
+====> Sent Share: 0x76f40cb0b5302679c598dd8550030757...part: 2/6 ====>
+====> Sent Share: 0xe12ea098c3be76e0e72decac7e55ae13...part: 3/6 ====>
+====> Sent Share: 0x9bfd75402a37d4f5f013a990b42b749c...part: 4/6 ====>
+====> Sent Share: 0xa7608aa6e89c40b8e04a1431f1845af1...part: 5/6 ====>
+====> Sent Share: 0x0357e0ccfeebba29b7d12c9036606113...part: 6/6 ====>
+
+[2021-04-21 03:54:50,626] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: cab7ed021bfeec5001b826a954cfcdd0 from: 9cdb1a <=====
+Total 1 received
+
+[2021-04-21 03:54:50,626] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:55:10,627] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 644ebade58f5175bebe5e5d9027864d2 from: 9cdb1a <=====
+Total 2 received
+
+[2021-04-21 03:55:10,627] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:55:30,628] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 7a10389c96cffb370336a0d930931e6a from: 9cdb1a <=====
+Total 3 received
+
+[2021-04-21 03:55:30,629] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:55:30,630] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 9cdb1a == 9cdb1a
+Reconstructed EphID is: 0x3e079465311578381c5f000fa2a2cbab with hash tag 0x9cdb1a
+
+Now Generate the EnctID
+[2021-04-21 03:55:30,631] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: d115c3f7b37e7521c8106f4ea862e7d5
+[2021-04-21 03:55:30,631] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: d115c3f7b37e7521c8106f4ea862e7d5 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data d115c3f7b37e7521c8106f4ea862e7d5 into DBF#1 with id DBF-a425bc94a20011eba519a97deeebcbd7
+Current Bloomfilter DBF-a425bc94a20011eba519a97deeebcbd7 state is :{342303, 66405, 54150, 210888, 536626, 93045, 570044, 416318, 700735}
+[2021-04-21 03:55:40,674] [IDManager] [INFO] Newly generated EphID is: 04745f12628a76532aa66282458edeb4
+[2021-04-21 03:55:40,675] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:55:40 ====> Sending Share: 0x88a6f9bd01a15ce6feecf7649b99cbde...part: 1/6 ====>
+[2021-04-21 03:55:50,675] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 1822d8ed3d0ce085b43e0c8e69f36459 from: 7f2ca0 <=====
+Total 1 received
+
+[2021-04-21 03:55:50,675] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:55:50,682] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:55:50 ====> Sending Share: 0x6da30d5c8fa84e048cc5b3390b3453bd...part: 2/6 ====>
+[2021-04-21 03:56:00,690] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:56:00 ====> Sending Share: 0xb36899f10c9f49abd43095ff945e7650...part: 3/6 ====>
+[2021-04-21 03:56:10,676] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: b73abecc58b4391b201048f3f753d63f from: 7f2ca0 <=====
+Total 2 received
+
+[2021-04-21 03:56:10,676] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:56:10,698] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:56:10 ====> Sending Share: 0x59f79f7a78864fdcd52d9fb837183398...part: 4/6 ====>
+[2021-04-21 03:56:20,708] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:56:20 ====> Sending Share: 0x61501df8d35d60978fbcd062f3618b94...part: 5/6 ====>
+[2021-04-21 03:56:30,676] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: f4d5cf31d59ccfacfdd5ae3590f42330 from: 7f2ca0 <=====
+Total 3 received
+
+[2021-04-21 03:56:30,676] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:56:30,677] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 7f2ca0 == 7f2ca0
+Reconstructed EphID is: 0x178e1d9482a6c5ecba5ef904e8d2cd7d with hash tag 0x7f2ca0
+
+Now Generate the EnctID
+[2021-04-21 03:56:30,677] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 1f0423eb55ebc9607437ee604f6896b7
+[2021-04-21 03:56:30,677] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 1f0423eb55ebc9607437ee604f6896b7 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 1f0423eb55ebc9607437ee604f6896b7 into DBF#1 with id DBF-a425bc94a20011eba519a97deeebcbd7
+Current Bloomfilter DBF-a425bc94a20011eba519a97deeebcbd7 state is :{342303, 66405, 54150, 210888, 577098, 536626, 93045, 494741, 241048, 570044, 416318, 700735}
+[2021-04-21 03:56:30,718] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:56:30 ====> Sending Share: 0xc972156c1d247bdc03de27ffc93a7e44...part: 6/6 ====>
+[2021-04-21 03:56:40,726] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x04745f12628a76532aa66282458edeb4
+
+====> Sent Share: 0x88a6f9bd01a15ce6feecf7649b99cbde...part: 1/6 ====>
+====> Sent Share: 0x6da30d5c8fa84e048cc5b3390b3453bd...part: 2/6 ====>
+====> Sent Share: 0xb36899f10c9f49abd43095ff945e7650...part: 3/6 ====>
+====> Sent Share: 0x59f79f7a78864fdcd52d9fb837183398...part: 4/6 ====>
+====> Sent Share: 0x61501df8d35d60978fbcd062f3618b94...part: 5/6 ====>
+====> Sent Share: 0xc972156c1d247bdc03de27ffc93a7e44...part: 6/6 ====>
+
+[2021-04-21 03:56:50,677] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: d0f40a1db3c6a43b4d8e3c5336d44b2c from: 7f2ca0 <=====
+Total 1 received
+
+[2021-04-21 03:56:50,678] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:57:10,678] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 4b956f8ff331b6c60f39f34ce8f44e33 from: 7f2ca0 <=====
+Total 2 received
+
+[2021-04-21 03:57:10,678] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:57:30,679] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 64b9ff8893de074d42d8d322a7542c44 from: 7f2ca0 <=====
+Total 3 received
+
+[2021-04-21 03:57:30,679] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:57:30,679] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 7f2ca0 == 7f2ca0
+Reconstructed EphID is: 0x178e1d9482a6c5ecba5ef904e8d2cd7d with hash tag 0x7f2ca0
+
+Now Generate the EnctID
+[2021-04-21 03:57:30,680] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 1f0423eb55ebc9607437ee604f6896b7
+[2021-04-21 03:57:30,680] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 1f0423eb55ebc9607437ee604f6896b7 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 1f0423eb55ebc9607437ee604f6896b7 into DBF#1 with id DBF-a425bc94a20011eba519a97deeebcbd7
+Current Bloomfilter DBF-a425bc94a20011eba519a97deeebcbd7 state is :{342303, 66405, 54150, 210888, 577098, 536626, 93045, 494741, 241048, 570044, 416318, 700735}
+[2021-04-21 03:57:40,727] [IDManager] [INFO] Newly generated EphID is: 400199729934088921d5752fb1c6ab4c
+[2021-04-21 03:57:40,727] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:57:40 ====> Sending Share: 0xd0bd54cec00d15604619652827dab684...part: 1/6 ====>
+[2021-04-21 03:57:50,727] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: f11b9e1b0ed6ba14b6b4537395e1d6c1 from: fd6eb8 <=====
+Total 1 received
+
+[2021-04-21 03:57:50,728] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:57:50,734] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:57:50 ====> Sending Share: 0x164cfa54ddd87ee6e0f88fb452ed1999...part: 2/6 ====>
+[2021-04-21 03:58:00,742] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:58:00 ====> Sending Share: 0x10b08a04f296451cf272f4d432fdd489...part: 3/6 ====>
+[2021-04-21 03:58:10,728] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 5e5588ddf7998039223c20b6c3417a92 from: fd6eb8 <=====
+Total 2 received
+
+[2021-04-21 03:58:10,729] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:58:10,750] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:58:10 ====> Sending Share: 0xbfe803defe4668027a889487c80ce754...part: 4/6 ====>
+[2021-04-21 03:58:20,758] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:58:20 ====> Sending Share: 0x23f367e300e8e79779396ecf121a51fc...part: 5/6 ====>
+[2021-04-21 03:58:30,766] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:58:30 ====> Sending Share: 0x3cd2b610fa7dc3dbee8583aa1126147f...part: 6/6 ====>
+[2021-04-21 03:58:40,257] [BFManager] [INFO] 
+------------------> Segment 7-B <------------------
+Updating the DBF pool...Removing the oldest DBF and add a new DBF
+
+Current DBF is DBF-a425bc94a20011eba519a97deeebcbd7
+Current DBF pool has: ['DBF-1ab98680a1ff11eba519a97deeebcbd7', 'DBF-a425bc94a20011eba519a97deeebcbd7']
+[2021-04-21 03:58:40,729] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: df675694063f042f72df510b0334d265 from: fd6eb8 <=====
+Total 3 received
+
+[2021-04-21 03:58:40,729] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:58:40,729] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 03:58:40,774] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x400199729934088921d5752fb1c6ab4c
+
+====> Sent Share: 0xd0bd54cec00d15604619652827dab684...part: 1/6 ====>
+====> Sent Share: 0x164cfa54ddd87ee6e0f88fb452ed1999...part: 2/6 ====>
+====> Sent Share: 0x10b08a04f296451cf272f4d432fdd489...part: 3/6 ====>
+====> Sent Share: 0xbfe803defe4668027a889487c80ce754...part: 4/6 ====>
+====> Sent Share: 0x23f367e300e8e79779396ecf121a51fc...part: 5/6 ====>
+====> Sent Share: 0x3cd2b610fa7dc3dbee8583aa1126147f...part: 6/6 ====>
+
+[2021-04-21 03:59:00,730] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: f33f39872c21c20157fab41c15c88668 from: fd6eb8 <=====
+Total 4 received
+
+[2021-04-21 03:59:00,731] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:59:00,731] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 03:59:20,732] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: e94bc48a66647d0d1047491c74c2ea7c from: fd6eb8 <=====
+Total 5 received
+
+[2021-04-21 03:59:20,732] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 03:59:20,732] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 03:59:40,775] [IDManager] [INFO] Newly generated EphID is: c26205f08182b1c1c90da24ab05b1bf4
+[2021-04-21 03:59:40,775] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:59:40 ====> Sending Share: 0x14ef493fc3a9a8162fc93bee98cb64a4...part: 1/6 ====>
+[2021-04-21 03:59:50,775] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 11022c98886b6e4fdc96b0822c6f8f12 from: 8813bc <=====
+Total 1 received
+
+[2021-04-21 03:59:50,775] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 03:59:50,782] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+03:59:50 ====> Sending Share: 0x532ae70bbdae693c17c588ff22ce6b0d...part: 2/6 ====>
+[2021-04-21 04:00:00,790] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:00:00 ====> Sending Share: 0x7d14df546f90f5338102897c4e642f30...part: 3/6 ====>
+[2021-04-21 04:00:10,776] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: a11922d78f503740a3685c8e78780ed5 from: 8813bc <=====
+Total 2 received
+
+[2021-04-21 04:00:10,776] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:00:10,798] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:00:10 ====> Sending Share: 0x92ad3219d9514bfc6b803d661b8cb10d...part: 4/6 ====>
+[2021-04-21 04:00:20,806] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:00:20 ====> Sending Share: 0x93f3df5bfaef6d96d73ea4bc8a47f0a4...part: 5/6 ====>
+[2021-04-21 04:00:30,777] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 4b1f569d52e0693e5c1d7d9ed73f72f3 from: 8813bc <=====
+Total 3 received
+
+[2021-04-21 04:00:30,777] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:00:30,777] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 8813bc == 8813bc
+Reconstructed EphID is: 0x9ada73e03e320e6c07a87979f325f3a8 with hash tag 0x8813bc
+
+Now Generate the EnctID
+[2021-04-21 04:00:30,777] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 19e638835285477a3242d33cbdb9320d
+[2021-04-21 04:00:30,777] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 19e638835285477a3242d33cbdb9320d to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 19e638835285477a3242d33cbdb9320d into DBF#2 with id DBF-09c68d5ca20211eba519a97deeebcbd7
+Current Bloomfilter DBF-09c68d5ca20211eba519a97deeebcbd7 state is :{531536, 318930, 622503}
+[2021-04-21 04:00:30,814] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:00:30 ====> Sending Share: 0x80e8e71ad46b5a02c43dbf7f9a95edf5...part: 6/6 ====>
+[2021-04-21 04:00:40,822] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xc26205f08182b1c1c90da24ab05b1bf4
+
+====> Sent Share: 0x14ef493fc3a9a8162fc93bee98cb64a4...part: 1/6 ====>
+====> Sent Share: 0x532ae70bbdae693c17c588ff22ce6b0d...part: 2/6 ====>
+====> Sent Share: 0x7d14df546f90f5338102897c4e642f30...part: 3/6 ====>
+====> Sent Share: 0x92ad3219d9514bfc6b803d661b8cb10d...part: 4/6 ====>
+====> Sent Share: 0x93f3df5bfaef6d96d73ea4bc8a47f0a4...part: 5/6 ====>
+====> Sent Share: 0x80e8e71ad46b5a02c43dbf7f9a95edf5...part: 6/6 ====>
+
+[2021-04-21 04:00:50,778] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 0f14c7e9d31c044906b613b348c5bb6b from: 8813bc <=====
+Total 1 received
+
+[2021-04-21 04:00:50,778] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:01:10,778] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: ecf976bd10030860a3321ecbcd0ae83c from: 8813bc <=====
+Total 2 received
+
+[2021-04-21 04:01:10,778] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:01:40,823] [IDManager] [INFO] Newly generated EphID is: c281b81a7cdc2852519730eda575ef47
+[2021-04-21 04:01:40,823] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:01:40 ====> Sending Share: 0x2e356eb840cc5b071fa1e41b92c755bf...part: 1/6 ====>
+[2021-04-21 04:01:50,824] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: f5d33709f965aaadc2897191743abd98 from: 9e2709 <=====
+Total 1 received
+
+[2021-04-21 04:01:50,824] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:01:50,830] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:01:50 ====> Sending Share: 0xfe631e9d69ea3e06d062e72688b2bec4...part: 2/6 ====>
+[2021-04-21 04:02:00,838] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:02:00 ====> Sending Share: 0x330ac7c9f835d15163da3a0e87382a59...part: 3/6 ====>
+[2021-04-21 04:02:10,824] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: d465138d4d889224f450299870ef6d1e from: 9e2709 <=====
+Total 2 received
+
+[2021-04-21 04:02:10,825] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:02:10,846] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:02:10 ====> Sending Share: 0xcc2c6a3debaf14e6da07dcd38e57987b...part: 4/6 ====>
+[2021-04-21 04:02:20,855] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:02:20 ====> Sending Share: 0xc9c805f9445608c732ebcf759e11092c...part: 5/6 ====>
+[2021-04-21 04:02:30,825] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 9b2ef58c497b065aed3f2ae00d88847b from: 9e2709 <=====
+Total 3 received
+
+[2021-04-21 04:02:30,825] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:02:30,826] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 9e2709 == 9e2709
+Reconstructed EphID is: 0xff7960024d124ff557eb02cb176a75e9 with hash tag 0x9e2709
+
+Now Generate the EnctID
+[2021-04-21 04:02:30,827] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 2f37b894c41d0159019a915f4a190fd6
+[2021-04-21 04:02:30,827] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 2f37b894c41d0159019a915f4a190fd6 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 2f37b894c41d0159019a915f4a190fd6 into DBF#2 with id DBF-09c68d5ca20211eba519a97deeebcbd7
+Current Bloomfilter DBF-09c68d5ca20211eba519a97deeebcbd7 state is :{602214, 370631, 622503, 435531, 531536, 318930}
+[2021-04-21 04:02:30,862] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:02:30 ====> Sending Share: 0x2bdd9afc022aacf26e8611f4b6647c6c...part: 6/6 ====>
+[2021-04-21 04:02:40,870] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xc281b81a7cdc2852519730eda575ef47
+
+====> Sent Share: 0x2e356eb840cc5b071fa1e41b92c755bf...part: 1/6 ====>
+====> Sent Share: 0xfe631e9d69ea3e06d062e72688b2bec4...part: 2/6 ====>
+====> Sent Share: 0x330ac7c9f835d15163da3a0e87382a59...part: 3/6 ====>
+====> Sent Share: 0xcc2c6a3debaf14e6da07dcd38e57987b...part: 4/6 ====>
+====> Sent Share: 0xc9c805f9445608c732ebcf759e11092c...part: 5/6 ====>
+====> Sent Share: 0x2bdd9afc022aacf26e8611f4b6647c6c...part: 6/6 ====>
+
+[2021-04-21 04:02:50,828] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 4a30dd06ed3d074fad5675684a0603af from: 9e2709 <=====
+Total 1 received
+
+[2021-04-21 04:02:50,828] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:03:10,829] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: e16ac9fd38ce9503349609312667eab9 from: 9e2709 <=====
+Total 2 received
+
+[2021-04-21 04:03:10,829] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:03:30,829] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 60dcbc6f2c2faf7582fde63aa2ae399b from: 9e2709 <=====
+Total 3 received
+
+[2021-04-21 04:03:30,830] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:03:30,830] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 9e2709 == 9e2709
+Reconstructed EphID is: 0xff7960024d124ff557eb02cb176a75e9 with hash tag 0x9e2709
+
+Now Generate the EnctID
+[2021-04-21 04:03:30,831] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 2f37b894c41d0159019a915f4a190fd6
+[2021-04-21 04:03:30,832] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 2f37b894c41d0159019a915f4a190fd6 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 2f37b894c41d0159019a915f4a190fd6 into DBF#2 with id DBF-09c68d5ca20211eba519a97deeebcbd7
+Current Bloomfilter DBF-09c68d5ca20211eba519a97deeebcbd7 state is :{602214, 370631, 622503, 435531, 531536, 318930}
+[2021-04-21 04:03:40,871] [IDManager] [INFO] Newly generated EphID is: 1b7e60dc5d70890ee0360f9a3eac5605
+[2021-04-21 04:03:40,871] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:03:40 ====> Sending Share: 0xd83f782a7547e44cbf3f38f34cbc244f...part: 1/6 ====>
+[2021-04-21 04:03:50,871] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 42d04e4412cae8cbdf52126cc7177d9b from: e76593 <=====
+Total 1 received
+
+[2021-04-21 04:03:50,872] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:03:50,878] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:03:50 ====> Sending Share: 0xbc69ad5d6016c8013432c905a54d0f7d...part: 2/6 ====>
+[2021-04-21 04:04:00,887] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:04:00 ====> Sending Share: 0xc7fd00751ddd342c3f10bfd1485f178e...part: 3/6 ====>
+[2021-04-21 04:04:10,872] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: a21ae45eee7eebb5ac152c7cbdf9da97 from: e76593 <=====
+Total 2 received
+
+[2021-04-21 04:04:10,872] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:04:10,894] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:04:10 ====> Sending Share: 0xfaf97171ae9b28cddfd91d5635f23c82...part: 4/6 ====>
+[2021-04-21 04:04:20,896] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:04:20 ====> Sending Share: 0x555f00531250a5e6168be1946e067e5a...part: 5/6 ====>
+[2021-04-21 04:04:30,906] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:04:30 ====> Sending Share: 0xd72dad1948fdab74e3290c8bf09bdd14...part: 6/6 ====>
+[2021-04-21 04:04:40,873] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 2f7acd15774330c4d50d58bf45869631 from: e76593 <=====
+Total 3 received
+
+[2021-04-21 04:04:40,873] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:04:40,874] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:04:40,915] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x1b7e60dc5d70890ee0360f9a3eac5605
+
+====> Sent Share: 0xd83f782a7547e44cbf3f38f34cbc244f...part: 1/6 ====>
+====> Sent Share: 0xbc69ad5d6016c8013432c905a54d0f7d...part: 2/6 ====>
+====> Sent Share: 0xc7fd00751ddd342c3f10bfd1485f178e...part: 3/6 ====>
+====> Sent Share: 0xfaf97171ae9b28cddfd91d5635f23c82...part: 4/6 ====>
+====> Sent Share: 0x555f00531250a5e6168be1946e067e5a...part: 5/6 ====>
+====> Sent Share: 0xd72dad1948fdab74e3290c8bf09bdd14...part: 6/6 ====>
+
+[2021-04-21 04:05:00,874] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 5d901fb1245372ea31426af1d630f4ce from: e76593 <=====
+Total 4 received
+
+[2021-04-21 04:05:00,874] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:05:00,874] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:05:20,875] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: d093b1226c8274ce129d7a8544c8a94b from: e76593 <=====
+Total 5 received
+
+[2021-04-21 04:05:20,875] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:05:20,875] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:05:40,916] [IDManager] [INFO] Newly generated EphID is: 9057b08526e2f3929d70307fd91776b4
+[2021-04-21 04:05:40,916] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:05:40 ====> Sending Share: 0x0ccb33dfb826e5729b6fd15ad195f770...part: 1/6 ====>
+[2021-04-21 04:05:50,916] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: bafef533f6ea3ac95754ab0d5956d8c4 from: 6a24d3 <=====
+Total 1 received
+
+[2021-04-21 04:05:50,916] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:05:50,926] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:05:50 ====> Sending Share: 0x09f06e1241c02a8573146f657608b712...part: 2/6 ====>
+[2021-04-21 04:06:00,934] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:06:00 ====> Sending Share: 0x87c75f1cc3aec2cb245e0a9fc66fb59a...part: 3/6 ====>
+[2021-04-21 04:06:10,917] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: cabe77921b263696eb7e681323f87a37 from: 6a24d3 <=====
+Total 2 received
+
+[2021-04-21 04:06:10,917] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:06:10,942] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:06:10 ====> Sending Share: 0x865006ff3df2ae43af4ca309c2caf309...part: 4/6 ====>
+[2021-04-21 04:06:20,951] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:06:20 ====> Sending Share: 0x058a65b9b08becef13e038a36b1a6f5f...part: 5/6 ====>
+[2021-04-21 04:06:30,960] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:06:30 ====> Sending Share: 0x05767b4c1b7a7ecd5218cb6cbf5e2a9b...part: 6/6 ====>
+[2021-04-21 04:06:40,918] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 53e61bf2eb0c424e6e914701cc232ab3 from: 6a24d3 <=====
+Total 3 received
+
+[2021-04-21 04:06:40,918] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:06:40,918] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:06:40,970] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x9057b08526e2f3929d70307fd91776b4
+
+====> Sent Share: 0x0ccb33dfb826e5729b6fd15ad195f770...part: 1/6 ====>
+====> Sent Share: 0x09f06e1241c02a8573146f657608b712...part: 2/6 ====>
+====> Sent Share: 0x87c75f1cc3aec2cb245e0a9fc66fb59a...part: 3/6 ====>
+====> Sent Share: 0x865006ff3df2ae43af4ca309c2caf309...part: 4/6 ====>
+====> Sent Share: 0x058a65b9b08becef13e038a36b1a6f5f...part: 5/6 ====>
+====> Sent Share: 0x05767b4c1b7a7ecd5218cb6cbf5e2a9b...part: 6/6 ====>
+
+[2021-04-21 04:07:00,918] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: cd4e3df596b652385d7a68eaa9ac39bb from: 6a24d3 <=====
+Total 4 received
+
+[2021-04-21 04:07:00,919] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:07:00,919] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:07:40,970] [IDManager] [INFO] Newly generated EphID is: 9be6c9ba594399023ba9172dd186ff92
+[2021-04-21 04:07:40,971] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:07:40 ====> Sending Share: 0xfc336691e6212145b453cf179370976c...part: 1/6 ====>
+[2021-04-21 04:07:50,971] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 5436f6992058cb9c13806d8b61d85948 from: 477e9b <=====
+Total 1 received
+
+[2021-04-21 04:07:50,971] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:07:50,979] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:07:50 ====> Sending Share: 0x9328264b413d49ee10471670027d2dfa...part: 2/6 ====>
+[2021-04-21 04:08:00,989] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:08:00 ====> Sending Share: 0x60c508e66a9812fb4f82ed371eacc33b...part: 3/6 ====>
+[2021-04-21 04:08:10,972] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 8988cccf8928169cf72e75eb0d93ba7a from: 477e9b <=====
+Total 2 received
+
+[2021-04-21 04:08:10,972] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:08:10,998] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:08:10 ====> Sending Share: 0x650a0e6362317c6d7207536ce7ff572f...part: 4/6 ====>
+[2021-04-21 04:08:21,006] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:08:21 ====> Sending Share: 0x9ff736c22809864477d449115e74e9d6...part: 5/6 ====>
+[2021-04-21 04:08:30,972] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 31b1e76fe673e1f5aed66352f52b701a from: 477e9b <=====
+Total 3 received
+
+[2021-04-21 04:08:30,973] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:08:30,973] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 477e9b == 477e9b
+Reconstructed EphID is: 0x91bc64ccac0600f303cc4a33f1f94c83 with hash tag 0x477e9b
+
+Now Generate the EnctID
+[2021-04-21 04:08:30,974] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 5c22a34f7202ebf8d6490a4becf46fc4
+[2021-04-21 04:08:30,974] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 5c22a34f7202ebf8d6490a4becf46fc4 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 5c22a34f7202ebf8d6490a4becf46fc4 into DBF#2 with id DBF-09c68d5ca20211eba519a97deeebcbd7
+Current Bloomfilter DBF-09c68d5ca20211eba519a97deeebcbd7 state is :{602214, 370631, 622503, 435531, 782988, 531536, 745712, 318930, 107576}
+[2021-04-21 04:08:31,014] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:08:31 ====> Sending Share: 0x118c8202bc20308060e9ce24820d7b31...part: 6/6 ====>
+[2021-04-21 04:08:40,257] [BFManager] [INFO] 
+------------------> Segment 7-B <------------------
+Updating the DBF pool...Removing the oldest DBF and add a new DBF
+
+Current DBF is DBF-09c68d5ca20211eba519a97deeebcbd7
+Current DBF pool has: ['DBF-1ab98680a1ff11eba519a97deeebcbd7', 'DBF-a425bc94a20011eba519a97deeebcbd7', 'DBF-09c68d5ca20211eba519a97deeebcbd7']
+[2021-04-21 04:08:41,022] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x9be6c9ba594399023ba9172dd186ff92
+
+====> Sent Share: 0xfc336691e6212145b453cf179370976c...part: 1/6 ====>
+====> Sent Share: 0x9328264b413d49ee10471670027d2dfa...part: 2/6 ====>
+====> Sent Share: 0x60c508e66a9812fb4f82ed371eacc33b...part: 3/6 ====>
+====> Sent Share: 0x650a0e6362317c6d7207536ce7ff572f...part: 4/6 ====>
+====> Sent Share: 0x9ff736c22809864477d449115e74e9d6...part: 5/6 ====>
+====> Sent Share: 0x118c8202bc20308060e9ce24820d7b31...part: 6/6 ====>
+
+[2021-04-21 04:08:50,975] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 4cb2467a383c2da63a7835c3189f7a27 from: 477e9b <=====
+Total 1 received
+
+[2021-04-21 04:08:50,975] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:09:10,976] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: da89e9ee7e80f9ae9a13ed3b77efd8a1 from: 477e9b <=====
+Total 2 received
+
+[2021-04-21 04:09:10,976] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:09:30,976] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: db38d1ccb942460ecda989bc131c8b89 from: 477e9b <=====
+Total 3 received
+
+[2021-04-21 04:09:30,976] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:09:30,976] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 477e9b == 477e9b
+Reconstructed EphID is: 0x91bc64ccac0600f303cc4a33f1f94c83 with hash tag 0x477e9b
+
+Now Generate the EnctID
+[2021-04-21 04:09:30,977] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 5c22a34f7202ebf8d6490a4becf46fc4
+[2021-04-21 04:09:30,977] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 5c22a34f7202ebf8d6490a4becf46fc4 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 5c22a34f7202ebf8d6490a4becf46fc4 into DBF#3 with id DBF-6f67607ca20311eba519a97deeebcbd7
+Current Bloomfilter DBF-6f67607ca20311eba519a97deeebcbd7 state is :{745712, 107576, 782988}
+[2021-04-21 04:09:41,023] [IDManager] [INFO] Newly generated EphID is: 0dd67bd1ac0598f22b54c955518b6095
+[2021-04-21 04:09:41,023] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:09:41 ====> Sending Share: 0xd9db94befc200efed53a81678409aaca...part: 1/6 ====>
+[2021-04-21 04:09:51,024] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 936cbb02a2689d4c62b20b363ff01936 from: 57de8f <=====
+Total 1 received
+
+[2021-04-21 04:09:51,024] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:09:51,030] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:09:51 ====> Sending Share: 0xda6bbda7f5285bdd7404778abe1f41a2...part: 2/6 ====>
+[2021-04-21 04:10:01,038] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:10:01 ====> Sending Share: 0x0f86f68c971e7f8e07b2abbeffcc251d...part: 3/6 ====>
+[2021-04-21 04:10:11,025] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: cf57c031c55c48d6da2b11bbdacf6b18 from: 57de8f <=====
+Total 2 received
+
+[2021-04-21 04:10:11,025] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:10:11,046] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:10:11 ====> Sending Share: 0x792d3f6ce2027a1090451e0449105539...part: 4/6 ====>
+[2021-04-21 04:10:21,054] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:10:21 ====> Sending Share: 0x175e9848d5d44b650dbbce5a99ebd1f8...part: 5/6 ====>
+[2021-04-21 04:10:31,025] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 7bb4b8526d9f024745e5ae8ce0323cd6 from: 57de8f <=====
+Total 3 received
+
+[2021-04-21 04:10:31,025] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:10:31,026] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 57de8f == 57de8f
+Reconstructed EphID is: 0xc7f3a8c504c3ffa7df7a9afc0f94472f with hash tag 0x57de8f
+
+Now Generate the EnctID
+[2021-04-21 04:10:31,026] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 95d7f04335706f70c1dcad14788f45f2
+[2021-04-21 04:10:31,026] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 95d7f04335706f70c1dcad14788f45f2 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 95d7f04335706f70c1dcad14788f45f2 into DBF#3 with id DBF-6f67607ca20311eba519a97deeebcbd7
+Current Bloomfilter DBF-6f67607ca20311eba519a97deeebcbd7 state is :{759620, 141450, 782988, 745712, 145491, 107576}
+[2021-04-21 04:10:31,062] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:10:31 ====> Sending Share: 0xea1b01207293f38b8016bcc1f25e9b58...part: 6/6 ====>
+[2021-04-21 04:10:41,071] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x0dd67bd1ac0598f22b54c955518b6095
+
+====> Sent Share: 0xd9db94befc200efed53a81678409aaca...part: 1/6 ====>
+====> Sent Share: 0xda6bbda7f5285bdd7404778abe1f41a2...part: 2/6 ====>
+====> Sent Share: 0x0f86f68c971e7f8e07b2abbeffcc251d...part: 3/6 ====>
+====> Sent Share: 0x792d3f6ce2027a1090451e0449105539...part: 4/6 ====>
+====> Sent Share: 0x175e9848d5d44b650dbbce5a99ebd1f8...part: 5/6 ====>
+====> Sent Share: 0xea1b01207293f38b8016bcc1f25e9b58...part: 6/6 ====>
+
+[2021-04-21 04:10:51,027] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 9883a3649b30c99da5e1e1a950188e6f from: 57de8f <=====
+Total 1 received
+
+[2021-04-21 04:10:51,027] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:11:11,027] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 25c481684e119ed9fa1fab112a825fe4 from: 57de8f <=====
+Total 2 received
+
+[2021-04-21 04:11:11,028] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:11:31,028] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 2377525d864181fc429f0ac46f6fb134 from: 57de8f <=====
+Total 3 received
+
+[2021-04-21 04:11:31,029] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:11:31,029] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 57de8f == 57de8f
+Reconstructed EphID is: 0xc7f3a8c504c3ffa7df7a9afc0f94472f with hash tag 0x57de8f
+
+Now Generate the EnctID
+[2021-04-21 04:11:31,030] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 95d7f04335706f70c1dcad14788f45f2
+[2021-04-21 04:11:31,031] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 95d7f04335706f70c1dcad14788f45f2 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 95d7f04335706f70c1dcad14788f45f2 into DBF#3 with id DBF-6f67607ca20311eba519a97deeebcbd7
+Current Bloomfilter DBF-6f67607ca20311eba519a97deeebcbd7 state is :{759620, 141450, 782988, 745712, 145491, 107576}
+[2021-04-21 04:11:41,072] [IDManager] [INFO] Newly generated EphID is: b442db30a6ace57fae8bebf3c0da7fa8
+[2021-04-21 04:11:41,073] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:11:41 ====> Sending Share: 0x9f422545db05dfed46c2adf15f542107...part: 1/6 ====>
+[2021-04-21 04:11:51,073] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: a91724ab4f32a3b849866759f5ea40ca from: 472ffb <=====
+Total 1 received
+
+[2021-04-21 04:11:51,073] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:11:51,082] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:11:51 ====> Sending Share: 0x8e8bf46297a00320687cdcbe9f6f00eb...part: 2/6 ====>
+[2021-04-21 04:12:01,090] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:12:01 ====> Sending Share: 0x82204886dc7b4f1913ba785b812b1f54...part: 3/6 ====>
+[2021-04-21 04:12:11,074] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: c1ad15eae1f91ddd171bd759e35a86f2 from: 472ffb <=====
+Total 2 received
+
+[2021-04-21 04:12:11,074] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:12:11,098] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:12:11 ====> Sending Share: 0x79ff21b2a997c3d7487b80c804887c42...part: 4/6 ====>
+[2021-04-21 04:12:21,106] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:12:21 ====> Sending Share: 0x76287fe5fef5615b06bff604298717b5...part: 5/6 ====>
+[2021-04-21 04:12:31,114] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:12:31 ====> Sending Share: 0x769c6320dc9427a44e87d80ff026f1ad...part: 6/6 ====>
+[2021-04-21 04:12:41,075] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: b0fae0073ab9271d397e0f88ce1b1a1a from: 472ffb <=====
+Total 3 received
+
+[2021-04-21 04:12:41,075] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:12:41,075] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:12:41,122] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xb442db30a6ace57fae8bebf3c0da7fa8
+
+====> Sent Share: 0x9f422545db05dfed46c2adf15f542107...part: 1/6 ====>
+====> Sent Share: 0x8e8bf46297a00320687cdcbe9f6f00eb...part: 2/6 ====>
+====> Sent Share: 0x82204886dc7b4f1913ba785b812b1f54...part: 3/6 ====>
+====> Sent Share: 0x79ff21b2a997c3d7487b80c804887c42...part: 4/6 ====>
+====> Sent Share: 0x76287fe5fef5615b06bff604298717b5...part: 5/6 ====>
+====> Sent Share: 0x769c6320dc9427a44e87d80ff026f1ad...part: 6/6 ====>
+
+[2021-04-21 04:13:01,076] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 87b2b8e400b2b6388e4ad7b7cb6b671a from: 472ffb <=====
+Total 4 received
+
+[2021-04-21 04:13:01,076] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:13:01,076] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:13:21,077] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: f320899fd7bd4c50bad4bd4bce06610c from: 472ffb <=====
+Total 5 received
+
+[2021-04-21 04:13:21,077] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:13:21,077] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:13:41,123] [IDManager] [INFO] Newly generated EphID is: ef53c75b80902fc56c17a8baa8ad1f0e
+[2021-04-21 04:13:41,123] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:13:41 ====> Sending Share: 0x16e4672d09c8986825590957c079463f...part: 1/6 ====>
+[2021-04-21 04:13:51,123] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 853df5466496749e7d77d4bdbcfbb4d3 from: e0b8df <=====
+Total 1 received
+
+[2021-04-21 04:13:51,124] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:13:51,131] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:13:51 ====> Sending Share: 0x594763e08b5f2f4e57cc9e281997fea7...part: 2/6 ====>
+[2021-04-21 04:14:01,142] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:14:01 ====> Sending Share: 0xb67cbd760553f4780372672bb4094847...part: 3/6 ====>
+[2021-04-21 04:14:11,125] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: e4d3009060a57e4b7c21c0662f3c90f0 from: e0b8df <=====
+Total 2 received
+
+[2021-04-21 04:14:11,125] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:14:11,150] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:14:11 ====> Sending Share: 0x2e8473ed77a6e7e5284a64628fcd2320...part: 4/6 ====>
+[2021-04-21 04:14:21,158] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:14:21 ====> Sending Share: 0xc15e8746e2580995c65495ccace38f30...part: 5/6 ====>
+[2021-04-21 04:14:31,126] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 7f0d067885c31703f689f04d74f77a94 from: e0b8df <=====
+Total 3 received
+
+[2021-04-21 04:14:31,126] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:14:31,126] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: e0b8df == e0b8df
+Reconstructed EphID is: 0x604de49a9195f9fcfa8c2d541e34e63c with hash tag 0xe0b8df
+
+Now Generate the EnctID
+[2021-04-21 04:14:31,126] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 640ff982d33fb4e41334f78447b40e4e
+[2021-04-21 04:14:31,126] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 640ff982d33fb4e41334f78447b40e4e to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 640ff982d33fb4e41334f78447b40e4e into DBF#3 with id DBF-6f67607ca20311eba519a97deeebcbd7
+Current Bloomfilter DBF-6f67607ca20311eba519a97deeebcbd7 state is :{39587, 759620, 338021, 789193, 141450, 782988, 745712, 145491, 107576}
+[2021-04-21 04:14:31,166] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:14:31 ====> Sending Share: 0x6f0af78245675989dd90fb6a0b4c8c79...part: 6/6 ====>
+[2021-04-21 04:14:41,174] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xef53c75b80902fc56c17a8baa8ad1f0e
+
+====> Sent Share: 0x16e4672d09c8986825590957c079463f...part: 1/6 ====>
+====> Sent Share: 0x594763e08b5f2f4e57cc9e281997fea7...part: 2/6 ====>
+====> Sent Share: 0xb67cbd760553f4780372672bb4094847...part: 3/6 ====>
+====> Sent Share: 0x2e8473ed77a6e7e5284a64628fcd2320...part: 4/6 ====>
+====> Sent Share: 0xc15e8746e2580995c65495ccace38f30...part: 5/6 ====>
+====> Sent Share: 0x6f0af78245675989dd90fb6a0b4c8c79...part: 6/6 ====>
+
+[2021-04-21 04:14:51,127] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 53ec06fed3ef3ec7ecb064738e2c71be from: e0b8df <=====
+Total 1 received
+
+[2021-04-21 04:14:51,127] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:15:11,127] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 637002234b29f5975e951cd87adb766e from: e0b8df <=====
+Total 2 received
+
+[2021-04-21 04:15:11,127] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:15:41,175] [IDManager] [INFO] Newly generated EphID is: bb808d566cac2e513cc2d07bdf496f84
+[2021-04-21 04:15:41,175] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:15:41 ====> Sending Share: 0x03c83260438b1896a515247efc9c684b...part: 1/6 ====>
+[2021-04-21 04:15:51,176] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 4c0a509056fd213318e51fe539cff5bf from: b6e108 <=====
+Total 1 received
+
+[2021-04-21 04:15:51,176] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:15:51,182] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:15:51 ====> Sending Share: 0x35c3fd858392efe45f77d7ce6eabc1bd...part: 2/6 ====>
+[2021-04-21 04:16:01,192] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:16:01 ====> Sending Share: 0x5173eec62cc3b43a6beaea6a35777bdb...part: 3/6 ====>
+[2021-04-21 04:16:11,176] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 14eef251c8155ec49803deb5c224cbcd from: b6e108 <=====
+Total 2 received
+
+[2021-04-21 04:16:11,176] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:16:11,202] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:16:11 ====> Sending Share: 0x56d806223f1d6598ca6e5c5250ff96a5...part: 4/6 ====>
+[2021-04-21 04:16:21,210] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:16:21 ====> Sending Share: 0x45f04399baa003ff7b022d86c144121b...part: 5/6 ====>
+[2021-04-21 04:16:31,177] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: ff832f3bcbcdeb6b2978e3126749c02d from: b6e108 <=====
+Total 3 received
+
+[2021-04-21 04:16:31,177] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:16:31,177] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: b6e108 == b6e108
+Reconstructed EphID is: 0xa4d549f7788532b6ac1ca6a0ce4b3e04 with hash tag 0xb6e108
+
+Now Generate the EnctID
+[2021-04-21 04:16:31,178] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 3bb4c90cec6a03a7f14d9798cee3b8a8
+[2021-04-21 04:16:31,178] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 3bb4c90cec6a03a7f14d9798cee3b8a8 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 3bb4c90cec6a03a7f14d9798cee3b8a8 into DBF#3 with id DBF-6f67607ca20311eba519a97deeebcbd7
+Current Bloomfilter DBF-6f67607ca20311eba519a97deeebcbd7 state is :{593922, 39587, 759620, 338021, 789193, 141450, 782988, 745712, 348952, 145491, 107576, 98525}
+[2021-04-21 04:16:31,218] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:16:31 ====> Sending Share: 0x1ebca72c9f4b8f6e7da65e078644ee3d...part: 6/6 ====>
+[2021-04-21 04:16:41,226] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xbb808d566cac2e513cc2d07bdf496f84
+
+====> Sent Share: 0x03c83260438b1896a515247efc9c684b...part: 1/6 ====>
+====> Sent Share: 0x35c3fd858392efe45f77d7ce6eabc1bd...part: 2/6 ====>
+====> Sent Share: 0x5173eec62cc3b43a6beaea6a35777bdb...part: 3/6 ====>
+====> Sent Share: 0x56d806223f1d6598ca6e5c5250ff96a5...part: 4/6 ====>
+====> Sent Share: 0x45f04399baa003ff7b022d86c144121b...part: 5/6 ====>
+====> Sent Share: 0x1ebca72c9f4b8f6e7da65e078644ee3d...part: 6/6 ====>
+
+[2021-04-21 04:17:01,179] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 39ba7a898b1ff1f78365bc70080403e9 from: b6e108 <=====
+Total 1 received
+
+[2021-04-21 04:17:01,179] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:17:21,179] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 895d88ed46b96bdd4bdd917103995343 from: b6e108 <=====
+Total 2 received
+
+[2021-04-21 04:17:21,179] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:17:41,228] [IDManager] [INFO] Newly generated EphID is: 7949b397c76ad185639b89dd3eb30b47
+[2021-04-21 04:17:41,228] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:17:41 ====> Sending Share: 0xbacbd25cefcdb5f8d37d26bb3043991a...part: 1/6 ====>
+[2021-04-21 04:17:51,229] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 36a34e2ee80c29ef0ee9e22f382a73de from: 8e46ed <=====
+Total 1 received
+
+[2021-04-21 04:17:51,229] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:17:51,238] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:17:51 ====> Sending Share: 0x9e6bdf6463535e72d1ebc8b01ae45b7f...part: 2/6 ====>
+[2021-04-21 04:18:01,246] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:18:01 ====> Sending Share: 0x2429daae21fbcaf35ee76fbbfe955276...part: 3/6 ====>
+[2021-04-21 04:18:11,229] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 084b1c60f016d754f6d0d018ceea4254 from: 8e46ed <=====
+Total 2 received
+
+[2021-04-21 04:18:11,229] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:18:11,254] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:18:11 ====> Sending Share: 0x4c05c43a2bc6fb7a7a701bdedb567dfe...part: 4/6 ====>
+[2021-04-21 04:18:21,262] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:18:21 ====> Sending Share: 0x15ff9c0880b4f0082485cd18b127de18...part: 5/6 ====>
+[2021-04-21 04:18:31,270] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:18:31 ====> Sending Share: 0x8217621920c5a89c5d288369800972c3...part: 6/6 ====>
+[2021-04-21 04:18:40,258] [BFManager] [INFO] 
+------------------> Segment 7-B <------------------
+Updating the DBF pool...Removing the oldest DBF and add a new DBF
+
+Current DBF is DBF-6f67607ca20311eba519a97deeebcbd7
+Current DBF pool has: ['DBF-1ab98680a1ff11eba519a97deeebcbd7', 'DBF-a425bc94a20011eba519a97deeebcbd7', 'DBF-09c68d5ca20211eba519a97deeebcbd7', 'DBF-6f67607ca20311eba519a97deeebcbd7']
+[2021-04-21 04:18:41,230] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 6b334115435a3f25f2d6e592fb13203f from: 8e46ed <=====
+Total 3 received
+
+[2021-04-21 04:18:41,230] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:18:41,230] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:18:41,280] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x7949b397c76ad185639b89dd3eb30b47
+
+====> Sent Share: 0xbacbd25cefcdb5f8d37d26bb3043991a...part: 1/6 ====>
+====> Sent Share: 0x9e6bdf6463535e72d1ebc8b01ae45b7f...part: 2/6 ====>
+====> Sent Share: 0x2429daae21fbcaf35ee76fbbfe955276...part: 3/6 ====>
+====> Sent Share: 0x4c05c43a2bc6fb7a7a701bdedb567dfe...part: 4/6 ====>
+====> Sent Share: 0x15ff9c0880b4f0082485cd18b127de18...part: 5/6 ====>
+====> Sent Share: 0x8217621920c5a89c5d288369800972c3...part: 6/6 ====>
+
+[2021-04-21 04:19:01,231] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: fc7397978e92f99106f60d23907c2fb4 from: 8e46ed <=====
+Total 4 received
+
+[2021-04-21 04:19:01,231] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:19:01,232] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:19:21,233] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 22e6c6349adb0da87f27f2967ac854d5 from: 8e46ed <=====
+Total 5 received
+
+[2021-04-21 04:19:21,233] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:19:21,233] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:19:41,281] [IDManager] [INFO] Newly generated EphID is: 89ff74e9ab57cce2d71e26709f981c40
+[2021-04-21 04:19:41,282] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:19:41 ====> Sending Share: 0x0e0e18fcf022afaaa08e497cbec54c6d...part: 1/6 ====>
+[2021-04-21 04:19:51,282] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 28314f3c5a53e6ef4311add7af9c9451 from: 3f1a3a <=====
+Total 1 received
+
+[2021-04-21 04:19:51,283] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:19:51,290] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:19:51 ====> Sending Share: 0xb9a5016bcd18a71e24ad99d5346741cb...part: 2/6 ====>
+[2021-04-21 04:20:01,298] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:20:01 ====> Sending Share: 0x8cc42e364239b33d637c177a007dfc5c...part: 3/6 ====>
+[2021-04-21 04:20:11,283] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 617ef987aafd53d2cc00d1f90aef52ef from: 3f1a3a <=====
+Total 2 received
+
+[2021-04-21 04:20:11,284] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:20:11,306] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:20:11 ====> Sending Share: 0x876b9f5c4f85d4085cf9c26b23097c1f...part: 4/6 ====>
+[2021-04-21 04:20:21,314] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:20:21 ====> Sending Share: 0xa99b54ddf4fd097f11269aa89c09c114...part: 5/6 ====>
+[2021-04-21 04:20:31,322] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:20:31 ====> Sending Share: 0xf3534ebb329f53a18002a0326b7ecb3b...part: 6/6 ====>
+[2021-04-21 04:20:41,284] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 2fc0a74991fd11a4f5c3c48c3df1a1b2 from: 3f1a3a <=====
+Total 3 received
+
+[2021-04-21 04:20:41,285] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:20:41,285] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:20:41,330] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x89ff74e9ab57cce2d71e26709f981c40
+
+====> Sent Share: 0x0e0e18fcf022afaaa08e497cbec54c6d...part: 1/6 ====>
+====> Sent Share: 0xb9a5016bcd18a71e24ad99d5346741cb...part: 2/6 ====>
+====> Sent Share: 0x8cc42e364239b33d637c177a007dfc5c...part: 3/6 ====>
+====> Sent Share: 0x876b9f5c4f85d4085cf9c26b23097c1f...part: 4/6 ====>
+====> Sent Share: 0xa99b54ddf4fd097f11269aa89c09c114...part: 5/6 ====>
+====> Sent Share: 0xf3534ebb329f53a18002a0326b7ecb3b...part: 6/6 ====>
+
+[2021-04-21 04:21:01,286] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: c4b4aac028536293969792fe15a131d6 from: 3f1a3a <=====
+Total 4 received
+
+[2021-04-21 04:21:01,286] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:21:01,286] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:21:41,331] [IDManager] [INFO] Newly generated EphID is: aa2fad5dc2680143e8ed1b9ee06187be
+[2021-04-21 04:21:41,331] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:21:41 ====> Sending Share: 0x1163c756092864f19d9ac5d4d398d6f4...part: 1/6 ====>
+[2021-04-21 04:21:51,331] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: a25e2c99bcfce5e91bbfde90656e5e04 from: 2127bd <=====
+Total 1 received
+
+[2021-04-21 04:21:51,331] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:21:51,338] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:21:51 ====> Sending Share: 0x2def8ab8a46a7fcc2c4755cae09d82b2...part: 2/6 ====>
+[2021-04-21 04:22:01,347] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:22:01 ====> Sending Share: 0xffd2f785942e51d394f2cb81076f8af8...part: 3/6 ====>
+[2021-04-21 04:22:11,332] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: ba36de0aca7430956bb6cacc44c2b2cc from: 2127bd <=====
+Total 2 received
+
+[2021-04-21 04:22:11,332] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:22:11,354] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:22:11 ====> Sending Share: 0x870e0dbcd873db07d79d26f7480eefc8...part: 4/6 ====>
+[2021-04-21 04:22:21,363] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:22:21 ====> Sending Share: 0xc3a0cd5e713b1b68f446682da27bb120...part: 5/6 ====>
+[2021-04-21 04:22:31,333] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 826133cdc7ad8ca8c6908873b650d1d9 from: 2127bd <=====
+Total 3 received
+
+[2021-04-21 04:22:31,333] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:22:31,333] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 2127bd == 2127bd
+Reconstructed EphID is: 0x3ad71f7a9f47aca3d6abc3c01853d381 with hash tag 0x2127bd
+
+Now Generate the EnctID
+[2021-04-21 04:22:31,334] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 7cf47466282cad3c1301debdc814db69
+[2021-04-21 04:22:31,334] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 7cf47466282cad3c1301debdc814db69 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 7cf47466282cad3c1301debdc814db69 into DBF#4 with id DBF-d5083504a20411eba519a97deeebcbd7
+Current Bloomfilter DBF-d5083504a20411eba519a97deeebcbd7 state is :{467296, 545177, 691652}
+[2021-04-21 04:22:31,370] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:22:31 ====> Sending Share: 0xb58b366a5e8412f6eaee8f2416b5cf01...part: 6/6 ====>
+[2021-04-21 04:22:41,379] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xaa2fad5dc2680143e8ed1b9ee06187be
+
+====> Sent Share: 0x1163c756092864f19d9ac5d4d398d6f4...part: 1/6 ====>
+====> Sent Share: 0x2def8ab8a46a7fcc2c4755cae09d82b2...part: 2/6 ====>
+====> Sent Share: 0xffd2f785942e51d394f2cb81076f8af8...part: 3/6 ====>
+====> Sent Share: 0x870e0dbcd873db07d79d26f7480eefc8...part: 4/6 ====>
+====> Sent Share: 0xc3a0cd5e713b1b68f446682da27bb120...part: 5/6 ====>
+====> Sent Share: 0xb58b366a5e8412f6eaee8f2416b5cf01...part: 6/6 ====>
+
+[2021-04-21 04:22:51,334] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: fadd2de2b4a8fa232c4d1786ba18bb2a from: 2127bd <=====
+Total 1 received
+
+[2021-04-21 04:22:51,335] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:23:11,335] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 23aacc49916679049cec7805501a6ec1 from: 2127bd <=====
+Total 2 received
+
+[2021-04-21 04:23:11,336] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:23:31,336] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: fcca0f025de6094d186ea9ef7855ec9b from: 2127bd <=====
+Total 3 received
+
+[2021-04-21 04:23:31,336] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:23:31,336] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 2127bd == 2127bd
+Reconstructed EphID is: 0x3ad71f7a9f47aca3d6abc3c01853d381 with hash tag 0x2127bd
+
+Now Generate the EnctID
+[2021-04-21 04:23:31,337] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 7cf47466282cad3c1301debdc814db69
+[2021-04-21 04:23:31,337] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 7cf47466282cad3c1301debdc814db69 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 7cf47466282cad3c1301debdc814db69 into DBF#4 with id DBF-d5083504a20411eba519a97deeebcbd7
+Current Bloomfilter DBF-d5083504a20411eba519a97deeebcbd7 state is :{467296, 545177, 691652}
+[2021-04-21 04:23:41,380] [IDManager] [INFO] Newly generated EphID is: 838d5303b015eee61f4cfc014afaa2bf
+[2021-04-21 04:23:41,380] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:23:41 ====> Sending Share: 0xb61fe0aa20de1791d4f74c67bfd23ae0...part: 1/6 ====>
+[2021-04-21 04:23:51,383] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 6d375326c8745030841287e18ee62403 from: b556c3 <=====
+Total 1 received
+
+[2021-04-21 04:23:51,384] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:23:51,390] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:23:51 ====> Sending Share: 0xa9e1ae4b7944d75e4916e76180a81623...part: 2/6 ====>
+[2021-04-21 04:24:01,400] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:24:01 ====> Sending Share: 0x5ed2bbe7b94a2e4b7babccee8d7c3488...part: 3/6 ====>
+[2021-04-21 04:24:11,384] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: b54bfd340d0f8380cb9dc8beffc4f8c7 from: b556c3 <=====
+Total 2 received
+
+[2021-04-21 04:24:11,384] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:24:11,410] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:24:11 ====> Sending Share: 0xd4f3097ee0ee1c596cb5fd0ee64e960e...part: 4/6 ====>
+[2021-04-21 04:24:21,420] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:24:21 ====> Sending Share: 0x0c429710f030a1881c3577c28b1f3ab7...part: 5/6 ====>
+[2021-04-21 04:24:31,430] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:24:31 ====> Sending Share: 0x04c1649de711bdd78a2a3d097bee2281...part: 6/6 ====>
+[2021-04-21 04:24:41,385] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 4dca6fb43b6b2d0d5662724105da1758 from: b556c3 <=====
+Total 3 received
+
+[2021-04-21 04:24:41,385] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:24:41,385] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:24:41,439] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x838d5303b015eee61f4cfc014afaa2bf
+
+====> Sent Share: 0xb61fe0aa20de1791d4f74c67bfd23ae0...part: 1/6 ====>
+====> Sent Share: 0xa9e1ae4b7944d75e4916e76180a81623...part: 2/6 ====>
+====> Sent Share: 0x5ed2bbe7b94a2e4b7babccee8d7c3488...part: 3/6 ====>
+====> Sent Share: 0xd4f3097ee0ee1c596cb5fd0ee64e960e...part: 4/6 ====>
+====> Sent Share: 0x0c429710f030a1881c3577c28b1f3ab7...part: 5/6 ====>
+====> Sent Share: 0x04c1649de711bdd78a2a3d097bee2281...part: 6/6 ====>
+
+[2021-04-21 04:25:01,385] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 9e343827252ba349999bdae59b106124 from: b556c3 <=====
+Total 4 received
+
+[2021-04-21 04:25:01,386] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:25:01,386] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:25:21,386] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: f1650abbf0a32fd4860f50cc91b92748 from: b556c3 <=====
+Total 5 received
+
+[2021-04-21 04:25:21,386] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:25:21,386] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:25:41,440] [IDManager] [INFO] Newly generated EphID is: dfca34226f95ad0c406805c382afdf4c
+[2021-04-21 04:25:41,440] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:25:41 ====> Sending Share: 0xbc17b24cdea111bdb57b085b79eedf54...part: 1/6 ====>
+[2021-04-21 04:25:51,441] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 3a652f87cb02175797845be7ac45fa7b from: d8ed12 <=====
+Total 1 received
+
+[2021-04-21 04:25:51,441] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:25:51,450] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:25:51 ====> Sending Share: 0x229a7ed8263a2c838d9dc313b9cccbb2...part: 2/6 ====>
+[2021-04-21 04:26:01,458] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:26:01 ====> Sending Share: 0x135299c44660fd5dc8d035ec4249a465...part: 3/6 ====>
+[2021-04-21 04:26:11,441] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 8dfc02e3877bf483d297e7667729f757 from: d8ed12 <=====
+Total 2 received
+
+[2021-04-21 04:26:11,441] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:26:11,468] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:26:11 ====> Sending Share: 0x8e4003113f15844c671260e51365696d...part: 4/6 ====>
+[2021-04-21 04:26:21,478] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:26:21 ====> Sending Share: 0x9362babf1057c14f686443fe2d201acb...part: 5/6 ====>
+[2021-04-21 04:26:31,486] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:26:31 ====> Sending Share: 0x22bac0cdba27b466ccc5df378f79b87f...part: 6/6 ====>
+[2021-04-21 04:26:41,442] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 566e3306025bab975daeec676a504f78 from: d8ed12 <=====
+Total 3 received
+
+[2021-04-21 04:26:41,442] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:26:41,442] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:26:41,494] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xdfca34226f95ad0c406805c382afdf4c
+
+====> Sent Share: 0xbc17b24cdea111bdb57b085b79eedf54...part: 1/6 ====>
+====> Sent Share: 0x229a7ed8263a2c838d9dc313b9cccbb2...part: 2/6 ====>
+====> Sent Share: 0x135299c44660fd5dc8d035ec4249a465...part: 3/6 ====>
+====> Sent Share: 0x8e4003113f15844c671260e51365696d...part: 4/6 ====>
+====> Sent Share: 0x9362babf1057c14f686443fe2d201acb...part: 5/6 ====>
+====> Sent Share: 0x22bac0cdba27b466ccc5df378f79b87f...part: 6/6 ====>
+
+[2021-04-21 04:27:01,443] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: cb498fccc0c1857eadb265e99292aabc from: d8ed12 <=====
+Total 4 received
+
+[2021-04-21 04:27:01,443] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:27:01,443] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:27:21,444] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: 4b3bc50c7fcb5e4f04b08417849f2579 from: d8ed12 <=====
+Total 5 received
+
+[2021-04-21 04:27:21,444] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:27:21,444] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:27:41,495] [IDManager] [INFO] Newly generated EphID is: c4db4d327b6d01f24982c9d560d29593
+[2021-04-21 04:27:41,495] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:27:41 ====> Sending Share: 0x0fc62611ff25f8eaac946b5b791d284f...part: 1/6 ====>
+[2021-04-21 04:27:51,496] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: f67371c63bf23a11358e2f8cc628a144 from: 7b1acd <=====
+Total 1 received
+
+[2021-04-21 04:27:51,496] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:27:51,502] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:27:51 ====> Sending Share: 0xaabdc394afb764e65df9fb9d742e0dc0...part: 2/6 ====>
+[2021-04-21 04:28:01,510] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:28:01 ====> Sending Share: 0x95c225ba8d2145e55db37a9b520545e8...part: 3/6 ====>
+[2021-04-21 04:28:11,497] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 5ce605709c2b6a8de770d40b50b32587 from: 7b1acd <=====
+Total 2 received
+
+[2021-04-21 04:28:11,497] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:28:11,520] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:28:11 ====> Sending Share: 0xd0d34c8397639be7abc0e85512a2d0c6...part: 4/6 ====>
+[2021-04-21 04:28:21,531] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:28:21 ====> Sending Share: 0x5bf137efce7e66ed482244cab606ae5b...part: 5/6 ====>
+[2021-04-21 04:28:31,498] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 9e5fcb0b74856758d2e4b4f67ffe1c13 from: 7b1acd <=====
+Total 3 received
+
+[2021-04-21 04:28:31,498] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:28:31,498] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 7b1acd == 7b1acd
+Reconstructed EphID is: 0x6b08100c53d9d5e2bd3cc77ae05e8f4c with hash tag 0x7b1acd
+
+Now Generate the EnctID
+[2021-04-21 04:28:31,498] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 28990b702d299d0cd031b8b002b19ae2
+[2021-04-21 04:28:31,499] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 28990b702d299d0cd031b8b002b19ae2 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 28990b702d299d0cd031b8b002b19ae2 into DBF#4 with id DBF-d5083504a20411eba519a97deeebcbd7
+Current Bloomfilter DBF-d5083504a20411eba519a97deeebcbd7 state is :{467296, 691652, 660912, 545177, 392987, 417340}
+[2021-04-21 04:28:31,538] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:28:31 ====> Sending Share: 0x371be7ff3271a6f632d78ffc3c30dea6...part: 6/6 ====>
+[2021-04-21 04:28:40,258] [BFManager] [INFO] 
+------------------> Segment 7-B <------------------
+Updating the DBF pool...Removing the oldest DBF and add a new DBF
+
+Current DBF is DBF-d5083504a20411eba519a97deeebcbd7
+Current DBF pool has: ['DBF-1ab98680a1ff11eba519a97deeebcbd7', 'DBF-a425bc94a20011eba519a97deeebcbd7', 'DBF-09c68d5ca20211eba519a97deeebcbd7', 'DBF-6f67607ca20311eba519a97deeebcbd7', 'DBF-d5083504a20411eba519a97deeebcbd7']
+[2021-04-21 04:28:41,546] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xc4db4d327b6d01f24982c9d560d29593
+
+====> Sent Share: 0x0fc62611ff25f8eaac946b5b791d284f...part: 1/6 ====>
+====> Sent Share: 0xaabdc394afb764e65df9fb9d742e0dc0...part: 2/6 ====>
+====> Sent Share: 0x95c225ba8d2145e55db37a9b520545e8...part: 3/6 ====>
+====> Sent Share: 0xd0d34c8397639be7abc0e85512a2d0c6...part: 4/6 ====>
+====> Sent Share: 0x5bf137efce7e66ed482244cab606ae5b...part: 5/6 ====>
+====> Sent Share: 0x371be7ff3271a6f632d78ffc3c30dea6...part: 6/6 ====>
+
+[2021-04-21 04:28:51,499] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: bae0c296c5003071f7e9d24e540984e9 from: 7b1acd <=====
+Total 1 received
+
+[2021-04-21 04:28:51,499] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:29:11,500] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: b268ec128d9bc5d956802c12ccd56009 from: 7b1acd <=====
+Total 2 received
+
+[2021-04-21 04:29:11,500] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:29:41,547] [IDManager] [INFO] Newly generated EphID is: fc3a88de033bb21c7da45a350b13bbe7
+[2021-04-21 04:29:41,547] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:29:41 ====> Sending Share: 0xa4fbf8be20fc742812f8e6d006c76ece...part: 1/6 ====>
+[2021-04-21 04:29:51,547] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 98518dd75a1b72c85063ceac54f65d6d from: a649e9 <=====
+Total 1 received
+
+[2021-04-21 04:29:51,548] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:29:51,554] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:29:51 ====> Sending Share: 0x41d004e645f05ad3a5a0f4c821c2ee92...part: 2/6 ====>
+[2021-04-21 04:30:01,562] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:30:01 ====> Sending Share: 0xd2b6ad567217661f359c841d5c063b32...part: 3/6 ====>
+[2021-04-21 04:30:11,548] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 72964000ed1a37f984f8d20c47606354 from: a649e9 <=====
+Total 2 received
+
+[2021-04-21 04:30:11,548] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:30:11,572] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:30:11 ====> Sending Share: 0x57aff20ea571960ac2eb94cfb59154b0...part: 4/6 ====>
+[2021-04-21 04:30:21,582] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:30:21 ====> Sending Share: 0xd0bbd30edffeea964d8e26df2e643b0a...part: 5/6 ====>
+[2021-04-21 04:30:31,549] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: b31a398fe6678676d4b778dae7efcf22 from: a649e9 <=====
+Total 3 received
+
+[2021-04-21 04:30:31,549] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:30:31,549] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: a649e9 == a649e9
+Reconstructed EphID is: 0x244c23132d6b36e336f86ebb10b1bd6e with hash tag 0xa649e9
+
+Now Generate the EnctID
+[2021-04-21 04:30:31,549] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: e8cece5dad09e945485d4d6176ff7eea
+[2021-04-21 04:30:31,549] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: e8cece5dad09e945485d4d6176ff7eea to the DBF (murmur3 hashing with 3 hashes)
+Inserting data e8cece5dad09e945485d4d6176ff7eea into DBF#5 with id DBF-3aa90ed2a20611eba519a97deeebcbd7
+Current Bloomfilter DBF-3aa90ed2a20611eba519a97deeebcbd7 state is :{664841, 240564, 233204}
+[2021-04-21 04:30:31,590] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:30:31 ====> Sending Share: 0x3dda505721bf63c1d5843a4bc67eee42...part: 6/6 ====>
+[2021-04-21 04:30:41,598] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xfc3a88de033bb21c7da45a350b13bbe7
+
+====> Sent Share: 0xa4fbf8be20fc742812f8e6d006c76ece...part: 1/6 ====>
+====> Sent Share: 0x41d004e645f05ad3a5a0f4c821c2ee92...part: 2/6 ====>
+====> Sent Share: 0xd2b6ad567217661f359c841d5c063b32...part: 3/6 ====>
+====> Sent Share: 0x57aff20ea571960ac2eb94cfb59154b0...part: 4/6 ====>
+====> Sent Share: 0xd0bbd30edffeea964d8e26df2e643b0a...part: 5/6 ====>
+====> Sent Share: 0x3dda505721bf63c1d5843a4bc67eee42...part: 6/6 ====>
+
+[2021-04-21 04:30:51,550] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 59dd7a8446035e403f9fc31836a4a0d8 from: a649e9 <=====
+Total 1 received
+
+[2021-04-21 04:30:51,550] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:31:11,550] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 66e002de0bedbf55c5b1b0c4337ed875 from: a649e9 <=====
+Total 2 received
+
+[2021-04-21 04:31:11,551] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:31:31,551] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: da21d29d3826a9b766ed41dede7e75f9 from: a649e9 <=====
+Total 3 received
+
+[2021-04-21 04:31:31,552] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:31:31,552] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: a649e9 == a649e9
+Reconstructed EphID is: 0x244c23132d6b36e336f86ebb10b1bd6e with hash tag 0xa649e9
+
+Now Generate the EnctID
+[2021-04-21 04:31:31,552] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: e8cece5dad09e945485d4d6176ff7eea
+[2021-04-21 04:31:31,552] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: e8cece5dad09e945485d4d6176ff7eea to the DBF (murmur3 hashing with 3 hashes)
+Inserting data e8cece5dad09e945485d4d6176ff7eea into DBF#5 with id DBF-3aa90ed2a20611eba519a97deeebcbd7
+Current Bloomfilter DBF-3aa90ed2a20611eba519a97deeebcbd7 state is :{664841, 240564, 233204}
+[2021-04-21 04:31:41,599] [IDManager] [INFO] Newly generated EphID is: 9bc6f154c7731e1a965ddd7879dcaaf3
+[2021-04-21 04:31:41,599] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:31:41 ====> Sending Share: 0xb2e119c144d62525f52664ed06d71357...part: 1/6 ====>
+[2021-04-21 04:31:51,600] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 8d9621d6bb891732be6850e1aa7a44d0 from: ff17be <=====
+Total 1 received
+
+[2021-04-21 04:31:51,600] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:31:51,606] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:31:51 ====> Sending Share: 0x4afb306c22cf428759eee9c40c55d52f...part: 2/6 ====>
+[2021-04-21 04:32:01,614] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:32:01 ====> Sending Share: 0x64153555615e763ec4b76bfd8a58f07a...part: 3/6 ====>
+[2021-04-21 04:32:11,600] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: a9c8f239f2d49a588a6e37458f45e7c3 from: ff17be <=====
+Total 2 received
+
+[2021-04-21 04:32:11,600] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:32:11,622] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:32:11 ====> Sending Share: 0xfe2f287d0083c04c357feb9980e06538...part: 4/6 ====>
+[2021-04-21 04:32:21,632] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:32:21 ====> Sending Share: 0x194909e3003f20afac486897efec336b...part: 5/6 ====>
+[2021-04-21 04:32:31,642] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:32:31 ====> Sending Share: 0xb562d987609097692910e2f8d77c5b10...part: 6/6 ====>
+[2021-04-21 04:32:41,601] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 0ba1ce3fd99ff52b28e7811ea246d83e from: ff17be <=====
+Total 3 received
+
+[2021-04-21 04:32:41,601] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:32:41,601] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:32:41,650] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x9bc6f154c7731e1a965ddd7879dcaaf3
+
+====> Sent Share: 0xb2e119c144d62525f52664ed06d71357...part: 1/6 ====>
+====> Sent Share: 0x4afb306c22cf428759eee9c40c55d52f...part: 2/6 ====>
+====> Sent Share: 0x64153555615e763ec4b76bfd8a58f07a...part: 3/6 ====>
+====> Sent Share: 0xfe2f287d0083c04c357feb9980e06538...part: 4/6 ====>
+====> Sent Share: 0x194909e3003f20afac486897efec336b...part: 5/6 ====>
+====> Sent Share: 0xb562d987609097692910e2f8d77c5b10...part: 6/6 ====>
+
+[2021-04-21 04:33:01,602] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 5147d9e2891fccd7fb5ae493d07c25c5 from: ff17be <=====
+Total 4 received
+
+[2021-04-21 04:33:01,602] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:33:01,603] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:33:21,603] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: a4bef9450b5bc0b1cff2c70ec1d4ac28 from: ff17be <=====
+Total 5 received
+
+[2021-04-21 04:33:21,603] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:33:21,603] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:33:41,651] [IDManager] [INFO] Newly generated EphID is: 1c78599d3671401536fa306b6eb9fa55
+[2021-04-21 04:33:41,651] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:33:41 ====> Sending Share: 0x36858d5b2a99a038ba3ea96ea0aaeee3...part: 1/6 ====>
+[2021-04-21 04:33:51,651] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 76b5d9f57a2e11411f9fc1902614e2f4 from: 05fabf <=====
+Total 1 received
+
+[2021-04-21 04:33:51,652] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:33:51,658] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:33:51 ====> Sending Share: 0xb5234e9712e7e38a2ae7b6d4ad1a879b...part: 2/6 ====>
+[2021-04-21 04:34:01,666] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:34:01 ====> Sending Share: 0x98519d50ef5c0a0988f5589d9408c47e...part: 3/6 ====>
+[2021-04-21 04:34:11,652] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 9b371031c2bb71b70b20cfdc5c736918 from: 05fabf <=====
+Total 2 received
+
+[2021-04-21 04:34:11,652] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:34:11,674] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:34:11 ====> Sending Share: 0xe0107988bff613b6d4678ec95575a58b...part: 4/6 ====>
+[2021-04-21 04:34:21,682] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:34:21 ====> Sending Share: 0x8c5fe33e84b600920d3e5957f1612ac3...part: 5/6 ====>
+[2021-04-21 04:34:31,653] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: 5821fcf7f4c00b57a1ce71bfec276523 from: 05fabf <=====
+Total 3 received
+
+[2021-04-21 04:34:31,653] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:34:31,653] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 05fabf == 05fabf
+Reconstructed EphID is: 0xea9e5a431b17e9f5df4b46db490bd2b6 with hash tag 0x05fabf
+
+Now Generate the EnctID
+[2021-04-21 04:34:31,654] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 85ac9ca7b4a7cdb79d01581b90bcea1d
+[2021-04-21 04:34:31,654] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 85ac9ca7b4a7cdb79d01581b90bcea1d to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 85ac9ca7b4a7cdb79d01581b90bcea1d into DBF#5 with id DBF-3aa90ed2a20611eba519a97deeebcbd7
+Current Bloomfilter DBF-3aa90ed2a20611eba519a97deeebcbd7 state is :{664841, 240564, 233204, 530293, 338903, 100216}
+[2021-04-21 04:34:31,690] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:34:31 ====> Sending Share: 0x9d3fda723d9bd09b3379b84967cb5425...part: 6/6 ====>
+[2021-04-21 04:34:41,698] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x1c78599d3671401536fa306b6eb9fa55
+
+====> Sent Share: 0x36858d5b2a99a038ba3ea96ea0aaeee3...part: 1/6 ====>
+====> Sent Share: 0xb5234e9712e7e38a2ae7b6d4ad1a879b...part: 2/6 ====>
+====> Sent Share: 0x98519d50ef5c0a0988f5589d9408c47e...part: 3/6 ====>
+====> Sent Share: 0xe0107988bff613b6d4678ec95575a58b...part: 4/6 ====>
+====> Sent Share: 0x8c5fe33e84b600920d3e5957f1612ac3...part: 5/6 ====>
+====> Sent Share: 0x9d3fda723d9bd09b3379b84967cb5425...part: 6/6 ====>
+
+[2021-04-21 04:34:51,654] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: ad76a048103bde22e3a8a73ad530d714 from: 05fabf <=====
+Total 1 received
+
+[2021-04-21 04:34:51,654] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:35:11,655] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 9b34fa22152eea18d0af704d178fbeec from: 05fabf <=====
+Total 2 received
+
+[2021-04-21 04:35:11,655] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:35:41,699] [IDManager] [INFO] Newly generated EphID is: 0656ead7c15dfb87cbb7ba873f6d89f6
+[2021-04-21 04:35:41,699] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:35:41 ====> Sending Share: 0x4ce036711f57b2d23d388ffe2f820781...part: 1/6 ====>
+[2021-04-21 04:35:51,699] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 303403dc0ed8f8ea8e930fadc97d9ed0 from: 271051 <=====
+Total 1 received
+
+[2021-04-21 04:35:51,699] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:35:51,706] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:35:51 ====> Sending Share: 0x2ab3335b7718ce8bdd97c1d9643267d6...part: 2/6 ====>
+[2021-04-21 04:36:01,714] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:36:01 ====> Sending Share: 0x9fcfe196c8a14eb4acd55018dd7eaaf4...part: 3/6 ====>
+[2021-04-21 04:36:11,700] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: 31c597a3600c8ab7de52b7cb19cdb772 from: 271051 <=====
+Total 2 received
+
+[2021-04-21 04:36:11,700] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:36:11,722] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:36:11 ====> Sending Share: 0xac36412313f1334caaf13abc9b66d0dc...part: 4/6 ====>
+[2021-04-21 04:36:21,732] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:36:21 ====> Sending Share: 0x4fe6520059087c53d7eb81c49dead98e...part: 5/6 ====>
+[2021-04-21 04:36:31,701] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 3, secret: feef338c1e60cd5b01ce699d7aae3599 from: 271051 <=====
+Total 3 received
+
+[2021-04-21 04:36:31,701] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:36:31,701] [IDManager] [INFO] 
+------------------> Segment 4-B & 5-A <------------------
+Hash of reconstructed EphID matched: 271051 == 271051
+Reconstructed EphID is: 0xfa3a78362ac617f3128f714589bdebb3 with hash tag 0x271051
+
+Now Generate the EnctID
+[2021-04-21 04:36:31,701] [IDManager] [INFO] ------------------> Segment 5-B <------------------
+Newly generated EncntID is: 2063e1c30a93ce79ca32dd422efdbf75
+[2021-04-21 04:36:31,702] [BFManager] [INFO] 
+------------------> Segment 6 & 7-A <------------------
+Inserting a new EncntID: 2063e1c30a93ce79ca32dd422efdbf75 to the DBF (murmur3 hashing with 3 hashes)
+Inserting data 2063e1c30a93ce79ca32dd422efdbf75 into DBF#5 with id DBF-3aa90ed2a20611eba519a97deeebcbd7
+Current Bloomfilter DBF-3aa90ed2a20611eba519a97deeebcbd7 state is :{197384, 664841, 688905, 240564, 233204, 530293, 338903, 100216, 558461}
+[2021-04-21 04:36:31,743] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:36:31 ====> Sending Share: 0x8ae0142e97e729ca33c42530e50ac509...part: 6/6 ====>
+[2021-04-21 04:36:41,750] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x0656ead7c15dfb87cbb7ba873f6d89f6
+
+====> Sent Share: 0x4ce036711f57b2d23d388ffe2f820781...part: 1/6 ====>
+====> Sent Share: 0x2ab3335b7718ce8bdd97c1d9643267d6...part: 2/6 ====>
+====> Sent Share: 0x9fcfe196c8a14eb4acd55018dd7eaaf4...part: 3/6 ====>
+====> Sent Share: 0xac36412313f1334caaf13abc9b66d0dc...part: 4/6 ====>
+====> Sent Share: 0x4fe6520059087c53d7eb81c49dead98e...part: 5/6 ====>
+====> Sent Share: 0x8ae0142e97e729ca33c42530e50ac509...part: 6/6 ====>
+
+[2021-04-21 04:36:51,702] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 97b0d79649d5c0d3f9062524ec1f1947 from: 271051 <=====
+Total 1 received
+
+[2021-04-21 04:36:51,702] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:37:11,702] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: fc0a83c1e26b6522c3f9ea616e20627a from: 271051 <=====
+Total 2 received
+
+[2021-04-21 04:37:11,703] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:37:41,750] [IDManager] [INFO] Newly generated EphID is: 285a2dfee11fdf51aa97f68d6e22ee6c
+[2021-04-21 04:37:41,751] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:37:41 ====> Sending Share: 0xf731a58a49c3860bf866b64f47dc9da0...part: 1/6 ====>
+[2021-04-21 04:37:51,751] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 14042f8a2775794008e3ae0f32b5356e from: 6c0c60 <=====
+Total 1 received
+
+[2021-04-21 04:37:51,751] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:37:51,758] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:37:51 ====> Sending Share: 0x5a6c5c22d375f30db1f67bbba2995955...part: 2/6 ====>
+[2021-04-21 04:38:01,765] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:38:01 ====> Sending Share: 0x520a51c87e372656d74746d27e592189...part: 3/6 ====>
+[2021-04-21 04:38:11,774] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:38:11 ====> Sending Share: 0xde0b867b4a071fe768591793db1bf63c...part: 4/6 ====>
+[2021-04-21 04:38:21,782] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:38:21 ====> Sending Share: 0xfe6ffa3b36e5dfbf652bedffb8e1d76f...part: 5/6 ====>
+[2021-04-21 04:38:31,752] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 76fe82b6dee12f9138ef5de91f1192e8 from: 6c0c60 <=====
+Total 2 received
+
+[2021-04-21 04:38:31,752] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:38:31,790] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:38:31 ====> Sending Share: 0xb337ad0844d365decdbfca1617aac522...part: 6/6 ====>
+[2021-04-21 04:38:40,256] [BFManager] [INFO] 
+------------------> Segment 8 or 10 <------------------
+Clustering 6 DBFs into one QBF
+
+[2021-04-21 04:38:40,264] [BFManager] [INFO] 
+------------------> Segment 7-B <------------------
+Updating the DBF pool...Removing the oldest DBF and add a new DBF
+
+Current DBF is DBF-3aa90ed2a20611eba519a97deeebcbd7
+Current DBF pool has: ['DBF-1ab98680a1ff11eba519a97deeebcbd7', 'DBF-a425bc94a20011eba519a97deeebcbd7', 'DBF-09c68d5ca20211eba519a97deeebcbd7', 'DBF-6f67607ca20311eba519a97deeebcbd7', 'DBF-d5083504a20411eba519a97deeebcbd7', 'DBF-3aa90ed2a20611eba519a97deeebcbd7']
+[2021-04-21 04:38:40,351] [BFManager] [INFO] 
+------------------> Segment 9-A <------------------
+Querying the sever with QBF ID: QBF-a049703ca20711eba519a97deeebcbd7
+
+[2021-04-21 04:38:41,798] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x285a2dfee11fdf51aa97f68d6e22ee6c
+
+====> Sent Share: 0xf731a58a49c3860bf866b64f47dc9da0...part: 1/6 ====>
+====> Sent Share: 0x5a6c5c22d375f30db1f67bbba2995955...part: 2/6 ====>
+====> Sent Share: 0x520a51c87e372656d74746d27e592189...part: 3/6 ====>
+====> Sent Share: 0xde0b867b4a071fe768591793db1bf63c...part: 4/6 ====>
+====> Sent Share: 0xfe6ffa3b36e5dfbf652bedffb8e1d76f...part: 5/6 ====>
+====> Sent Share: 0xb337ad0844d365decdbfca1617aac522...part: 6/6 ====>
+
+[2021-04-21 04:38:50,082] [BFManager] [INFO] 
+------------------> Segment 9-B <------------------
+===================================================
+Got the result from server: No Match, You are safe.
+===================================================
+
+[2021-04-21 04:38:51,753] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 554f0c1d55b49bbd3e2c2d11f970279a from: 6c0c60 <=====
+Total 3 received
+
+[2021-04-21 04:38:51,753] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:38:51,753] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:39:11,754] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: bcf37704e95fca47135ac6804443f710 from: 6c0c60 <=====
+Total 4 received
+
+[2021-04-21 04:39:11,754] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:39:11,754] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:39:41,799] [IDManager] [INFO] Newly generated EphID is: 190e0adb358be2a655ab5060f82365dc
+[2021-04-21 04:39:41,800] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:39:41 ====> Sending Share: 0x3b462973282ba31807f1c9e10fa39cf4...part: 1/6 ====>
+[2021-04-21 04:39:51,800] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 1, secret: 4046ac19334830e71fc43532d8b87630 from: 1735a2 <=====
+Total 1 received
+
+[2021-04-21 04:39:51,800] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 1 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:39:51,810] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:39:51 ====> Sending Share: 0xd0cb29b74fceb0a0197296d14afeb6a7...part: 2/6 ====>
+[2021-04-21 04:40:01,818] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:40:01 ====> Sending Share: 0xd99d0ba7ac750b3e8a2db731aa34b2f6...part: 3/6 ====>
+[2021-04-21 04:40:11,801] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 2, secret: d31736dde45d958d5436679a666e8b9f from: 1735a2 <=====
+Total 2 received
+
+[2021-04-21 04:40:11,801] [IDManager] [INFO] 
+------------------> Segment 4 <------------------
+Received 2 parts not enoungh to reconst the EphID
+
+[2021-04-21 04:40:11,827] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:40:11 ====> Sending Share: 0x55bbcf443e1eb2f35a232b022d4591e1...part: 4/6 ====>
+[2021-04-21 04:40:21,837] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:40:21 ====> Sending Share: 0x4527748d04cba7be8952f242d4315367...part: 5/6 ====>
+[2021-04-21 04:40:31,846] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+04:40:31 ====> Sending Share: 0xa7dffb82007be9a017bd0cf39ef7f788...part: 6/6 ====>
+[2021-04-21 04:40:41,801] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 4, secret: 7080a0d0efee6a29a7d2768b66c41946 from: 1735a2 <=====
+Total 3 received
+
+[2021-04-21 04:40:41,802] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 3 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:40:41,802] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:40:41,854] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x190e0adb358be2a655ab5060f82365dc
+
+====> Sent Share: 0x3b462973282ba31807f1c9e10fa39cf4...part: 1/6 ====>
+====> Sent Share: 0xd0cb29b74fceb0a0197296d14afeb6a7...part: 2/6 ====>
+====> Sent Share: 0xd99d0ba7ac750b3e8a2db731aa34b2f6...part: 3/6 ====>
+====> Sent Share: 0x55bbcf443e1eb2f35a232b022d4591e1...part: 4/6 ====>
+====> Sent Share: 0x4527748d04cba7be8952f242d4315367...part: 5/6 ====>
+====> Sent Share: 0xa7dffb82007be9a017bd0cf39ef7f788...part: 6/6 ====>
+
+[2021-04-21 04:41:01,802] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 5, secret: 7b197fff4a69da1fc6fc5314d963917d from: 1735a2 <=====
+Total 4 received
+
+[2021-04-21 04:41:01,803] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 4 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:41:01,803] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
+
+[2021-04-21 04:41:21,803] [IDManager] [INFO] ------------------> Segment 3-C & B <------------------
+<===== Receive: part 6, secret: ad9fd0a632b1f885df0e12feeda62aa1 from: 1735a2 <=====
+Total 5 received
+
+[2021-04-21 04:41:21,803] [IDManager] [INFO] 
+------------------> Segment 4-A <------------------
+Received 5 parts now reconstructing the EphID using the first three
+
+[2021-04-21 04:41:21,803] [IDManager] [ERROR] 
+------------------> Segment 4-B <------------------
+     Hash of reconstructed EphID mismatched
