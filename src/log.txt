@@ -8441,3 +8441,1203 @@ Generating 6 sharings of EphID: 0x596620b46767f571c6cc696c8aa085ca
 ====> Sharing: 0x140215852985fde673c089a7b60ec74c...part: 5/6 ====>
 ====> Sharing: 0x1e2d77b115bc0a54a28816c6b0d9a9ad...part: 6/6 ====>
 
+[2021-04-20 22:36:00,818] [IDManager] [INFO] Newly generated EphID is: 0a26a3690d61df4cc0dfaf28a052bd3c
+[2021-04-20 22:36:00,818] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:36:00 ====> Sending Share: 0x4d4ca685e39e767117d7bf658a0bf53a...part: 1/6 ====>
+[2021-04-20 22:36:00,819] [IDManager] [ERROR] Failed to send message
+[2021-04-20 22:36:10,827] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:36:10 ====> Sending Share: 0x5532774ea4c4083ab692aa76560c39ca...part: 2/6 ====>
+[2021-04-20 22:36:10,830] [IDManager] [ERROR] Failed to send message
+[2021-04-20 22:36:20,850] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:36:20 ====> Sending Share: 0x21d815c350d294a99d10705b04538aec...part: 3/6 ====>
+[2021-04-20 22:36:20,852] [IDManager] [ERROR] Failed to send message
+[2021-04-20 22:36:30,868] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:36:30 ====> Sending Share: 0xb33d81e3e7ca1bbdcb51111394e1e89f...part: 4/6 ====>
+[2021-04-20 22:36:30,869] [IDManager] [ERROR] Failed to send message
+[2021-04-20 22:36:40,886] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:36:40 ====> Sending Share: 0x0962bbb069aa9d7741548ca007b752e5...part: 5/6 ====>
+[2021-04-20 22:36:40,886] [IDManager] [ERROR] Failed to send message
+[2021-04-20 22:36:50,900] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:36:50 ====> Sending Share: 0x2447c328d67419d5ff1ae3005cd3c9bc...part: 6/6 ====>
+[2021-04-20 22:36:50,902] [IDManager] [ERROR] Failed to send message
+[2021-04-20 22:37:00,917] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x0a26a3690d61df4cc0dfaf28a052bd3c
+
+====> Sent Share: 0x4d4ca685e39e767117d7bf658a0bf53a...part: 1/6 ====>
+====> Sent Share: 0x5532774ea4c4083ab692aa76560c39ca...part: 2/6 ====>
+====> Sent Share: 0x21d815c350d294a99d10705b04538aec...part: 3/6 ====>
+====> Sent Share: 0xb33d81e3e7ca1bbdcb51111394e1e89f...part: 4/6 ====>
+====> Sent Share: 0x0962bbb069aa9d7741548ca007b752e5...part: 5/6 ====>
+====> Sent Share: 0x2447c328d67419d5ff1ae3005cd3c9bc...part: 6/6 ====>
+
+[2021-04-20 22:38:00,925] [IDManager] [INFO] Newly generated EphID is: a1ecc1ca90bf462a4ef85d0589e49acc
+[2021-04-20 22:38:00,926] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:38:00 ====> Sending Share: 0xa60ea0017689e85c2e57e47b8a1f8ece...part: 1/6 ====>
+[2021-04-20 22:38:10,929] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:38:10 ====> Sending Share: 0x1b7191165ee2f93019265c10ef349519...part: 2/6 ====>
+[2021-04-20 22:38:20,949] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:38:20 ====> Sending Share: 0x0215950949ca78a60f63c3c5b923adac...part: 3/6 ====>
+[2021-04-20 22:38:30,966] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:38:30 ====> Sending Share: 0x59faabda374066be11101b99e7ecd887...part: 4/6 ====>
+[2021-04-20 22:38:40,970] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:38:40 ====> Sending Share: 0x2320d5892744c3781e2b638d7b9015ab...part: 5/6 ====>
+[2021-04-20 22:38:50,981] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:38:50 ====> Sending Share: 0x5d88121619d78ed436b59ba0740d6517...part: 6/6 ====>
+[2021-04-20 22:39:00,989] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xa1ecc1ca90bf462a4ef85d0589e49acc
+
+====> Sent Share: 0xa60ea0017689e85c2e57e47b8a1f8ece...part: 1/6 ====>
+====> Sent Share: 0x1b7191165ee2f93019265c10ef349519...part: 2/6 ====>
+====> Sent Share: 0x0215950949ca78a60f63c3c5b923adac...part: 3/6 ====>
+====> Sent Share: 0x59faabda374066be11101b99e7ecd887...part: 4/6 ====>
+====> Sent Share: 0x2320d5892744c3781e2b638d7b9015ab...part: 5/6 ====>
+====> Sent Share: 0x5d88121619d78ed436b59ba0740d6517...part: 6/6 ====>
+
+[2021-04-20 22:40:00,997] [IDManager] [INFO] Newly generated EphID is: 5c1228dce65edb1fb8fdf3cffd14c418
+[2021-04-20 22:40:00,998] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:40:00 ====> Sending Share: 0x99d22522ba484c2085b9feb6a033f54f...part: 1/6 ====>
+[2021-04-20 22:40:11,002] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:40:11 ====> Sending Share: 0xd374ed3ec4725fed71fb1e90ec47af19...part: 2/6 ====>
+[2021-04-20 22:40:21,013] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:40:21 ====> Sending Share: 0x08fa813104dd16867dc1535ee14ff177...part: 3/6 ====>
+[2021-04-20 22:40:31,030] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:40:31 ====> Sending Share: 0x3a62e0f97b886feba90c9d207f4cbc67...part: 4/6 ====>
+[2021-04-20 22:40:41,045] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:40:41 ====> Sending Share: 0x67ae0c9828746c1cf3dcfbd5c63e0fea...part: 5/6 ====>
+[2021-04-20 22:40:51,060] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:40:51 ====> Sending Share: 0x90dc040d0ba10b1a5e326f7eb623ec00...part: 6/6 ====>
+[2021-04-20 22:41:01,062] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x5c1228dce65edb1fb8fdf3cffd14c418
+
+====> Sent Share: 0x99d22522ba484c2085b9feb6a033f54f...part: 1/6 ====>
+====> Sent Share: 0xd374ed3ec4725fed71fb1e90ec47af19...part: 2/6 ====>
+====> Sent Share: 0x08fa813104dd16867dc1535ee14ff177...part: 3/6 ====>
+====> Sent Share: 0x3a62e0f97b886feba90c9d207f4cbc67...part: 4/6 ====>
+====> Sent Share: 0x67ae0c9828746c1cf3dcfbd5c63e0fea...part: 5/6 ====>
+====> Sent Share: 0x90dc040d0ba10b1a5e326f7eb623ec00...part: 6/6 ====>
+
+[2021-04-20 22:42:01,082] [IDManager] [INFO] Newly generated EphID is: 4affb59d0ddac794dc41f9076c35a08a
+[2021-04-20 22:42:01,082] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:42:01 ====> Sending Share: 0x5e46e44c845bde8a0e2f70835cd274ba...part: 1/6 ====>
+[2021-04-20 22:42:11,097] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:42:11 ====> Sending Share: 0x1d98720edcbafb75d65711095f89ea3d...part: 2/6 ====>
+[2021-04-20 22:42:21,098] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:42:21 ====> Sending Share: 0x88f45ee416f81e5834b8da99745c0112...part: 3/6 ====>
+[2021-04-20 22:42:31,115] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:42:31 ====> Sending Share: 0xa05aaacc331347312954cd339b48b93a...part: 4/6 ====>
+[2021-04-20 22:42:41,126] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:42:41 ====> Sending Share: 0x63cb55c7310c7600b42ae8d7d45012b5...part: 5/6 ====>
+[2021-04-20 22:42:51,130] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:42:51 ====> Sending Share: 0xd3465fd510e3aac6d53b2d861f720d82...part: 6/6 ====>
+[2021-04-20 22:43:01,139] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x4affb59d0ddac794dc41f9076c35a08a
+
+====> Sent Share: 0x5e46e44c845bde8a0e2f70835cd274ba...part: 1/6 ====>
+====> Sent Share: 0x1d98720edcbafb75d65711095f89ea3d...part: 2/6 ====>
+====> Sent Share: 0x88f45ee416f81e5834b8da99745c0112...part: 3/6 ====>
+====> Sent Share: 0xa05aaacc331347312954cd339b48b93a...part: 4/6 ====>
+====> Sent Share: 0x63cb55c7310c7600b42ae8d7d45012b5...part: 5/6 ====>
+====> Sent Share: 0xd3465fd510e3aac6d53b2d861f720d82...part: 6/6 ====>
+
+[2021-04-20 22:44:01,161] [IDManager] [INFO] Newly generated EphID is: b3825bbd5538afaf9f50ea2104163ade
+[2021-04-20 22:44:01,161] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:44:01 ====> Sending Share: 0x6d363a4d0b19921268ceac57937a49ac...part: 1/6 ====>
+[2021-04-20 22:44:11,177] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:44:11 ====> Sending Share: 0xf60e537931a8090c7f11306a4608f6f2...part: 2/6 ====>
+[2021-04-20 22:44:21,182] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:44:21 ====> Sending Share: 0x4e0aa741c8e4149de21876591bc242b2...part: 3/6 ====>
+[2021-04-20 22:44:31,198] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:44:31 ====> Sending Share: 0x752b35a6d0cdb4c691e47e2414a62cea...part: 4/6 ====>
+[2021-04-20 22:44:41,209] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:44:41 ====> Sending Share: 0x6b6ffea84964e9868e7547cb30b4b59b...part: 5/6 ====>
+[2021-04-20 22:44:51,222] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:44:51 ====> Sending Share: 0x30d9024632a9b2ddd7cad34e6feddcc5...part: 6/6 ====>
+[2021-04-20 22:45:01,227] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xb3825bbd5538afaf9f50ea2104163ade
+
+====> Sent Share: 0x6d363a4d0b19921268ceac57937a49ac...part: 1/6 ====>
+====> Sent Share: 0xf60e537931a8090c7f11306a4608f6f2...part: 2/6 ====>
+====> Sent Share: 0x4e0aa741c8e4149de21876591bc242b2...part: 3/6 ====>
+====> Sent Share: 0x752b35a6d0cdb4c691e47e2414a62cea...part: 4/6 ====>
+====> Sent Share: 0x6b6ffea84964e9868e7547cb30b4b59b...part: 5/6 ====>
+====> Sent Share: 0x30d9024632a9b2ddd7cad34e6feddcc5...part: 6/6 ====>
+
+[2021-04-20 22:46:01,240] [IDManager] [INFO] Newly generated EphID is: 32c38e51e2cf1673b4e3c92a545f2ca1
+[2021-04-20 22:46:01,242] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:46:01 ====> Sending Share: 0x05a59d37db61fc39db32ec25d55fbdce...part: 1/6 ====>
+[2021-04-20 22:46:11,256] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:46:11 ====> Sending Share: 0x5ab08faf88103a76a6c8a6e77e2c8c36...part: 2/6 ====>
+[2021-04-20 22:46:21,270] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:46:21 ====> Sending Share: 0x31e465b8e8d9d12a17a4f96f4ec597da...part: 3/6 ====>
+[2021-04-20 22:46:31,279] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:46:31 ====> Sending Share: 0x8b411f53fdbec0542dc7e3bd472ae0b9...part: 4/6 ====>
+[2021-04-20 22:46:41,297] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:46:41 ====> Sending Share: 0x66c6bc80c6bf07f4e93165d1675c66d4...part: 5/6 ====>
+[2021-04-20 22:46:51,315] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:46:51 ====> Sending Share: 0xc4753d3f43daa80c49e17fabaf5a2a2a...part: 6/6 ====>
+[2021-04-20 22:47:01,330] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x32c38e51e2cf1673b4e3c92a545f2ca1
+
+====> Sent Share: 0x05a59d37db61fc39db32ec25d55fbdce...part: 1/6 ====>
+====> Sent Share: 0x5ab08faf88103a76a6c8a6e77e2c8c36...part: 2/6 ====>
+====> Sent Share: 0x31e465b8e8d9d12a17a4f96f4ec597da...part: 3/6 ====>
+====> Sent Share: 0x8b411f53fdbec0542dc7e3bd472ae0b9...part: 4/6 ====>
+====> Sent Share: 0x66c6bc80c6bf07f4e93165d1675c66d4...part: 5/6 ====>
+====> Sent Share: 0xc4753d3f43daa80c49e17fabaf5a2a2a...part: 6/6 ====>
+
+[2021-04-20 22:48:01,352] [IDManager] [INFO] Newly generated EphID is: 496bb1279ac25d8af6da9ea276e308d4
+[2021-04-20 22:48:01,353] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:48:01 ====> Sending Share: 0x9e3a7cf4340df03c33152dca6f006940...part: 1/6 ====>
+[2021-04-20 22:48:11,367] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:48:11 ====> Sending Share: 0x09fbc042fa13a3f98a79a37eff356c29...part: 2/6 ====>
+[2021-04-20 22:48:21,377] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:48:21 ====> Sending Share: 0x8caf7b13ecd378c2fd07ffc02782118d...part: 3/6 ====>
+[2021-04-20 22:48:31,387] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:48:31 ====> Sending Share: 0x2655ad670c4d6e988ac0428de7e6596e...part: 4/6 ====>
+[2021-04-20 22:48:41,391] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:48:41 ====> Sending Share: 0xd6ee573c5881857a33a26be8406243ca...part: 5/6 ====>
+[2021-04-20 22:48:51,397] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:48:51 ====> Sending Share: 0x9e797893d16fbd67f7ae7bcf30f5d0a3...part: 6/6 ====>
+[2021-04-20 22:49:01,414] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x496bb1279ac25d8af6da9ea276e308d4
+
+====> Sent Share: 0x9e3a7cf4340df03c33152dca6f006940...part: 1/6 ====>
+====> Sent Share: 0x09fbc042fa13a3f98a79a37eff356c29...part: 2/6 ====>
+====> Sent Share: 0x8caf7b13ecd378c2fd07ffc02782118d...part: 3/6 ====>
+====> Sent Share: 0x2655ad670c4d6e988ac0428de7e6596e...part: 4/6 ====>
+====> Sent Share: 0xd6ee573c5881857a33a26be8406243ca...part: 5/6 ====>
+====> Sent Share: 0x9e797893d16fbd67f7ae7bcf30f5d0a3...part: 6/6 ====>
+
+[2021-04-20 22:50:01,423] [IDManager] [INFO] Newly generated EphID is: 41f792068336208e1749ae9f7941f046
+[2021-04-20 22:50:01,423] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:50:01 ====> Sending Share: 0xc5eee627b519edac60e9a049cee43b7e...part: 1/6 ====>
+[2021-04-20 22:50:11,437] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:50:11 ====> Sending Share: 0x60884426a4d6fb932def808d918d60c5...part: 2/6 ====>
+[2021-04-20 22:50:21,443] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:50:21 ====> Sending Share: 0x11c3ac03526d4a427e5b4f6ac13d601a...part: 3/6 ====>
+[2021-04-20 22:50:31,457] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:50:31 ====> Sending Share: 0xd9a11dbdbddcd9ba522d0ce15df4397c...part: 4/6 ====>
+[2021-04-20 22:50:41,472] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:50:41 ====> Sending Share: 0xb8209955e725a9faa964b8f167b1eced...part: 5/6 ====>
+[2021-04-20 22:50:51,477] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:50:51 ====> Sending Share: 0xad421ecbce47bb038402539ade767a6c...part: 6/6 ====>
+[2021-04-20 22:51:01,481] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x41f792068336208e1749ae9f7941f046
+
+====> Sent Share: 0xc5eee627b519edac60e9a049cee43b7e...part: 1/6 ====>
+====> Sent Share: 0x60884426a4d6fb932def808d918d60c5...part: 2/6 ====>
+====> Sent Share: 0x11c3ac03526d4a427e5b4f6ac13d601a...part: 3/6 ====>
+====> Sent Share: 0xd9a11dbdbddcd9ba522d0ce15df4397c...part: 4/6 ====>
+====> Sent Share: 0xb8209955e725a9faa964b8f167b1eced...part: 5/6 ====>
+====> Sent Share: 0xad421ecbce47bb038402539ade767a6c...part: 6/6 ====>
+
+[2021-04-20 22:52:01,496] [IDManager] [INFO] Newly generated EphID is: 20172fc0ae89c7f6bcd94b30de443d08
+[2021-04-20 22:52:01,498] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:52:01 ====> Sending Share: 0xaa9f1aa52f36bfa88e8c7d13769b9071...part: 1/6 ====>
+[2021-04-20 22:52:11,517] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:52:11 ====> Sending Share: 0xc51fe8ad0fcbb9deb1c61b728177697e...part: 2/6 ====>
+[2021-04-20 22:52:21,527] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:52:21 ====> Sending Share: 0x6f9999d85048b6992686264dfed7c82f...part: 3/6 ====>
+[2021-04-20 22:52:31,530] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:52:31 ====> Sending Share: 0xaa0c2e26f0adb5d7eccc9da5eebcac83...part: 4/6 ====>
+[2021-04-20 22:52:41,544] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:52:41 ====> Sending Share: 0x7477a598f0fab79b0499817a5126167b...part: 5/6 ====>
+[2021-04-20 22:52:51,557] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:52:51 ====> Sending Share: 0xcedc002e512fbbe26decd1cb26140616...part: 6/6 ====>
+[2021-04-20 22:53:01,561] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x20172fc0ae89c7f6bcd94b30de443d08
+
+====> Sent Share: 0xaa9f1aa52f36bfa88e8c7d13769b9071...part: 1/6 ====>
+====> Sent Share: 0xc51fe8ad0fcbb9deb1c61b728177697e...part: 2/6 ====>
+====> Sent Share: 0x6f9999d85048b6992686264dfed7c82f...part: 3/6 ====>
+====> Sent Share: 0xaa0c2e26f0adb5d7eccc9da5eebcac83...part: 4/6 ====>
+====> Sent Share: 0x7477a598f0fab79b0499817a5126167b...part: 5/6 ====>
+====> Sent Share: 0xcedc002e512fbbe26decd1cb26140616...part: 6/6 ====>
+
+[2021-04-20 22:54:01,581] [IDManager] [INFO] Newly generated EphID is: 285384570e01ceca38e04cfa750524d0
+[2021-04-20 22:54:01,581] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:54:01 ====> Sending Share: 0x675ed72877c37fe0d282fcc537785948...part: 1/6 ====>
+[2021-04-20 22:54:11,589] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:54:11 ====> Sending Share: 0xa425270677bcd95a1792abd473bdbd66...part: 2/6 ====>
+[2021-04-20 22:54:21,595] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:54:21 ====> Sending Share: 0xdea673f10deddb36080f5a2829d5512a...part: 3/6 ====>
+[2021-04-20 22:54:31,597] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:54:31 ====> Sending Share: 0x16e2bde83a568574a3f907c059bf1495...part: 4/6 ====>
+[2021-04-20 22:54:41,615] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:54:41 ====> Sending Share: 0x4cda04ebfcf6d815eb4fb49d037b07a5...part: 5/6 ====>
+[2021-04-20 22:54:51,630] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:54:51 ====> Sending Share: 0x808c48fc55ced319de1360be27092a5b...part: 6/6 ====>
+[2021-04-20 22:55:01,634] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x285384570e01ceca38e04cfa750524d0
+
+====> Sent Share: 0x675ed72877c37fe0d282fcc537785948...part: 1/6 ====>
+====> Sent Share: 0xa425270677bcd95a1792abd473bdbd66...part: 2/6 ====>
+====> Sent Share: 0xdea673f10deddb36080f5a2829d5512a...part: 3/6 ====>
+====> Sent Share: 0x16e2bde83a568574a3f907c059bf1495...part: 4/6 ====>
+====> Sent Share: 0x4cda04ebfcf6d815eb4fb49d037b07a5...part: 5/6 ====>
+====> Sent Share: 0x808c48fc55ced319de1360be27092a5b...part: 6/6 ====>
+
+[2021-04-20 22:56:01,659] [IDManager] [INFO] Newly generated EphID is: 226764368d2985e9475d5ad79a9bdd7b
+[2021-04-20 22:56:01,659] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:56:01 ====> Sending Share: 0xe0aad77e547d95de6a29a12713ed5293...part: 1/6 ====>
+[2021-04-20 22:56:11,669] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:56:11 ====> Sending Share: 0x5944921c4855e798c87ddf055336d855...part: 2/6 ====>
+[2021-04-20 22:56:21,687] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:56:21 ====> Sending Share: 0x8c34941068b27b18625a147258786ebf...part: 3/6 ====>
+[2021-04-20 22:56:31,699] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:56:31 ====> Sending Share: 0x797add5ab593505d37be416e23b215d2...part: 4/6 ====>
+[2021-04-20 22:56:41,708] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:56:41 ====> Sending Share: 0x21176dfb2ef8676748aa65f8b4e3cd8e...part: 5/6 ====>
+[2021-04-20 22:56:51,720] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:56:51 ====> Sending Share: 0x830a45f1d4e1c036951e82120c0d95f2...part: 6/6 ====>
+[2021-04-20 22:57:01,729] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x226764368d2985e9475d5ad79a9bdd7b
+
+====> Sent Share: 0xe0aad77e547d95de6a29a12713ed5293...part: 1/6 ====>
+====> Sent Share: 0x5944921c4855e798c87ddf055336d855...part: 2/6 ====>
+====> Sent Share: 0x8c34941068b27b18625a147258786ebf...part: 3/6 ====>
+====> Sent Share: 0x797add5ab593505d37be416e23b215d2...part: 4/6 ====>
+====> Sent Share: 0x21176dfb2ef8676748aa65f8b4e3cd8e...part: 5/6 ====>
+====> Sent Share: 0x830a45f1d4e1c036951e82120c0d95f2...part: 6/6 ====>
+
+[2021-04-20 22:58:01,754] [IDManager] [INFO] Newly generated EphID is: 0c718ac98a5c116f6d7068fe5551163b
+[2021-04-20 22:58:01,755] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:58:01 ====> Sending Share: 0xc496f06bdcf42e29a601018ad146a54d...part: 1/6 ====>
+[2021-04-20 22:58:11,769] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:58:11 ====> Sending Share: 0xc945097bf5bc6a90bf824f40e87ba469...part: 2/6 ====>
+[2021-04-20 22:58:21,780] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:58:21 ====> Sending Share: 0x1a7bd5f9d4b4c6a4b9f452209af0138f...part: 3/6 ====>
+[2021-04-20 22:58:31,786] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:58:31 ====> Sending Share: 0xb83b55e579dd426595570a29e8a3f2bd...part: 4/6 ====>
+[2021-04-20 22:58:41,791] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:58:41 ====> Sending Share: 0xa283893ee535ddd351aa775cd19741f5...part: 5/6 ====>
+[2021-04-20 22:58:51,806] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+22:58:51 ====> Sending Share: 0xd954700616be98edeeee99b955ca0136...part: 6/6 ====>
+[2021-04-20 22:59:01,811] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x0c718ac98a5c116f6d7068fe5551163b
+
+====> Sent Share: 0xc496f06bdcf42e29a601018ad146a54d...part: 1/6 ====>
+====> Sent Share: 0xc945097bf5bc6a90bf824f40e87ba469...part: 2/6 ====>
+====> Sent Share: 0x1a7bd5f9d4b4c6a4b9f452209af0138f...part: 3/6 ====>
+====> Sent Share: 0xb83b55e579dd426595570a29e8a3f2bd...part: 4/6 ====>
+====> Sent Share: 0xa283893ee535ddd351aa775cd19741f5...part: 5/6 ====>
+====> Sent Share: 0xd954700616be98edeeee99b955ca0136...part: 6/6 ====>
+
+[2021-04-20 23:00:01,823] [IDManager] [INFO] Newly generated EphID is: e4861bcb0339d1f67e24dbe8b246a63f
+[2021-04-20 23:00:01,823] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:00:01 ====> Sending Share: 0xd7ebd192d73109b94206f688666e90bd...part: 1/6 ====>
+[2021-04-20 23:00:11,834] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:00:11 ====> Sending Share: 0x7e4c8b55c110642bb7177a5c4de39423...part: 2/6 ====>
+[2021-04-20 23:00:21,847] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:00:21 ====> Sending Share: 0xd7a84913c0d7e14ddd56676468a5b070...part: 3/6 ====>
+[2021-04-20 23:00:31,851] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:00:31 ====> Sending Share: 0xe3ff0accd687811fb4c3bda0b6b4e5a5...part: 4/6 ====>
+[2021-04-20 23:00:41,866] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:00:41 ====> Sending Share: 0xa350d081021f43a13d5f7d11381133c2...part: 5/6 ====>
+[2021-04-20 23:00:51,883] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:00:51 ====> Sending Share: 0x159d9a30439f28d27729a5b5ecba9ac7...part: 6/6 ====>
+[2021-04-20 23:01:01,898] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xe4861bcb0339d1f67e24dbe8b246a63f
+
+====> Sent Share: 0xd7ebd192d73109b94206f688666e90bd...part: 1/6 ====>
+====> Sent Share: 0x7e4c8b55c110642bb7177a5c4de39423...part: 2/6 ====>
+====> Sent Share: 0xd7a84913c0d7e14ddd56676468a5b070...part: 3/6 ====>
+====> Sent Share: 0xe3ff0accd687811fb4c3bda0b6b4e5a5...part: 4/6 ====>
+====> Sent Share: 0xa350d081021f43a13d5f7d11381133c2...part: 5/6 ====>
+====> Sent Share: 0x159d9a30439f28d27729a5b5ecba9ac7...part: 6/6 ====>
+
+[2021-04-20 23:02:01,920] [IDManager] [INFO] Newly generated EphID is: 8492d20cd1ef2212fccbb2355c208563
+[2021-04-20 23:02:01,921] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:02:01 ====> Sending Share: 0xae9d5eea3a2d6d0adde418a5bf1cd040...part: 1/6 ====>
+[2021-04-20 23:02:11,936] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:02:11 ====> Sending Share: 0xe0525996c3c19aa57c23785ed48ffd37...part: 2/6 ====>
+[2021-04-20 23:02:21,940] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:02:21 ====> Sending Share: 0x19b1c2126eabaae2d789d1609c7a0c49...part: 3/6 ====>
+[2021-04-20 23:02:31,957] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:02:31 ====> Sending Share: 0x5abb985d3aeb9dc2f01723ab16dafd74...part: 4/6 ====>
+[2021-04-20 23:02:41,972] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:02:41 ====> Sending Share: 0xa36fdc7728817345c5cb6f3e43b2d0b9...part: 5/6 ====>
+[2021-04-20 23:02:51,990] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:02:51 ====> Sending Share: 0xf3ce8e60376d2b6b58a6b41a23018618...part: 6/6 ====>
+[2021-04-20 23:03:01,997] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x8492d20cd1ef2212fccbb2355c208563
+
+====> Sent Share: 0xae9d5eea3a2d6d0adde418a5bf1cd040...part: 1/6 ====>
+====> Sent Share: 0xe0525996c3c19aa57c23785ed48ffd37...part: 2/6 ====>
+====> Sent Share: 0x19b1c2126eabaae2d789d1609c7a0c49...part: 3/6 ====>
+====> Sent Share: 0x5abb985d3aeb9dc2f01723ab16dafd74...part: 4/6 ====>
+====> Sent Share: 0xa36fdc7728817345c5cb6f3e43b2d0b9...part: 5/6 ====>
+====> Sent Share: 0xf3ce8e60376d2b6b58a6b41a23018618...part: 6/6 ====>
+
+[2021-04-20 23:04:02,020] [IDManager] [INFO] Newly generated EphID is: 954629bc3d34be4fde36a902a9a0d0a6
+[2021-04-20 23:04:02,021] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:04:02 ====> Sending Share: 0x04d215acb04fc509ae674f8b6381df50...part: 1/6 ====>
+[2021-04-20 23:04:12,042] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:04:12 ====> Sending Share: 0x974a6e1a5e3d7eb886146ce571454c5f...part: 2/6 ====>
+[2021-04-20 23:04:22,047] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:04:22 ====> Sending Share: 0x4caf330546fdeb5c653e0110d2eb17d5...part: 3/6 ====>
+[2021-04-20 23:04:32,062] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:04:32 ====> Sending Share: 0x2500646d6a910af54be40c0d887341b1...part: 4/6 ====>
+[2021-04-20 23:04:42,077] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:04:42 ====> Sending Share: 0x203e0252c8f6dd833a068ddb91ddc9f3...part: 5/6 ====>
+[2021-04-20 23:04:52,085] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:04:52 ====> Sending Share: 0x3e680cb5622f63062fa5867aef2ab09b...part: 6/6 ====>
+[2021-04-20 23:05:02,088] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x954629bc3d34be4fde36a902a9a0d0a6
+
+====> Sent Share: 0x04d215acb04fc509ae674f8b6381df50...part: 1/6 ====>
+====> Sent Share: 0x974a6e1a5e3d7eb886146ce571454c5f...part: 2/6 ====>
+====> Sent Share: 0x4caf330546fdeb5c653e0110d2eb17d5...part: 3/6 ====>
+====> Sent Share: 0x2500646d6a910af54be40c0d887341b1...part: 4/6 ====>
+====> Sent Share: 0x203e0252c8f6dd833a068ddb91ddc9f3...part: 5/6 ====>
+====> Sent Share: 0x3e680cb5622f63062fa5867aef2ab09b...part: 6/6 ====>
+
+[2021-04-20 23:06:02,107] [IDManager] [INFO] Newly generated EphID is: 233b8c790a108248765cfc8c1c45dd01
+[2021-04-20 23:06:02,108] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:06:02 ====> Sending Share: 0x1bb43a78e0ef5b4180e1fc5ec748df35...part: 1/6 ====>
+[2021-04-20 23:06:12,123] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:06:12 ====> Sending Share: 0x586aeb3a01824cfcdb947feda4b88a66...part: 2/6 ====>
+[2021-04-20 23:06:22,138] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:06:22 ====> Sending Share: 0xd95f9ebc6bc9577a86748738b494de94...part: 3/6 ====>
+[2021-04-20 23:06:32,141] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:06:32 ====> Sending Share: 0x9e9255001fc47aba8182123ff6dddbc0...part: 4/6 ====>
+[2021-04-20 23:06:42,152] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:06:42 ====> Sending Share: 0xa8030e051d73b6bcccbd21036b9381e9...part: 5/6 ====>
+[2021-04-20 23:06:52,157] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:06:52 ====> Sending Share: 0xf5b1c9cb64d70b816825b38312b5d10f...part: 6/6 ====>
+[2021-04-20 23:07:02,169] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x233b8c790a108248765cfc8c1c45dd01
+
+====> Sent Share: 0x1bb43a78e0ef5b4180e1fc5ec748df35...part: 1/6 ====>
+====> Sent Share: 0x586aeb3a01824cfcdb947feda4b88a66...part: 2/6 ====>
+====> Sent Share: 0xd95f9ebc6bc9577a86748738b494de94...part: 3/6 ====>
+====> Sent Share: 0x9e9255001fc47aba8182123ff6dddbc0...part: 4/6 ====>
+====> Sent Share: 0xa8030e051d73b6bcccbd21036b9381e9...part: 5/6 ====>
+====> Sent Share: 0xf5b1c9cb64d70b816825b38312b5d10f...part: 6/6 ====>
+
+[2021-04-20 23:08:02,178] [IDManager] [INFO] Newly generated EphID is: 288dd50dec9ca2eabb3b89321f430fbb
+[2021-04-20 23:08:02,178] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:08:02 ====> Sending Share: 0xc22435cb4e04d0adf02300a8e92a3c74...part: 1/6 ====>
+[2021-04-20 23:08:12,191] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:08:12 ====> Sending Share: 0x82442d564ddaabdf4b3bd932e1c8901b...part: 2/6 ====>
+[2021-04-20 23:08:22,203] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:08:22 ====> Sending Share: 0x68edbbaeec1e347ecc8612d0091e0aaf...part: 3/6 ====>
+[2021-04-20 23:08:32,215] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:08:32 ====> Sending Share: 0x7620e0d528cf6a8c7401ad805f2aac30...part: 4/6 ====>
+[2021-04-20 23:08:42,231] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:08:42 ====> Sending Share: 0xa9dd9cc903ee4e0841aea943e3ee749e...part: 5/6 ====>
+[2021-04-20 23:08:52,236] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:08:52 ====> Sending Share: 0x0423ef8a7d7adef2358d061a976963fa...part: 6/6 ====>
+[2021-04-20 23:09:02,249] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x288dd50dec9ca2eabb3b89321f430fbb
+
+====> Sent Share: 0xc22435cb4e04d0adf02300a8e92a3c74...part: 1/6 ====>
+====> Sent Share: 0x82442d564ddaabdf4b3bd932e1c8901b...part: 2/6 ====>
+====> Sent Share: 0x68edbbaeec1e347ecc8612d0091e0aaf...part: 3/6 ====>
+====> Sent Share: 0x7620e0d528cf6a8c7401ad805f2aac30...part: 4/6 ====>
+====> Sent Share: 0xa9dd9cc903ee4e0841aea943e3ee749e...part: 5/6 ====>
+====> Sent Share: 0x0423ef8a7d7adef2358d061a976963fa...part: 6/6 ====>
+
+[2021-04-20 23:10:02,266] [IDManager] [INFO] Newly generated EphID is: ab933d0a742d5b4a5fba0e93ff33a221
+[2021-04-20 23:10:02,267] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:10:02 ====> Sending Share: 0xe1c55e7971cb0e223d7b3b5309e0a4dd...part: 1/6 ====>
+[2021-04-20 23:10:12,279] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:10:12 ====> Sending Share: 0x2b0e08380b44bdd4af8030b13a70be91...part: 2/6 ====>
+[2021-04-20 23:10:22,293] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:10:22 ====> Sending Share: 0x876d3a46409a6a61b5c8eeae90e3ef3b...part: 3/6 ====>
+[2021-04-20 23:10:32,309] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:10:32 ====> Sending Share: 0xf6e2f4a411cc13c95055754b0d3a36dc...part: 4/6 ====>
+[2021-04-20 23:10:42,318] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:10:42 ====> Sending Share: 0x796f37517ed9ba0b7f25c486af739575...part: 5/6 ====>
+[2021-04-20 23:10:52,329] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:10:52 ====> Sending Share: 0x0f12024e87c35d284239dc6177900b05...part: 6/6 ====>
+[2021-04-20 23:11:02,332] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xab933d0a742d5b4a5fba0e93ff33a221
+
+====> Sent Share: 0xe1c55e7971cb0e223d7b3b5309e0a4dd...part: 1/6 ====>
+====> Sent Share: 0x2b0e08380b44bdd4af8030b13a70be91...part: 2/6 ====>
+====> Sent Share: 0x876d3a46409a6a61b5c8eeae90e3ef3b...part: 3/6 ====>
+====> Sent Share: 0xf6e2f4a411cc13c95055754b0d3a36dc...part: 4/6 ====>
+====> Sent Share: 0x796f37517ed9ba0b7f25c486af739575...part: 5/6 ====>
+====> Sent Share: 0x0f12024e87c35d284239dc6177900b05...part: 6/6 ====>
+
+[2021-04-20 23:12:02,351] [IDManager] [INFO] Newly generated EphID is: 0399950385f246ad461c2584e35f3e24
+[2021-04-20 23:12:02,351] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:12:02 ====> Sending Share: 0x5043b9f0d383395bb030c676e83ae355...part: 1/6 ====>
+[2021-04-20 23:12:12,369] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:12:12 ====> Sending Share: 0x49056bcd7118e978e54b6510b43e4293...part: 2/6 ====>
+[2021-04-20 23:12:22,374] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:12:22 ====> Sending Share: 0xeddeaa995eb35704e56c015247695bdd...part: 3/6 ====>
+[2021-04-20 23:12:32,390] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:12:32 ====> Sending Share: 0x3ecf76549c5281ffb0929b3ba1bc2f35...part: 4/6 ====>
+[2021-04-20 23:12:42,407] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:12:42 ====> Sending Share: 0x3bd7ceff29f66a6946bf32ccc336bc99...part: 5/6 ====>
+[2021-04-20 23:12:52,412] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:12:52 ====> Sending Share: 0xe4f7b499079f1041a7f1c805abd90409...part: 6/6 ====>
+[2021-04-20 23:13:02,420] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x0399950385f246ad461c2584e35f3e24
+
+====> Sent Share: 0x5043b9f0d383395bb030c676e83ae355...part: 1/6 ====>
+====> Sent Share: 0x49056bcd7118e978e54b6510b43e4293...part: 2/6 ====>
+====> Sent Share: 0xeddeaa995eb35704e56c015247695bdd...part: 3/6 ====>
+====> Sent Share: 0x3ecf76549c5281ffb0929b3ba1bc2f35...part: 4/6 ====>
+====> Sent Share: 0x3bd7ceff29f66a6946bf32ccc336bc99...part: 5/6 ====>
+====> Sent Share: 0xe4f7b499079f1041a7f1c805abd90409...part: 6/6 ====>
+
+[2021-04-20 23:14:02,433] [IDManager] [INFO] Newly generated EphID is: 644a3e2af244afa20e2074024787720a
+[2021-04-20 23:14:02,434] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:14:02 ====> Sending Share: 0xfe50268a1f933cf1b615bf695279c142...part: 1/6 ====>
+[2021-04-20 23:14:12,440] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:14:12 ====> Sending Share: 0x9d4cb634cd77b4095316fef2a266f737...part: 2/6 ====>
+[2021-04-20 23:14:22,454] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:14:22 ====> Sending Share: 0x413fed2afbf214e8e524329e374f13e8...part: 3/6 ====>
+[2021-04-20 23:14:32,457] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:14:32 ====> Sending Share: 0xea29cb6cab025f906c3d5a6c11321754...part: 4/6 ====>
+[2021-04-20 23:14:42,472] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:14:42 ====> Sending Share: 0x980a50f9daa893ffe862765c3010017d...part: 5/6 ====>
+[2021-04-20 23:14:52,482] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:14:52 ====> Sending Share: 0x4ae17dd28ae4b2375993866e93e8d262...part: 6/6 ====>
+[2021-04-20 23:15:02,491] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x644a3e2af244afa20e2074024787720a
+
+====> Sent Share: 0xfe50268a1f933cf1b615bf695279c142...part: 1/6 ====>
+====> Sent Share: 0x9d4cb634cd77b4095316fef2a266f737...part: 2/6 ====>
+====> Sent Share: 0x413fed2afbf214e8e524329e374f13e8...part: 3/6 ====>
+====> Sent Share: 0xea29cb6cab025f906c3d5a6c11321754...part: 4/6 ====>
+====> Sent Share: 0x980a50f9daa893ffe862765c3010017d...part: 5/6 ====>
+====> Sent Share: 0x4ae17dd28ae4b2375993866e93e8d262...part: 6/6 ====>
+
+[2021-04-20 23:16:02,511] [IDManager] [INFO] Newly generated EphID is: 59895e0a7910175d79056cfabcd33c17
+[2021-04-20 23:16:02,512] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:16:02 ====> Sending Share: 0xdeb4b31e09c7b6fb043e24cd2e713854...part: 1/6 ====>
+[2021-04-20 23:16:12,529] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:16:12 ====> Sending Share: 0x870fcb5f77a6aa79d854cc03aedea602...part: 2/6 ====>
+[2021-04-20 23:16:22,546] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:16:22 ====> Sending Share: 0x529aa6cec2acf1d9f549629e3e1b8520...part: 3/6 ====>
+[2021-04-20 23:16:32,553] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:16:32 ====> Sending Share: 0x4155456beada8d1b5b1be89cdc27d5ae...part: 4/6 ====>
+[2021-04-20 23:16:42,565] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:16:42 ====> Sending Share: 0x533fa736f02f7c3e09cc5dff890397ac...part: 5/6 ====>
+[2021-04-20 23:16:52,574] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:16:52 ====> Sending Share: 0x8859cc2fd2abbf42015ac2c644aecb1a...part: 6/6 ====>
+[2021-04-20 23:17:02,582] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x59895e0a7910175d79056cfabcd33c17
+
+====> Sent Share: 0xdeb4b31e09c7b6fb043e24cd2e713854...part: 1/6 ====>
+====> Sent Share: 0x870fcb5f77a6aa79d854cc03aedea602...part: 2/6 ====>
+====> Sent Share: 0x529aa6cec2acf1d9f549629e3e1b8520...part: 3/6 ====>
+====> Sent Share: 0x4155456beada8d1b5b1be89cdc27d5ae...part: 4/6 ====>
+====> Sent Share: 0x533fa736f02f7c3e09cc5dff890397ac...part: 5/6 ====>
+====> Sent Share: 0x8859cc2fd2abbf42015ac2c644aecb1a...part: 6/6 ====>
+
+[2021-04-20 23:18:02,600] [IDManager] [INFO] Newly generated EphID is: 34903ed0c4b217bd857bee0520203a8e
+[2021-04-20 23:18:02,601] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:18:02 ====> Sending Share: 0xb6754bbaa542401c7f9218e4b095fa83...part: 1/6 ====>
+[2021-04-20 23:18:12,604] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:18:12 ====> Sending Share: 0xae7e54e0deac7fa665e0c3734b00c173...part: 2/6 ====>
+[2021-04-20 23:18:22,615] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:18:22 ====> Sending Share: 0x1cab5a4370f0d65b3867edb0ef608f5e...part: 3/6 ====>
+[2021-04-20 23:18:32,616] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:18:32 ====> Sending Share: 0x00fc5be25c0f443af727979d9db56443...part: 4/6 ====>
+[2021-04-20 23:18:42,619] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:18:42 ====> Sending Share: 0x5b7159bda007c945a21fc13955ff4022...part: 5/6 ====>
+[2021-04-20 23:18:52,633] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:18:52 ====> Sending Share: 0x2c0a53d53cda657b39506a84183e22fc...part: 6/6 ====>
+[2021-04-20 23:19:02,640] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x34903ed0c4b217bd857bee0520203a8e
+
+====> Sent Share: 0xb6754bbaa542401c7f9218e4b095fa83...part: 1/6 ====>
+====> Sent Share: 0xae7e54e0deac7fa665e0c3734b00c173...part: 2/6 ====>
+====> Sent Share: 0x1cab5a4370f0d65b3867edb0ef608f5e...part: 3/6 ====>
+====> Sent Share: 0x00fc5be25c0f443af727979d9db56443...part: 4/6 ====>
+====> Sent Share: 0x5b7159bda007c945a21fc13955ff4022...part: 5/6 ====>
+====> Sent Share: 0x2c0a53d53cda657b39506a84183e22fc...part: 6/6 ====>
+
+[2021-04-20 23:20:02,658] [IDManager] [INFO] Newly generated EphID is: 29f8406e3cb7d332bd34f6f76eb44eae
+[2021-04-20 23:20:02,658] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:20:02 ====> Sending Share: 0x978089c71ab51b0407c243ac33780830...part: 1/6 ====>
+[2021-04-20 23:20:12,673] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:20:12 ====> Sending Share: 0xe64f51f81d05e2adcbcb8a7705141bd2...part: 2/6 ====>
+[2021-04-20 23:20:22,683] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:20:22 ====> Sending Share: 0x1664990143aa2a300950cb57e3888995...part: 3/6 ====>
+[2021-04-20 23:20:32,691] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:20:32 ====> Sending Share: 0x27c05ee28ea1f18ac052064eced55177...part: 4/6 ====>
+[2021-04-20 23:20:42,704] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:20:42 ====> Sending Share: 0x1a62a39bfded38bdf0cf3b5bc6fa7379...part: 5/6 ====>
+[2021-04-20 23:20:52,710] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:20:52 ====> Sending Share: 0xee4b672d918bffc99ac86a7ecbf7ef9a...part: 6/6 ====>
+[2021-04-20 23:21:02,722] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x29f8406e3cb7d332bd34f6f76eb44eae
+
+====> Sent Share: 0x978089c71ab51b0407c243ac33780830...part: 1/6 ====>
+====> Sent Share: 0xe64f51f81d05e2adcbcb8a7705141bd2...part: 2/6 ====>
+====> Sent Share: 0x1664990143aa2a300950cb57e3888995...part: 3/6 ====>
+====> Sent Share: 0x27c05ee28ea1f18ac052064eced55177...part: 4/6 ====>
+====> Sent Share: 0x1a62a39bfded38bdf0cf3b5bc6fa7379...part: 5/6 ====>
+====> Sent Share: 0xee4b672d918bffc99ac86a7ecbf7ef9a...part: 6/6 ====>
+
+[2021-04-20 23:22:02,739] [IDManager] [INFO] Newly generated EphID is: 4457ce243046bae011c8d8dcd54c4dd1
+[2021-04-20 23:22:02,740] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:22:02 ====> Sending Share: 0x31150402c782d92dc80491ebdef29788...part: 1/6 ====>
+[2021-04-20 23:22:12,746] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:22:12 ====> Sending Share: 0xc63f0f7bb34ae5477d9e5fb8509f1d36...part: 2/6 ====>
+[2021-04-20 23:22:22,757] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:22:22 ====> Sending Share: 0x03d5f08ef39edf2d329642422a51dedd...part: 3/6 ====>
+[2021-04-20 23:22:32,762] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:22:32 ====> Sending Share: 0xe9d9a73c887ec6dee6ec39896c0adc7a...part: 4/6 ====>
+[2021-04-20 23:22:42,769] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:22:42 ====> Sending Share: 0x784a338471ea9c5c9aa0458e15ca1610...part: 5/6 ====>
+[2021-04-20 23:22:52,782] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:22:52 ====> Sending Share: 0xaf279566afe25fa64db26650278f8b9d...part: 6/6 ====>
+[2021-04-20 23:23:02,799] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x4457ce243046bae011c8d8dcd54c4dd1
+
+====> Sent Share: 0x31150402c782d92dc80491ebdef29788...part: 1/6 ====>
+====> Sent Share: 0xc63f0f7bb34ae5477d9e5fb8509f1d36...part: 2/6 ====>
+====> Sent Share: 0x03d5f08ef39edf2d329642422a51dedd...part: 3/6 ====>
+====> Sent Share: 0xe9d9a73c887ec6dee6ec39896c0adc7a...part: 4/6 ====>
+====> Sent Share: 0x784a338471ea9c5c9aa0458e15ca1610...part: 5/6 ====>
+====> Sent Share: 0xaf279566afe25fa64db26650278f8b9d...part: 6/6 ====>
+
+[2021-04-20 23:24:02,807] [IDManager] [INFO] Newly generated EphID is: 2cedc8a493a71f52348cdf8a0a279ba0
+[2021-04-20 23:24:02,807] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:24:02 ====> Sending Share: 0xa0ff15e1a003368769526f15b5205924...part: 1/6 ====>
+[2021-04-20 23:24:12,820] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:24:12 ====> Sending Share: 0x561156966dfacc50499607ba6b77617b...part: 2/6 ====>
+[2021-04-20 23:24:22,833] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:24:22 ====> Sending Share: 0x4c248ac2fd8de0acd557a9782d2cb4a4...part: 3/6 ====>
+[2021-04-20 23:24:32,846] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:24:32 ====> Sending Share: 0x8338b2674ebc739d0c97544efa40529f...part: 4/6 ====>
+[2021-04-20 23:24:42,864] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:24:42 ====> Sending Share: 0xfb4dcd8361868520ef55083ed2b23b6c...part: 5/6 ====>
+[2021-04-20 23:24:52,873] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:24:52 ====> Sending Share: 0xb463dc1735ec15387d90c547b6826f0c...part: 6/6 ====>
+[2021-04-20 23:25:02,888] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x2cedc8a493a71f52348cdf8a0a279ba0
+
+====> Sent Share: 0xa0ff15e1a003368769526f15b5205924...part: 1/6 ====>
+====> Sent Share: 0x561156966dfacc50499607ba6b77617b...part: 2/6 ====>
+====> Sent Share: 0x4c248ac2fd8de0acd557a9782d2cb4a4...part: 3/6 ====>
+====> Sent Share: 0x8338b2674ebc739d0c97544efa40529f...part: 4/6 ====>
+====> Sent Share: 0xfb4dcd8361868520ef55083ed2b23b6c...part: 5/6 ====>
+====> Sent Share: 0xb463dc1735ec15387d90c547b6826f0c...part: 6/6 ====>
+
+[2021-04-20 23:26:02,902] [IDManager] [INFO] Newly generated EphID is: f0ffc4d4de8d082e8a8f69947e16ddc6
+[2021-04-20 23:26:02,903] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:26:02 ====> Sending Share: 0x46a3b631d4dfc8790a14b95209ec8fac...part: 1/6 ====>
+[2021-04-20 23:26:12,914] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:26:12 ====> Sending Share: 0xc908b8199d9882da31420274d0152fb6...part: 2/6 ====>
+[2021-04-20 23:26:22,917] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:26:22 ====> Sending Share: 0x782eca8c38b73752001744fcd090bde6...part: 3/6 ====>
+[2021-04-20 23:26:32,924] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:26:32 ====> Sending Share: 0x5415ed89a63be5e0769480ea0b5f3a3b...part: 4/6 ====>
+[2021-04-20 23:26:42,942] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:26:42 ====> Sending Share: 0x5cbe2111e6268e8594b9b63c8080a4b5...part: 5/6 ====>
+[2021-04-20 23:26:52,944] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:26:52 ====> Sending Share: 0x92276524f87731415a86e4f42ff4fd54...part: 6/6 ====>
+[2021-04-20 23:27:02,947] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xf0ffc4d4de8d082e8a8f69947e16ddc6
+
+====> Sent Share: 0x46a3b631d4dfc8790a14b95209ec8fac...part: 1/6 ====>
+====> Sent Share: 0xc908b8199d9882da31420274d0152fb6...part: 2/6 ====>
+====> Sent Share: 0x782eca8c38b73752001744fcd090bde6...part: 3/6 ====>
+====> Sent Share: 0x5415ed89a63be5e0769480ea0b5f3a3b...part: 4/6 ====>
+====> Sent Share: 0x5cbe2111e6268e8594b9b63c8080a4b5...part: 5/6 ====>
+====> Sent Share: 0x92276524f87731415a86e4f42ff4fd54...part: 6/6 ====>
+
+[2021-04-20 23:28:02,971] [IDManager] [INFO] Newly generated EphID is: 979b5d303d2f0569547fb236a815bf02
+[2021-04-20 23:28:02,972] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:28:02 ====> Sending Share: 0x9250248d2d062668e77a2aea072699c5...part: 1/6 ====>
+[2021-04-20 23:28:12,988] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:28:12 ====> Sending Share: 0xe04d0569ce926e5e48152b43f1779ca6...part: 2/6 ====>
+[2021-04-20 23:28:22,993] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:28:22 ====> Sending Share: 0x8191ffc621d3dd497650b3446708c7a6...part: 3/6 ====>
+[2021-04-20 23:28:33,003] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:28:33 ====> Sending Share: 0x761f13a226ca732a722cc2eb67da1ac4...part: 4/6 ====>
+[2021-04-20 23:28:43,019] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:28:43 ====> Sending Share: 0xbdf440fddd7630013ba95a38f3eb9600...part: 5/6 ====>
+[2021-04-20 23:28:53,024] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:28:53 ====> Sending Share: 0x591187d945d713cdd2c6792d0b3d395b...part: 6/6 ====>
+[2021-04-20 23:29:03,036] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x979b5d303d2f0569547fb236a815bf02
+
+====> Sent Share: 0x9250248d2d062668e77a2aea072699c5...part: 1/6 ====>
+====> Sent Share: 0xe04d0569ce926e5e48152b43f1779ca6...part: 2/6 ====>
+====> Sent Share: 0x8191ffc621d3dd497650b3446708c7a6...part: 3/6 ====>
+====> Sent Share: 0x761f13a226ca732a722cc2eb67da1ac4...part: 4/6 ====>
+====> Sent Share: 0xbdf440fddd7630013ba95a38f3eb9600...part: 5/6 ====>
+====> Sent Share: 0x591187d945d713cdd2c6792d0b3d395b...part: 6/6 ====>
+
+[2021-04-20 23:30:03,055] [IDManager] [INFO] Newly generated EphID is: d4f4ec5bc23fe656a95df3cbba42ef80
+[2021-04-20 23:30:03,056] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:30:03 ====> Sending Share: 0xa4d96a6dad8df404388d52a4c0128923...part: 1/6 ====>
+[2021-04-20 23:30:13,062] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:30:13 ====> Sending Share: 0xd46426777567d138c2a413e9abc0d2c2...part: 2/6 ====>
+[2021-04-20 23:30:23,067] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:30:23 ====> Sending Share: 0x6395207919cd7df447a2379a7d4dcc5e...part: 3/6 ====>
+[2021-04-20 23:30:33,083] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:30:33 ====> Sending Share: 0x526c58729abefa36c787bdb734b975f6...part: 4/6 ====>
+[2021-04-20 23:30:43,087] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:30:43 ====> Sending Share: 0xa0e9ce63f83c46004254a63fd203cf8a...part: 5/6 ====>
+[2021-04-20 23:30:53,098] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:30:53 ====> Sending Share: 0x4f0d824d32456150b808f134552cd91b...part: 6/6 ====>
+[2021-04-20 23:31:03,107] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xd4f4ec5bc23fe656a95df3cbba42ef80
+
+====> Sent Share: 0xa4d96a6dad8df404388d52a4c0128923...part: 1/6 ====>
+====> Sent Share: 0xd46426777567d138c2a413e9abc0d2c2...part: 2/6 ====>
+====> Sent Share: 0x6395207919cd7df447a2379a7d4dcc5e...part: 3/6 ====>
+====> Sent Share: 0x526c58729abefa36c787bdb734b975f6...part: 4/6 ====>
+====> Sent Share: 0xa0e9ce63f83c46004254a63fd203cf8a...part: 5/6 ====>
+====> Sent Share: 0x4f0d824d32456150b808f134552cd91b...part: 6/6 ====>
+
+[2021-04-20 23:32:03,126] [IDManager] [INFO] Newly generated EphID is: 030f07c77df2d315d08484715072b0ab
+[2021-04-20 23:32:03,126] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:32:03 ====> Sending Share: 0xb3b99c2ca430a6070a98ecdea0b3f2b2...part: 1/6 ====>
+[2021-04-20 23:32:13,141] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:32:13 ====> Sending Share: 0x4999a15f430072bba4ef95ed390a51a9...part: 2/6 ====>
+[2021-04-20 23:32:23,147] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:32:23 ====> Sending Share: 0xc4af175f5a6239339f887f9d1975cd8e...part: 3/6 ====>
+[2021-04-20 23:32:33,156] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:32:33 ====> Sending Share: 0x24f9fe2cea55f96efa63a9ee41f66663...part: 4/6 ====>
+[2021-04-20 23:32:43,166] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:32:43 ====> Sending Share: 0x6a7a55c7f2dbb36db58114e0b28c1c26...part: 5/6 ====>
+[2021-04-20 23:32:53,177] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:32:53 ====> Sending Share: 0x95301e3073f3672fd0e0c0746b36eed8...part: 6/6 ====>
+[2021-04-20 23:33:03,180] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x030f07c77df2d315d08484715072b0ab
+
+====> Sent Share: 0xb3b99c2ca430a6070a98ecdea0b3f2b2...part: 1/6 ====>
+====> Sent Share: 0x4999a15f430072bba4ef95ed390a51a9...part: 2/6 ====>
+====> Sent Share: 0xc4af175f5a6239339f887f9d1975cd8e...part: 3/6 ====>
+====> Sent Share: 0x24f9fe2cea55f96efa63a9ee41f66663...part: 4/6 ====>
+====> Sent Share: 0x6a7a55c7f2dbb36db58114e0b28c1c26...part: 5/6 ====>
+====> Sent Share: 0x95301e3073f3672fd0e0c0746b36eed8...part: 6/6 ====>
+
+[2021-04-20 23:34:03,189] [IDManager] [INFO] Newly generated EphID is: f2fab5faec75ab00cf0a9e5480192e09
+[2021-04-20 23:34:03,191] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:34:03 ====> Sending Share: 0x86ea8aa21b0c4e715b9f5aafa6939cdd...part: 1/6 ====>
+[2021-04-20 23:34:13,204] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:34:13 ====> Sending Share: 0xd7bb69958e0c8df95a4408d1b9658261...part: 2/6 ====>
+[2021-04-20 23:34:23,214] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:34:23 ====> Sending Share: 0xe56d52d545766998caf8a8bab88ede96...part: 3/6 ====>
+[2021-04-20 23:34:33,223] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:34:33 ====> Sending Share: 0xb00046614149e14fadbd3a6aa40fb17c...part: 4/6 ====>
+[2021-04-20 23:34:43,237] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:34:43 ====> Sending Share: 0x377444398186f51e0291bde17be7fb13...part: 5/6 ====>
+[2021-04-20 23:34:53,246] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:34:53 ====> Sending Share: 0x7bc94c5e062da503c976331f4017bb5a...part: 6/6 ====>
+[2021-04-20 23:35:03,257] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xf2fab5faec75ab00cf0a9e5480192e09
+
+====> Sent Share: 0x86ea8aa21b0c4e715b9f5aafa6939cdd...part: 1/6 ====>
+====> Sent Share: 0xd7bb69958e0c8df95a4408d1b9658261...part: 2/6 ====>
+====> Sent Share: 0xe56d52d545766998caf8a8bab88ede96...part: 3/6 ====>
+====> Sent Share: 0xb00046614149e14fadbd3a6aa40fb17c...part: 4/6 ====>
+====> Sent Share: 0x377444398186f51e0291bde17be7fb13...part: 5/6 ====>
+====> Sent Share: 0x7bc94c5e062da503c976331f4017bb5a...part: 6/6 ====>
+
+[2021-04-20 23:36:03,271] [IDManager] [INFO] Newly generated EphID is: 275e256e5def1d4111aab447b626528b
+[2021-04-20 23:36:03,271] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:36:03 ====> Sending Share: 0x13b3f084eb4e8fa7e781cafdc8562815...part: 1/6 ====>
+[2021-04-20 23:36:13,288] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:36:13 ====> Sending Share: 0xba46ec1a91dba47a824325cbb62445bb...part: 2/6 ====>
+[2021-04-20 23:36:23,300] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:36:23 ====> Sending Share: 0x1b17182f51965bb8e1eec4b17f90ab7f...part: 3/6 ====>
+[2021-04-20 23:36:33,307] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:36:33 ====> Sending Share: 0x362474c32a7eb5630684a7af249b595f...part: 4/6 ====>
+[2021-04-20 23:36:43,317] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:36:43 ====> Sending Share: 0x0b6f01d61c94b178f004cec4a5444f5c...part: 5/6 ====>
+[2021-04-20 23:36:53,324] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:36:53 ====> Sending Share: 0x9af6bf6827d84ffa9e6f39f2018b8d75...part: 6/6 ====>
+[2021-04-20 23:37:00,927] [BFManager] [INFO] 
+------------------> Segment 7-B <------------------
+Updating the DBF pool...Removing the oldest DBF and add a new DBF
+
+Current DBF is DBF-ba2f2f9ca1e511eb81b1d46a6ac1a780
+Current DBF pool has: ['DBF-ba2f2f9ca1e511eb81b1d46a6ac1a780']
+[2021-04-20 23:37:00,931] [BFManager] [INFO] 
+------------------> Segment 8 or 10 <------------------
+Clustering 6 DBFs into one QBF
+
+[2021-04-20 23:37:00,937] [BFManager] [INFO] 
+------------------> Segment 8 & 9 <------------------
+QBF not ready, may be pool is not full yet?
+
+[2021-04-20 23:37:03,329] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x275e256e5def1d4111aab447b626528b
+
+====> Sent Share: 0x13b3f084eb4e8fa7e781cafdc8562815...part: 1/6 ====>
+====> Sent Share: 0xba46ec1a91dba47a824325cbb62445bb...part: 2/6 ====>
+====> Sent Share: 0x1b17182f51965bb8e1eec4b17f90ab7f...part: 3/6 ====>
+====> Sent Share: 0x362474c32a7eb5630684a7af249b595f...part: 4/6 ====>
+====> Sent Share: 0x0b6f01d61c94b178f004cec4a5444f5c...part: 5/6 ====>
+====> Sent Share: 0x9af6bf6827d84ffa9e6f39f2018b8d75...part: 6/6 ====>
+
+[2021-04-20 23:38:03,346] [IDManager] [INFO] Newly generated EphID is: 7a50bc8fd865314b765ed217ccde6126
+[2021-04-20 23:38:03,347] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:38:03 ====> Sending Share: 0x62681864bbad4374e1b7124b527b6b66...part: 1/6 ====>
+[2021-04-20 23:38:13,366] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:38:13 ====> Sending Share: 0x7753a68eee63636db28d927202df7f0e...part: 2/6 ====>
+[2021-04-20 23:38:23,370] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:38:23 ====> Sending Share: 0xb913670e70879135e8e2528bde0a9c1e...part: 3/6 ====>
+[2021-04-20 23:38:33,385] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:38:33 ====> Sending Share: 0x27a759e34219cccd84b55298e3fcc297...part: 4/6 ====>
+[2021-04-20 23:38:43,395] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:38:43 ====> Sending Share: 0xc30f7f0d631a16348606929914b5f277...part: 5/6 ====>
+[2021-04-20 23:38:53,400] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:38:53 ====> Sending Share: 0x8b4bd68cd3886d6aecd6128c70362bc0...part: 6/6 ====>
+[2021-04-20 23:39:03,408] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x7a50bc8fd865314b765ed217ccde6126
+
+====> Sent Share: 0x62681864bbad4374e1b7124b527b6b66...part: 1/6 ====>
+====> Sent Share: 0x7753a68eee63636db28d927202df7f0e...part: 2/6 ====>
+====> Sent Share: 0xb913670e70879135e8e2528bde0a9c1e...part: 3/6 ====>
+====> Sent Share: 0x27a759e34219cccd84b55298e3fcc297...part: 4/6 ====>
+====> Sent Share: 0xc30f7f0d631a16348606929914b5f277...part: 5/6 ====>
+====> Sent Share: 0x8b4bd68cd3886d6aecd6128c70362bc0...part: 6/6 ====>
+
+[2021-04-20 23:40:03,425] [IDManager] [INFO] Newly generated EphID is: 64ace88528071a4747528144e189879d
+[2021-04-20 23:40:03,426] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:40:03 ====> Sending Share: 0x86fe284120aeeb8f2a9ab575d3612caa...part: 1/6 ====>
+[2021-04-20 23:40:13,443] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:40:13 ====> Sending Share: 0x95a79ca50c35719dda0805f33e5eb247...part: 2/6 ====>
+[2021-04-20 23:40:23,460] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:40:23 ====> Sending Share: 0x90a945b0ea9aac73559a72bd22821874...part: 3/6 ====>
+[2021-04-20 23:40:33,465] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:40:33 ====> Sending Share: 0x78032364bbde9c0f9d51fbd37fcb5f31...part: 4/6 ====>
+[2021-04-20 23:40:43,477] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:40:43 ====> Sending Share: 0x4bb535c080014072b12ea136563a867e...part: 5/6 ====>
+[2021-04-20 23:40:53,486] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:40:53 ====> Sending Share: 0x0bbf7cc43702999c913062e5a5cf8e5b...part: 6/6 ====>
+[2021-04-20 23:41:03,502] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x64ace88528071a4747528144e189879d
+
+====> Sent Share: 0x86fe284120aeeb8f2a9ab575d3612caa...part: 1/6 ====>
+====> Sent Share: 0x95a79ca50c35719dda0805f33e5eb247...part: 2/6 ====>
+====> Sent Share: 0x90a945b0ea9aac73559a72bd22821874...part: 3/6 ====>
+====> Sent Share: 0x78032364bbde9c0f9d51fbd37fcb5f31...part: 4/6 ====>
+====> Sent Share: 0x4bb535c080014072b12ea136563a867e...part: 5/6 ====>
+====> Sent Share: 0x0bbf7cc43702999c913062e5a5cf8e5b...part: 6/6 ====>
+
+[2021-04-20 23:42:03,517] [IDManager] [INFO] Newly generated EphID is: a94ca7f56734eac61d6bdea3c45cc9e3
+[2021-04-20 23:42:03,518] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:42:03 ====> Sending Share: 0xccef0ab900a1f54bfecfcaaf1c0bcd56...part: 1/6 ====>
+[2021-04-20 23:42:13,529] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:42:13 ====> Sending Share: 0xae47327eb3fa0413beea03824ebafa5b...part: 2/6 ====>
+[2021-04-20 23:42:23,536] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:42:23 ====> Sending Share: 0x4d551f46813d171d5dba891d5c6a50f2...part: 3/6 ====>
+[2021-04-20 23:42:33,554] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:42:33 ====> Sending Share: 0xaa18d110686b2e68db415b804519d11a...part: 4/6 ====>
+[2021-04-20 23:42:43,561] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:42:43 ====> Sending Share: 0xc49247dc698449f6377e7aab08c97ad4...part: 5/6 ====>
+[2021-04-20 23:42:53,570] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:42:53 ====> Sending Share: 0x9cc183aa848869c57271e69da7794e20...part: 6/6 ====>
+[2021-04-20 23:43:03,587] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xa94ca7f56734eac61d6bdea3c45cc9e3
+
+====> Sent Share: 0xccef0ab900a1f54bfecfcaaf1c0bcd56...part: 1/6 ====>
+====> Sent Share: 0xae47327eb3fa0413beea03824ebafa5b...part: 2/6 ====>
+====> Sent Share: 0x4d551f46813d171d5dba891d5c6a50f2...part: 3/6 ====>
+====> Sent Share: 0xaa18d110686b2e68db415b804519d11a...part: 4/6 ====>
+====> Sent Share: 0xc49247dc698449f6377e7aab08c97ad4...part: 5/6 ====>
+====> Sent Share: 0x9cc183aa848869c57271e69da7794e20...part: 6/6 ====>
+
+[2021-04-20 23:44:03,603] [IDManager] [INFO] Newly generated EphID is: 2e4cfd63cf043143a2122a91b064750a
+[2021-04-20 23:44:03,604] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:44:03 ====> Sending Share: 0xf2fa8377075c93496f4e45b37f728735...part: 1/6 ====>
+[2021-04-20 23:44:13,615] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:44:13 ====> Sending Share: 0x8d85852893d2bebcad2c7d4ad3b7bae7...part: 2/6 ====>
+[2021-04-20 23:44:23,625] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:44:23 ====> Sending Share: 0xfdee02787466b39d5bacd157ad34101e...part: 3/6 ====>
+[2021-04-20 23:44:33,632] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:44:33 ====> Sending Share: 0x4433fb66a91871eb7acf41da0be786dc...part: 4/6 ====>
+[2021-04-20 23:44:43,645] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:44:43 ====> Sending Share: 0x60576ff331e7f9a70a93ced1efd21f1f...part: 5/6 ====>
+[2021-04-20 23:44:53,649] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:44:53 ====> Sending Share: 0x5258601e0ed54ad00afa783f58f3d8e8...part: 6/6 ====>
+[2021-04-20 23:45:03,663] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x2e4cfd63cf043143a2122a91b064750a
+
+====> Sent Share: 0xf2fa8377075c93496f4e45b37f728735...part: 1/6 ====>
+====> Sent Share: 0x8d85852893d2bebcad2c7d4ad3b7bae7...part: 2/6 ====>
+====> Sent Share: 0xfdee02787466b39d5bacd157ad34101e...part: 3/6 ====>
+====> Sent Share: 0x4433fb66a91871eb7acf41da0be786dc...part: 4/6 ====>
+====> Sent Share: 0x60576ff331e7f9a70a93ced1efd21f1f...part: 5/6 ====>
+====> Sent Share: 0x5258601e0ed54ad00afa783f58f3d8e8...part: 6/6 ====>
+
+[2021-04-20 23:46:03,684] [IDManager] [INFO] Newly generated EphID is: a71bfa026d9886f3a4984e226deb200e
+[2021-04-20 23:46:03,684] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:46:03 ====> Sending Share: 0x2bffd518c6f9ed9c56d092dfcfe542a4...part: 1/6 ====>
+[2021-04-20 23:46:13,693] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:46:13 ====> Sending Share: 0x33462ae884943877b0ee72d8bb8036fa...part: 2/6 ====>
+[2021-04-20 23:46:23,703] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:46:23 ====> Sending Share: 0xbceefb71a6676785b2f1ee0d30bbfd10...part: 3/6 ====>
+[2021-04-20 23:46:33,721] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:46:33 ====> Sending Share: 0xc8fa46b42c737ac65cdb047d2f9894e7...part: 4/6 ====>
+[2021-04-20 23:46:43,732] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:46:43 ====> Sending Share: 0x57680cb016b87239aea9b628b815fe7f...part: 5/6 ====>
+[2021-04-20 23:46:53,746] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:46:53 ====> Sending Share: 0x68384d6565364ddfa85e030fca3439d7...part: 6/6 ====>
+[2021-04-20 23:47:03,752] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0xa71bfa026d9886f3a4984e226deb200e
+
+====> Sent Share: 0x2bffd518c6f9ed9c56d092dfcfe542a4...part: 1/6 ====>
+====> Sent Share: 0x33462ae884943877b0ee72d8bb8036fa...part: 2/6 ====>
+====> Sent Share: 0xbceefb71a6676785b2f1ee0d30bbfd10...part: 3/6 ====>
+====> Sent Share: 0xc8fa46b42c737ac65cdb047d2f9894e7...part: 4/6 ====>
+====> Sent Share: 0x57680cb016b87239aea9b628b815fe7f...part: 5/6 ====>
+====> Sent Share: 0x68384d6565364ddfa85e030fca3439d7...part: 6/6 ====>
+
+[2021-04-20 23:48:03,765] [IDManager] [INFO] Newly generated EphID is: 3d76812c058284f1fcf42cbf32cdff95
+[2021-04-20 23:48:03,765] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:48:03 ====> Sending Share: 0x07cb4532d1a33e7cad6d8b9522259532...part: 1/6 ====>
+[2021-04-20 23:48:13,769] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:48:13 ====> Sending Share: 0xbf002f8d263c775530e24ed9ac5bcb71...part: 2/6 ====>
+[2021-04-20 23:48:23,781] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:48:23 ====> Sending Share: 0x6315403b034e2f7b8752768cd170a254...part: 3/6 ====>
+[2021-04-20 23:48:33,794] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:48:33 ====> Sending Share: 0xf40a773c68d866efb0be02ae916419d9...part: 4/6 ====>
+[2021-04-20 23:48:43,807] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:48:43 ====> Sending Share: 0x71dfd49156db1db1ad24f33eec363202...part: 5/6 ====>
+[2021-04-20 23:48:53,824] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:48:53 ====> Sending Share: 0xdc955839cd5653c17c87483de1e6eacd...part: 6/6 ====>
+[2021-04-20 23:49:03,840] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x3d76812c058284f1fcf42cbf32cdff95
+
+====> Sent Share: 0x07cb4532d1a33e7cad6d8b9522259532...part: 1/6 ====>
+====> Sent Share: 0xbf002f8d263c775530e24ed9ac5bcb71...part: 2/6 ====>
+====> Sent Share: 0x6315403b034e2f7b8752768cd170a254...part: 3/6 ====>
+====> Sent Share: 0xf40a773c68d866efb0be02ae916419d9...part: 4/6 ====>
+====> Sent Share: 0x71dfd49156db1db1ad24f33eec363202...part: 5/6 ====>
+====> Sent Share: 0xdc955839cd5653c17c87483de1e6eacd...part: 6/6 ====>
+
+[2021-04-20 23:50:03,863] [IDManager] [INFO] Newly generated EphID is: 9a76f7c431890694639b49711056d0ca
+[2021-04-20 23:50:03,864] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:50:03 ====> Sending Share: 0x2c8f99d6f925bc36cd82a74e70e9cd41...part: 1/6 ====>
+[2021-04-20 23:50:13,875] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:50:13 ====> Sending Share: 0x6737d4fea648481807d35dd70175eeec...part: 2/6 ====>
+[2021-04-20 23:50:23,894] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:50:23 ====> Sending Share: 0x4a6fa93b38f0aa38128d6d0ac1fb35cc...part: 3/6 ====>
+[2021-04-20 23:50:33,910] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:50:33 ====> Sending Share: 0xd637168cb11ee296edb0d4e9b279a1e0...part: 4/6 ====>
+[2021-04-20 23:50:43,914] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:50:43 ====> Sending Share: 0x0a8e1cf30ed2f134993d9573d2f1332a...part: 5/6 ====>
+[2021-04-20 23:50:53,926] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:50:53 ====> Sending Share: 0xe774bc6e520cd6111533aea92361e9a7...part: 6/6 ====>
+[2021-04-20 23:51:03,939] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x9a76f7c431890694639b49711056d0ca
+
+====> Sent Share: 0x2c8f99d6f925bc36cd82a74e70e9cd41...part: 1/6 ====>
+====> Sent Share: 0x6737d4fea648481807d35dd70175eeec...part: 2/6 ====>
+====> Sent Share: 0x4a6fa93b38f0aa38128d6d0ac1fb35cc...part: 3/6 ====>
+====> Sent Share: 0xd637168cb11ee296edb0d4e9b279a1e0...part: 4/6 ====>
+====> Sent Share: 0x0a8e1cf30ed2f134993d9573d2f1332a...part: 5/6 ====>
+====> Sent Share: 0xe774bc6e520cd6111533aea92361e9a7...part: 6/6 ====>
+
+[2021-04-20 23:52:03,957] [IDManager] [INFO] Newly generated EphID is: 70f62c633e65b2a29bfd65578295cd9b
+[2021-04-20 23:52:03,958] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:52:03 ====> Sending Share: 0x323e2a9b03268f008fa77d969a4b6069...part: 1/6 ====>
+[2021-04-20 23:52:13,974] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:52:13 ====> Sending Share: 0x814b0ef450d9fc1a79308c916d0709bb...part: 2/6 ====>
+[2021-04-20 23:52:23,980] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:52:23 ====> Sending Share: 0x5e1cd96f277ff9f058989247fac8c992...part: 3/6 ====>
+[2021-04-20 23:52:33,997] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:52:33 ====> Sending Share: 0xc8b38a0b871888822ddf8eba43909fed...part: 4/6 ====>
+[2021-04-20 23:52:44,013] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:52:44 ====> Sending Share: 0xc10f20c96fa3a7cff90581e8475e8ccd...part: 5/6 ====>
+[2021-04-20 23:52:54,030] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:52:54 ====> Sending Share: 0x472f9da8e12157d9ba0a6bd206329032...part: 6/6 ====>
+[2021-04-20 23:53:04,044] [IDManager] [INFO] 
+------------------> Segment 1 & 2 <------------------
+Has sent 6 generated sharings of EphID: 0x70f62c633e65b2a29bfd65578295cd9b
+
+====> Sent Share: 0x323e2a9b03268f008fa77d969a4b6069...part: 1/6 ====>
+====> Sent Share: 0x814b0ef450d9fc1a79308c916d0709bb...part: 2/6 ====>
+====> Sent Share: 0x5e1cd96f277ff9f058989247fac8c992...part: 3/6 ====>
+====> Sent Share: 0xc8b38a0b871888822ddf8eba43909fed...part: 4/6 ====>
+====> Sent Share: 0xc10f20c96fa3a7cff90581e8475e8ccd...part: 5/6 ====>
+====> Sent Share: 0x472f9da8e12157d9ba0a6bd206329032...part: 6/6 ====>
+
+[2021-04-20 23:54:04,058] [IDManager] [INFO] Newly generated EphID is: a08b214d9c4fb595e69047f418293e7b
+[2021-04-20 23:54:04,060] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:54:04 ====> Sending Share: 0x8b81ccd1755fc288cf8c5c06e5b3d384...part: 1/6 ====>
+[2021-04-20 23:54:14,076] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:54:14 ====> Sending Share: 0xf3a5301e7deb0c142aa866d6eeefc884...part: 2/6 ====>
+[2021-04-20 23:54:24,084] [IDManager] [INFO] 
+------------------> Segment 3-A <------------------
+23:54:24 ====> Sending Share: 0xd8f54b34b5f19237f7e4686433dd1d7c...part: 3/6 ====>
