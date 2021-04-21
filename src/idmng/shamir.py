@@ -120,33 +120,3 @@ def recover_secret(shares, prime=_PRIME):
     raise ValueError("need at least two shares")
   x_s, y_s = zip(*shares)
   return _lagrange_interpolate(0, x_s, y_s, prime)
-
-
-def main():
-  """Main function"""
-  secret = ephid_bytes_or_hexstr_to_decimal(
-      b"\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99\x99")
-  secret, shares = make_shares(secret, minimum=3, shares=6)
-
-  print('Secret:                                                     ', secret)
-  print('Shares:')
-  if shares:
-    for share in shares:
-      print('  ', share)
-
-  print('Secret recovered from minimum subset of shares:             ',
-        recover_secret(shares[:3]))
-  print('Secret recovered from a different minimum subset of shares: ',
-        recover_secret(shares[-3:]))
-
-
-if __name__ == '__main__':
-  from utils.helpers import ephid_bytes_or_hexstr_to_decimal
-  main()
-  # s = [(1, 28956852499995734302333234451844105093), (2, 4530917675024405667621562586281377631), (3, 160822523719505393604688124349264093365)]
-  # print('Secret recovered from minimum subset of shares:             ',
-  #       recover_secret(s))
-
-  # print(ephid_decimal_to_bytes(recover_secret(s)).hex())
-
-  # print(ephid_decimal_to_bytes(160822523719505393604688124349264093365).hex())
