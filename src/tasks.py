@@ -37,18 +37,23 @@ def bg_update_dbf_pool(bfmgr):
                     "\nUpdating the DBF pool...Removing the oldest DBF and add a new DBF\n"
                    f"\nCurrent DBF is {bfmgr.dbfpool[bfmgr.cur_dbf_idx].id}"
                    f"\nCurrent DBF pool has: {[d.id for d in bfmgr.dbfpool]}")
-  bfmgr.update_dbfpool_atomic()
+  with bfmgr.dbfpool_cv:
+    bfmgr.update_dbfpool_atomic()
+    bfmgr.dbfpool_cv.notifyAll()
 
 
 # background task for periodically querying the server with QBF
 def bg_qbf_woker_combine_and_query(bfmgr, url):
-  has_update_pool = False
+  # has_update_pool = False
 
-  if (len(bfmgr.dbfpool) < bfmgr.max_poolsz):
-    # We always update first to make this two events sequential ;D
-    # QBF worker get called but pool is not full yet? Lets make it full first!
-    bg_update_dbf_pool(bfmgr)
-    has_update_pool = True
+  with bfmgr.dbfpool_cv:
+    while (len(bfmgr.dbfpool) < bfmgr.max_poolsz):
+      # We always update first to make this two events sequential ;D
+      # QBF worker get called but pool is not full yet? Lets make it full first!
+      bfmgr.dbfpool_cv.wait()
+
+      # bg_update_dbf_pool(bfmgr)
+      # has_update_pool = True
 
   qbf = bfmgr.cluster_dbf(bfmgr.max_poolsz, type_name="QBF")
   if (qbf):
@@ -68,8 +73,8 @@ def bg_qbf_woker_combine_and_query(bfmgr, url):
     bfmgr.logger.info("\n------------------> Segment 8 & 9 <------------------"
                       "\nQBF not ready, may be pool is not full yet?\n")
 
-  if (not has_update_pool):
-    bg_update_dbf_pool(bfmgr)
+  # if (not has_update_pool):
+  #   bg_update_dbf_pool(bfmgr)
 
 # background task for periodically updating the current DBF, this funtion is used when
 # init with 6 DBFs
