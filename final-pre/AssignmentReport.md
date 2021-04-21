@@ -36,11 +36,11 @@ This the front-end implementation of the DIMY COVID contact tracing system. The 
 - Secret Part Payload is the secret part of the EphID generated using Shamir Algorithm.
 - The Sequence Number field is our solution to the issue of the overlapping timing window. For example, let's define the initial time point as t0, client 1 sends the message at t0 + 30 seconds, and then client 2 starts to send its shared secret at t0 + 30 seconds as well. Then at time point t0 + 60 seconds, Ideally that two clients should generate Encounter ID, but since the privacy which used to generate the EphID of the client1 has already been changed. We can't reconstruct the same Encounter ID. To fix this problem, we save the previous privacy as well as the current privacy. and use the sequence number to determine which privacy should use, the old one or the new one. To make it simple, we set the length of this filed as 4 bytes, which is 32 bits long. Should be sufficient to run the program for a year.
 
-### logging
+### Logging
 
 The logging subsystem has two output streams. One is the `stdout` and the other one is the `log.txt` configured by the ALL_LOG_FILE entry. The `stdout` is used for demonstration and the log file is used for diagnosing or inspecting the procedure.
 
-### configuration
+### Configuration
 
 The default configuration file is auto-generated into the location where the `Dimy.py` is at, also this must be the root source file tree. The user of this program can modify the default configuration file and feed it to the program to meet their requirements. For example, the testing can be time consuming as the timing parameters are relatively large. To achieve easy debugging purpose, we can manually configure the program's parameter's to simulate the behaviour but with a much shorter time interval. 
 
