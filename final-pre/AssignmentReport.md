@@ -6,21 +6,21 @@
 
 ## Overview
 
-This the front-end implementation of the DIMY COVID contact tracing system. The back-end is provided and hosted on AWS, the URL is included in the `default_conf.json` after running the program. The implementation is purely written in Python 3 and has been tested in both Linux, macOS, and Windows environments with the python version >= 3.7. The start the program with default parameters and configuration please go into the root source tree directory which contains `Dimy.py` and run `[python|python3] ./Dimy.py`. To make modifications to the configurations please refer to `README.md`. 
+This is the front-end implementation of the DIMY COVID contact tracing system. The back-end is provided and hosted on AWS, and the URL is included in the `default_conf.json` after running the program. The implementation is purely written in Python 3 and has been tested in both Linux, macOS, and Windows environments with the python version >= 3.7. To start the program with default parameters and configuration,  please go into the root source tree directory which contains `Dimy.py` and run `[python|python3] ./Dimy.py`. To make modifications to the configurations, please refer to `README.md`. 
 
 ## Implementation Features
 
 ### **Task Managers**
 
-- According to the protocol, we have several tasks that need to be scheduled periodically, such as the EphID generating and secret sharing task, DBF management task, etc. Those tasks are implemented as background threads which will be triggered when the timer fires. In general, we for each task have a specific manager to manage it.
+- According to the protocol, we have several tasks that need to be scheduled periodically, such as the EphID generating and secret sharing task, DBF management, etc. Those tasks are implemented as background threads which will be triggered when the timer fires. In general, for each task we have a specific manager to manage it.
 
   - ID manager is responsible for generating the EphID using ECC every one minute and then uses the Shamir algorithm to generate 6 parts for the secret and broadcast them every 10 seconds.
-  - Bloom Filter Manager is responsible for managing the DBF pool which has one DBF initially and continuously add a new DBF into the pool until the pool contains 6 DBFs. Besides, it will also update the DBFs pool by deleting or adding DBF and combine the pool into a QBF ot CBF.
+  - Bloom Filter Manager is responsible for managing the DBF pool which has one DBF initially and continuously add a new DBF into the pool until the pool contains 6 DBFs. Besides, it will also update the DBFs pool by deleting or adding DBF and combine the pool into a QBF or CBF.
   - Background Task Manager is responsible for scheduling the background tasks that we listed above. Basically, it manages all the daemon threads and register a specific timer for each of them and then launch each thread.
 
 ### **Communication methods: Broadcasting and Receiving**
 
-- The implementation of broadcasting and receiving uses POSIX sockets. For each client application, one socket is used for broadcasting and the other one is used for  receiving the broadcasting messages from other clients.
+- The implementation of broadcasting and receiving uses POSIX sockets. For each client application, one socket is used for broadcasting and the other one is used for receiving the broadcasting messages from other clients.
 - The receiving method is implemented as a blocking daemon thread which checks the receiving buffer periodically. And the broadcasting method runs on another daemon thread, which broadcasts secret shares every 10 seconds.
 
 ###  Message Format
@@ -34,7 +34,7 @@ This the front-end implementation of the DIMY COVID contact tracing system. The 
 - The Hash Tag is the first 3 bytes of the hash of the EphID calculated via sha256.
 - Section ID indicates the order of the receiving parts, but the Shamir Algorithm doesn't require the ordering of the secret parts, so this field is just for counting purposes.
 - Secret Part Payload is the secret part of the EphID generated using Shamir Algorithm.
-- The Sequence Number field is our solution to the issue of the overlapping timing window. For example, let's define the initial time point as t0, client 1 sends the message at t0 + 30 seconds, and then client 2 starts to send its shared secret at t0 + 30 seconds as well. Then at time point t0 + 60 seconds, Ideally that two clients should generate Encounter ID, but since the privacy which used to generate the EphID of the client1 has already been changed. We can't reconstruct the same Encounter ID. To fix this problem, we save the previous privacy as well as the current privacy. and use the sequence number to determine which privacy should use, the old one or the new one. To make it simple, we set the length of this filed as 4 bytes, which is 32 bits long. Should be sufficient to run the program for a year.
+- The Sequence Number field is our solution to the issue of the overlapping timing window. For example, let's define the initial time point as t0, client 1 sends the message at t0 + 30 seconds, and then client 2 starts to send its shared secret at t0 + 30 seconds as well. Then at time point t0 + 60 seconds, Ideally, two clients should generate Encounter ID, but since the privacy which used to generate the EphID of the client1 has already been changed, we can't reconstruct the same Encounter ID. To fix this problem, we save the previous privacy as well as the current privacy, and use the sequence number to determine which privacy should use, the old one or the new one. To make it simple, we set the length of this filed as 4 bytes, which is 32 bits long., which should be sufficient to run the program for a year.
 
 ### Logging
 
@@ -75,17 +75,17 @@ The entire front-end system contains:
 -  `Dimy.py`: The entrance of the whole front-end system
    -  The main entry of the program implements several bootstrap functions and the user command parser.
 
-## Tradeoffs
+## Trade-offs
 
 The main challenges are:
 
-- Since we have several threads running in the background, preventing them from facing raise conditions is not quite easy. Also to achieve the synchronisation, we used the `lock` and `conditional variable` which can potentially introduce performance overhead. 
-- Since client applications are broadcasting messages, which means they will receive the message that is sent from themselves as well. To avoid reconstructing their own EphID, we store the hashtag that clients have sent as a hash table. So the EphID will only be reconstructed if they are not in that local cache. However, this requires extra memory usage. 
+- Since we have several threads running in the background, preventing them from facing raise conditions is not quite easy. Also, to achieve the synchronization, we used the `lock` and `conditional variable` which can potentially introduce performance overhead. 
+- Since client applications are broadcasting messages, which means they will receive the message that is sent from themselves as well. To avoid reconstructing their own EphID, we store the hash tag that clients have sent as a hash table. So the EphID will only be reconstructed if they are not in that local cache. However, this requires extra memory usage. 
 
 <div style="page-break-after: always; break-after: page;"></div>
 
 
-## Dinary
+## Diary
 
 ### Contribution
 
@@ -112,9 +112,9 @@ The main challenges are:
 
 | Week | Completion                                                   | Issue                                                        |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 5    | Create github repo, decide the main developing language and assign the presentation workload. | Questions about the DIMY protocol details, the format of diary and presentation and the wheels we can use. |
+| 5    | Create Github repository, decide the main developing language and assign the presentation workload. | Questions about the DIMY protocol details, the format of diary and presentation and the wheels we can use. |
 | 6    | Prepare presentation slides, record the video clips and  assign tasks of implementation. | Questions about Video editing tool and Buckets to store videos. |
 | 7    | Implement Background Timer Module and rapid prototype the framework. | Null.                                                        |
 | 8    | Implement the helper modules and refine the framework.       | Search for the appropriate libraries.                        |
-| 9    | Implement ID management + Bloomfilter management module      | Multi-threading programming designs.                         |
+| 9    | Implement ID management + BloomFilter management module      | Multi-threading programming designs.                         |
 | 10   | Merge and refine the code + report                           | Null.                                                        |
