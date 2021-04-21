@@ -85,9 +85,9 @@ The entire front-end system contains:
 
 ## Diary
 
-### Contribution
+#### **Contribution**
 
-#### Individual Part
+##### **Individual Part**
 
 - Jiawei is in charge of the following things **(1/3):**
   - Implementing the communication library between clients and servers using TCP protocol and Implementing the message protocol.
@@ -102,11 +102,11 @@ The entire front-end system contains:
   - Implement the message passing library based on UDP protocol.
   - implement the configuration parser module of this project.
 
-#### Common Part
+##### Common Part
 
 -  Diary, Report, Video and code testing
 
-### Progress
+#### Progress
 
 | Week | Completion                                                   | Issue                                                        |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ |
