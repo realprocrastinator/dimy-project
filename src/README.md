@@ -8,13 +8,13 @@ The current implementation only contains the fron-tend part developed using `Pyt
 
 ## Notice
 
-#### Terms: please refer to the spec!
+### Terms: please refer to the spec!
 
 ## Usage
 
 First of all, please make sure you already have the required python libraries installed, the file `requiresments.txt` in the root source tree contains all the libraries installed on my system during developing. Not all of them are required, the main dependencies are `base58(1.0.3)`, `sslcrypto(5.3)`, `pyaes(1.6.1)` and `mmh3(3.0.0)`. But if there is some dependencies issues, this is good place to have a look :D.
 
-#### Tips for setting up the environment (Linux / MacOS)
+### Tips for setting up the environment (Linux / MacOS)
 
 A good way to test  the python program without messing up with the host environment is to create a virtual environment. To do this you can install `venv`.
 
@@ -31,6 +31,36 @@ Once the required libraries has been installed, the main program can be started 
 In the main loop, the user can feed in the command. Currently only two commands are supported, first is `s` to terminate the program. The second one is `c` to generate the `CBF` and upload to the specific back-end server and wait for reply.
 
 ## Features
+
+### **Task Managers**
+
+- According to the protocol, we have several tasks need to be scheduled periodically, such as the EphID generating and secret sharing task, DBF management task etc. Those tasks are implemented as background threads which will be triggered when the timer fires. In general we for each task for have a specific manager to manage the it.
+  - ID manager is responsible for generating the EphID using ECC  every one minute and then uses Shamir algorithm to generate 6 parts for the secret and broadcast them every 10 seconds.
+  - Bloom Filter Manager is responsible for managing the DBF pool which has one DBF initially and continuously add a new DBF into the pool until the pool contains 6 DBFs. Besides, it will also delete the DBF than has life time longer than 60 minutes and add a new one into the pool. The Bloom Filter manager will also combine the DBF pool which has 6 DBFs in to a QBF every 60 minutes of a CBF which is instead controlled by the user.
+  - Background Task Manager is responsible for schedule the background tasks that we listed above. Basically it manages all the daemon threads and register a specific timer for each of them and then launch each thread.
+
+### **Communication methods: Broadcasting and Receiving**
+
+- The implementation of broadcasting and receiving uses POSIX sockets. For each client application, one socket is used for broadcasting and the other one is used for  receiving the broadcasting messages from other clients.
+
+-  The receiving method is implemented as a blocking daemon thread which checks the receiving buffer periodically. And the broadcasting method runs on another daemon thread, which broadcasts secret shares every 10 seconds.
+
+###  Message Format
+
+- The broadcasting message has its specific format as follow:
+
+| **Length** | 3 Bytes  | 1 Byte     | 16 Bytes            | 4 Bytes         |
+| ---------- | -------- | ---------- | ------------------- | --------------- |
+| **Field**  | Hash Tag | Section ID | Secret Part Payload | Sequence Number |
+
+- Hash Tag is the first 3 bytes of the hash of the EphID calculated via sha256
+- Section ID indicates the order of the receiving parts, but the Shamir Algorithm doesn't require ordering of the secret parts, so this filed is just for counting purpose.
+- Secret Part Payload is the secret part of the EphID generated using Shamir Algorithm.
+- The Sequence Number field is our solution to the issue of the overlapping timing window. For example, lets define the initial time point is `t0`, client 1 sends the message at `t0 + 30 seconds`, and  then client 2 starts to send its shared secret at `t0 + 30 seconds` as well. Then at time point `t0  + 60 seconds`, Ideally those two client should generate Encounter ID, but since the privacy which used to generate the EphID of the client1 has already been changed. We can't reconstruct the same Encounter ID. To fix this problem, we save the previous privacy as well as the current privacy. and use the sequence number to determine which privacy should use, the old one or the new one. To make it simple, we set the length of this filed as 4 bytes, which is 32 bits long. Should be sufficient to run the program for a year.
+
+### logging
+
+The logging subsystem has two output streams. One is the `stdout` and the other one is the `log.txt` configured by the `ALL_LOG_FILE` entry. The `stdout` is used for   demonstration and the log file is used for diagnosing or inspecting the procedure.
 
 ### configuration
 
@@ -97,25 +127,46 @@ The default configuration file is a `json` file contains several entries as foll
 
 - `NUM_THRESHOLD`: The default minimal number of secret parts that `Shamir` algorithm require to reconstruct the secret, by the fault is `3`
 
-### logging
-
-The logging subsystem has two output streams. One is the `stdout` and the other one is the `logfile` configured by the `ALL_LOG_FILE` entry.
-
-Details about each module
-
 ## Modules (TODO add details)
 
 The entire front-end system contains:
 
 -  `bfmng` A storage component
 -  `bgwork` A background task scheduler
+   -  `bgmgr.py` implements the background task scheduling method by maintaining a job queue, each of its entry contains a daemon thread. 
+   -  `exception.py` implements the custom run-time error.
+   -  `job.py` implements the generic backgournd task class.  
 -  `common` A communication module
+   -  `udpmgr.py` implements the client-to-client EphID broadcasting and receiving methods using two dedicated socket for multiplexing the message. This is just a wrapper of python socket module. 
+   -  `tcpmgr.py` implements the helper function for uploading the CBF to the server and querying the sever with QBF.
+   -  `msg.py` implements the broadcasting message format class.
 -  `config`  A configuration helper module
+   -  `configure.py` implements the default configuration and configuration parser.
 -  `idmng` A client `EphID`, `EncntID` management component
+   -  `idmgr.py` implements the EphID generating methods, Encounter ID generation methods and secret sharing methods, etc. This module is implemented on top of the `sslcrypto` module.
+   -  `shamir.py` is the  implementation borrowed from `Wiki with some small  modifications.  
 -  `sslcrypto_client` A module ported from `sslcrypto` which implements the `ECDH` algorithm
+   -  A module borrowed from online which implements the `ECDH` algorithm.
 -  `test` A module contains several unit tests for the various modules
+   -  Several unit tests against several custom implementations introduced above.
 -  `utils` A module contains several helper functions
+   -  `helper.py` implements some helper functions for handling and converting data type.
 -  `tasks.py` A file contains all the background tasks wrappers
--  `main.py` The entry point of the whole front-end system
+   -  All the background/non-background task wrapper functions go here. 
+-  `Dimy.py` The entry point of the whole front-end system
+   -  The main entry of the program implements several bootstrap functions and the user command parser.
+
+## Challenges and Known Issues
+
+The main challenges are:
+
+- Since we have several threads running in the background, preventing them from facing raise conditions is not quite easy. Also to achieve the synchronisation, we used the `lock` and `conditional variable` which can potentially lead to deadlock issues.
+
+- The overlapping timing issue which introduced before leads to the inconsistent Encounter ID. Instead of discarding the package, we used store the previous privacy for generating the EphID using ECDH algorithm together with the sequence number in the message to choose whether to use to old privacy or the new one.
+- The testing can be time consuming as the timing parameters are relatively large. To achieve easy debugging purpose, we separate the output stream to a log file and the console. Besides, we can manually configure the program's parameter's to simulate the behaviour but with a much shorter time interval.  
+
+Known Issues:
+
+- The first minute of the broadcasting message can be received properly on some platforms.  
 
 
